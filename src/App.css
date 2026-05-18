@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f5f7;
+  color: #1d1d1f;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 48px 24px 32px;
+  text-align: center;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  margin: 8px 0 0;
+  font-size: 24px;
+  color: #666;
+}
+
+.layout {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.panel {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #1d1d1f;
+  color: white;
+}
+
+
+.practice-card {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 18px;
+  background: #fafafa;
+  min-height: 160px;
+}
+
+.practice-card h3 {
+  margin-top: 0;
+}
+
+.practice-card p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .practice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+}
+
+
+.vocab-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.vocab-card {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 18px;
+  background: #fafafa;
+}
+
+.vocab-card h3 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.ipa {
+  color: #666;
+  font-style: italic;
+}
+
+.sentence-index {
+  color: #777;
+  font-size: 14px;
+}
+
+.translation {
+  font-size: 16px;
+  color: #444;
+}
+
+.blank-sentence {
+  font-size: 22px;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .vocab-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.navigation-row {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 14px;
+}
+
+.word-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 22px;
+  line-height: 1.8;
+  margin-top: 18px;
+}
+
+.word-token {
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  padding: 6px 10px;
+  background: white;
+  color: #1d1d1f;
+  font-size: 20px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.word-token:hover {
+  background: #f0f0f0;
+}
+
+.word-token-selected {
+  border-color: #1d1d1f;
+  background: #f0f0f0;
+}
+
+.word-popup {
+  margin-top: 16px;
+  border: 1px solid #d6d6d6;
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.word-popup p {
+  margin: 8px 0;
+}
+
+.word-popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 18px;
+}
+
+.close-button {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.recognized-box {
+  margin-top: 16px;
+  border: 1px solid #d6d6d6;
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: #f7f7f7;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.recognized-box p {
+  margin: 8px 0 0;
+  font-size: 16px;
+}
+
+.practice-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.level-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 6px;
+  background: #f1f1f1;
+  border-radius: 999px;
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.level-tab {
+  background: transparent;
+  color: #1d1d1f;
+  border-radius: 999px;
+  padding: 9px 16px;
+  white-space: nowrap;
+}
+
+.level-tab-active {
+  background: #1d1d1f;
+  color: white;
+}
+
+.practice-toolbar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.single-practice-card {
+  min-height: 280px;
+  touch-action: pan-y;
+}
+
+.practice-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.practice-card-header h3 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .practice-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+
+.word-token-matched {
+  border-color: #2e7d32;
+  background: #e8f5e9;
+  color: #1b5e20;
+  font-weight: 700;
+}
