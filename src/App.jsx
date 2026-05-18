@@ -247,6 +247,7 @@ function PracticeSection({ lesson }) {
         setSelectedWord={setSelectedWord}
         recognizedText={recognizedText}
         matchedWordIndexes={matchedWordIndexes}
+        matchScore={matchScore}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       />
@@ -278,6 +279,7 @@ function PracticeCard({
   setSelectedWord,
   recognizedText,
   matchedWordIndexes,
+  matchScore,
   onTouchStart,
   onTouchEnd,
 }) {
@@ -350,12 +352,16 @@ function PracticeCard({
         </div>
       )}
 
-      {recognizedText && (
-        <div className="recognized-box">
-          <strong>Recognized:</strong>
-          <p>{recognizedText}</p>
-        </div>
-      )}
+{recognizedText && (
+  <div className="recognized-box">
+    <div className="recognized-header">
+      <strong>Recognized:</strong>
+      <span className="match-score">{matchScore}% matched</span>
+    </div>
+
+    <p>{recognizedText}</p>
+  </div>
+)}
     </div>
   );
 }

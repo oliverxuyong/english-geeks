@@ -294,3 +294,19 @@ button:disabled {
   color: #1b5e20;
   font-weight: 700;
 }
+
+.recognized-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.match-score {
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: white;
+  border: 1px solid #d6d6d6;
+  font-size: 14px;
+  font-weight: 700;
+}
