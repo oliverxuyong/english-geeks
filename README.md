@@ -1,3 +1,9 @@
+# About
+早先自己用react实现了一个网页前端版的english geeks。当前这个尝试用cursor从头开始这个项目，目标是做成一个交互式网页版的英语填空练习的app，从头在ai的帮助下一步步完成。未来将会作为微信公众号推文的完整功能链接。也是网络示范直播的演示界面，以及视频制作的基本素材。
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
