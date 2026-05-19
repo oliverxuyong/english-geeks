@@ -1,0 +1,12 @@
+I want to build an interactive webpage.
+The page is designed for learning a short English passage.
+Each sentence will be separated and studied one by one.
+Users can practice vocabulary before they listen to the full audio.
+The listening step helps them hear natural pronunciation and rhythm.
+Practice cards show Chinese translation and IPA above each word.
+Three difficulty tabs control how many words are blanked out.
+Swipe up or down to move between sentences on a touch screen.
+Swipe left or right to switch between beginner and advanced levels.
+The Speak button uses speech recognition until you tap Stop.
+Matched words turn green as you read, even when they were blanked.
+After practice, play the full passage again to feel your progress.

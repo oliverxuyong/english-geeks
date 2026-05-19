@@ -1,0 +1,58 @@
+{
+  "vocabulary": [
+    {
+      "id": "v008",
+      "word": "interactive",
+      "ipa": "/ˌɪntərˈæktɪv/",
+      "chinese": "交互式的",
+      "english": "allowing two-way communication between user and system",
+      "meaningInContext": "用户可以点击、朗读、切换内容的网页"
+    },
+    {
+      "id": "v005",
+      "word": "swipe",
+      "ipa": "/swaɪp/",
+      "chinese": "滑动",
+      "english": "to move a finger across a touch screen",
+      "meaningInContext": "在触摸屏上切换句子或难度级别"
+    },
+    {
+      "id": "v004",
+      "word": "blanked",
+      "ipa": "/blæŋkt/",
+      "chinese": "被挖空的",
+      "english": "with parts hidden for practice",
+      "meaningInContext": "练习时部分单词被遮住"
+    },
+    {
+      "id": "v001",
+      "word": "practice",
+      "ipa": "/ˈpræktɪs/",
+      "chinese": "练习",
+      "english": "repeated exercise to improve skill",
+      "meaningInContext": "本课核心的填空朗读练习"
+    },
+    {
+      "id": "v002",
+      "word": "passage",
+      "ipa": "/ˈpæsɪdʒ/",
+      "chinese": "一段文字",
+      "english": "a short section of text",
+      "meaningInContext": "待学习的英语短文"
+    }
+  ],
+  "sentences": {
+    "s001": "我想做一个交互式网页。",
+    "s002": "这个页面是用来学习一小段英文材料的。",
+    "s003": "每个句子都会被拆开，并一句一句地学习。",
+    "s004": "用户可以先学生词，再听全文音频。",
+    "s005": "倾听环节帮助他们感受自然的发音和节奏。",
+    "s006": "练习卡片在单词上方显示中文和音标。",
+    "s007": "三个难度标签控制有多少词被挖空。",
+    "s008": "在触摸屏上可以上下滑动切换句子。",
+    "s009": "左右滑动可在初、中、高级别之间切换。",
+    "s010": "Speak 按钮会保持语音识别，直到你点击 Stop。",
+    "s011": "读对的词会变绿，包括原本被挖空的词。",
+    "s012": "练习结束后，再播放一遍全文，体会进步。"
+  }
+}
