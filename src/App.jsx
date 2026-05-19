@@ -158,8 +158,21 @@ function PracticeSection({ lesson }) {
     const SpeechRecognition =
       window.SpeechRecognition || window.webkitSpeechRecognition;
 
+    if (!window.isSecureContext) {
+      alert(
+        "Speech recognition requires HTTPS (or localhost on this computer). " +
+          "On your phone, open the https:// address shown in the dev server terminal, not http://."
+      );
+      return;
+    }
+
     if (!SpeechRecognition) {
-      alert("Speech recognition is not supported in this browser. Please try Chrome.");
+      const isIos = /iPad|iPhone|iPod/.test(navigator.userAgent);
+      alert(
+        isIos
+          ? "Speech recognition is not available in Chrome on iPhone. Open this page in Safari instead."
+          : "Speech recognition is not supported in this browser. Please try Chrome on desktop or Android."
+      );
       return;
     }
 
