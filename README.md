@@ -66,8 +66,6 @@ Deterministic in `scripts/lib/blankRules.mjs`: beginner hides ~last 25% of token
 | 3 Practice | One card; tabs 初/中/高; ↑↓ swipe sentences, ←→ swipe levels; per-word IPA; Speak until Stop |
 | 4 Final listen | Replay audio or `fullVideoUrl` |
 
-Fixed step nav (1–4) on the right jumps via `scrollIntoView`.
-
 ## Mobile / HTTPS
 
 - Dev: `@vitejs/plugin-basic-ssl` — always use the **https** LAN URL on iPhone/Android.
@@ -78,7 +76,7 @@ Fixed step nav (1–4) on the right jumps via `scrollIntoView`.
 
 ```
 src/
-  components/     # Vocabulary, Listening, Practice, StepNav
+  components/     # Vocabulary, Listening, Practice
   data/lesson001.js
   hooks/useSpeechRecognition.js
   utils/lcsMatch.js, playAudio.js

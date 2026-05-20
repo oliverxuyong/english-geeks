@@ -4,7 +4,6 @@ import { VocabularySection } from "./components/VocabularySection";
 import { ListeningSection } from "./components/ListeningSection";
 import { PracticeSection } from "./components/PracticeSection";
 import { FinalListeningSection } from "./components/FinalListeningSection";
-import { StepNav } from "./components/StepNav";
 
 function App() {
   const lesson = lesson001;
@@ -15,8 +14,6 @@ function App() {
         <h1>{lesson.title}</h1>
         <p>{lesson.subtitle}</p>
       </header>
-
-      <StepNav />
 
       <main className="layout">
         <VocabularySection lesson={lesson} />

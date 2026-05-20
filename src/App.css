@@ -11,7 +11,6 @@ body {
 
 .app {
   min-height: 100vh;
-  position: relative;
 }
 
 .hero {
@@ -312,27 +311,6 @@ button:disabled {
   font-weight: 700;
 }
 
-.step-nav {
-  position: fixed;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 20;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.step-nav-button {
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  border-radius: 50%;
-  font-weight: 700;
-  background: #1d1d1f;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
 .vocab-card-top {
   display: flex;
   align-items: center;
@@ -437,10 +415,6 @@ button:disabled {
 }
 
 @media (max-width: 800px) {
-  .step-nav {
-    right: 10px;
-  }
-
   .practice-toolbar {
     position: sticky;
     top: 8px;
