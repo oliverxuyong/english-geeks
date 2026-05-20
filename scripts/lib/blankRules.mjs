@@ -12,17 +12,24 @@ function isContentWord(word) {
   return w.length > 0 && !FUNCTION_WORDS.has(w);
 }
 
+function spacedBlanks(count) {
+  if (count <= 0) return "";
+  return "_ ".repeat(count).trimEnd();
+}
+
 function blankToken(word, style) {
   const letters = word.replace(/[^a-zA-Z']/g, "");
   if (!letters.length) return word;
 
   if (style === "full") {
-    return "_".repeat(Math.max(4, Math.min(letters.length, 10)));
+    return spacedBlanks(letters.length);
   }
 
   if (style === "stub") {
     const show = Math.max(1, Math.ceil(letters.length * 0.35));
-    return letters.slice(0, show) + "_".repeat(Math.max(2, letters.length - show));
+    const visible = letters.slice(0, show);
+    const hidden = letters.length - show;
+    return visible + (hidden > 0 ? ` ${spacedBlanks(hidden)}` : "");
   }
 
   return word;

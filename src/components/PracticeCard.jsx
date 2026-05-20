@@ -1,4 +1,5 @@
 import { speakWord } from "../utils/playAudio";
+import { formatBlankDisplay } from "../utils/formatBlankDisplay";
 import { calculateMatchScore } from "../utils/lcsMatch";
 
 const LEVEL_LABELS = {
@@ -12,8 +13,12 @@ export function PracticeCard({
   sentence,
   sentenceCount,
   showTranslation,
+  onToggleTranslation,
   showIPA,
+  onToggleIPA,
   showFullText,
+  onFullTextPressStart,
+  onFullTextPressEnd,
   selectedWord,
   setSelectedWord,
   recognizedText,
@@ -31,9 +36,35 @@ export function PracticeCard({
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
     >
-      <div className="swipe-hints" aria-hidden="true">
-        <span className="swipe-hint swipe-hint-vertical">↑↓ sentence</span>
-        <span className="swipe-hint swipe-hint-horizontal">←→ level</span>
+      <div className="practice-card-top">
+        <span className="swipe-hint swipe-hint-vertical" aria-hidden="true">
+          ↑↓ sentence
+        </span>
+
+        <div className="practice-card-toolbar">
+          <button
+            type="button"
+            onMouseDown={onFullTextPressStart}
+            onMouseUp={onFullTextPressEnd}
+            onMouseLeave={onFullTextPressEnd}
+            onTouchStart={onFullTextPressStart}
+            onTouchEnd={onFullTextPressEnd}
+          >
+            Full Text
+          </button>
+
+          <button type="button" onClick={onToggleTranslation}>
+            {showTranslation ? "Hide Trans." : "Show Trans."}
+          </button>
+
+          <button type="button" onClick={onToggleIPA}>
+            {showIPA ? "Hide IPA" : "Show IPA"}
+          </button>
+        </div>
+
+        <span className="swipe-hint swipe-hint-horizontal" aria-hidden="true">
+          ←→ level
+        </span>
       </div>
 
       <div className="practice-card-header">
@@ -76,7 +107,9 @@ export function PracticeCard({
         {sentence.words.map((word, wordIndex) => {
           const isMatched = matchedWordIndexes.has(wordIndex);
           const displayText =
-            showFullText || isMatched ? word.text : sentence.blanks[level][wordIndex];
+            showFullText || isMatched
+              ? word.text
+              : formatBlankDisplay(word.text, sentence.blanks[level][wordIndex]);
 
           return (
             <div className="word-column" key={word.id}>

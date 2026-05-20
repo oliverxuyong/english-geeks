@@ -265,11 +265,29 @@ button:disabled {
   color: white;
 }
 
-.practice-toolbar {
+.practice-card-top {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px;
+  align-items: start;
+  margin-bottom: 12px;
+}
+
+.practice-card-top .swipe-hint-vertical {
+  justify-self: start;
+}
+
+.practice-card-top .swipe-hint-horizontal {
+  justify-self: end;
+}
+
+.practice-card-toolbar {
   display: flex;
+  justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
   align-items: center;
+  justify-self: center;
 }
 
 .single-practice-card {
@@ -356,13 +374,6 @@ button:disabled {
   font-weight: 500;
 }
 
-.swipe-hints {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-
 .swipe-hint {
   font-size: 12px;
   color: #888;
@@ -420,15 +431,4 @@ button:disabled {
 
 .single-practice-card {
   touch-action: none;
-}
-
-@media (max-width: 800px) {
-  .practice-toolbar {
-    position: sticky;
-    top: 8px;
-    z-index: 5;
-    background: white;
-    padding: 8px 0;
-    border-radius: 12px;
-  }
 }

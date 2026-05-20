@@ -14,7 +14,7 @@ export function PracticeSection({ lesson }) {
   const [activeLevel, setActiveLevel] = useState("intermediate");
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const [showTranslation, setShowTranslation] = useState(true);
-  const [showIPA, setShowIPA] = useState(true);
+  const [showIPA, setShowIPA] = useState(false);
   const [showFullText, setShowFullText] = useState(false);
   const [selectedWord, setSelectedWord] = useState(null);
   const [matchedWordIndexes, setMatchedWordIndexes] = useState(() => new Set());
@@ -110,34 +110,17 @@ export function PracticeSection({ lesson }) {
           ))}
         </div>
 
-        <div className="practice-toolbar">
-          <button
-            type="button"
-            onMouseDown={() => setShowFullText(true)}
-            onMouseUp={() => setShowFullText(false)}
-            onMouseLeave={() => setShowFullText(false)}
-            onTouchStart={() => setShowFullText(true)}
-            onTouchEnd={() => setShowFullText(false)}
-          >
-            Full Text
-          </button>
-
-          <button type="button" onClick={() => setShowTranslation((v) => !v)}>
-            {showTranslation ? "Hide Trans." : "Show Trans."}
-          </button>
-
-          <button type="button" onClick={() => setShowIPA((v) => !v)}>
-            {showIPA ? "Hide IPA" : "Show IPA"}
-          </button>
-        </div>
-
         <PracticeCard
           level={activeLevel}
           sentence={sentence}
           sentenceCount={lesson.sentences.length}
           showTranslation={showTranslation}
+          onToggleTranslation={() => setShowTranslation((v) => !v)}
           showIPA={showIPA}
+          onToggleIPA={() => setShowIPA((v) => !v)}
           showFullText={showFullText}
+          onFullTextPressStart={() => setShowFullText(true)}
+          onFullTextPressEnd={() => setShowFullText(false)}
           selectedWord={selectedWord}
           setSelectedWord={setSelectedWord}
           recognizedText={recognizedText}
