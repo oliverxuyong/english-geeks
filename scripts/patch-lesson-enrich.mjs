@@ -26,3 +26,4 @@ for (const s of lesson.sentences) {
 const out = `export const lesson001 = ${JSON.stringify(lesson, null, 2)};\n`;
 fs.writeFileSync(lessonPath, out);
 console.log("Patched", lessonPath);
+console.log("Tip: run node scripts/apply-word-glosses.mjs to restore per-word glosses.");

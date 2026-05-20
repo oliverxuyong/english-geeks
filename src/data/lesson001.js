@@ -62,72 +62,72 @@ export const lesson001 = {
         {
           "id": "s001-w001",
           "text": "I'd",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/aɪd/",
+          "chinese": "我想",
+          "english": "I would"
         },
         {
           "id": "s001-w002",
           "text": "like",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/laɪk/",
+          "chinese": "想要",
+          "english": "to want; prefer"
         },
         {
           "id": "s001-w003",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "去；用于",
+          "english": "infinitive marker"
         },
         {
           "id": "s001-w004",
           "text": "begin",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/bɪˈɡɪn/",
+          "chinese": "开始",
+          "english": "to start"
         },
         {
           "id": "s001-w005",
           "text": "this",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðɪs/",
+          "chinese": "这次",
+          "english": "this"
         },
         {
           "id": "s001-w006",
           "text": "talk",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tɔk/",
+          "chinese": "演讲",
+          "english": "a spoken presentation"
         },
         {
           "id": "s001-w007",
           "text": "with",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/wɪð/",
+          "chinese": "用；以",
+          "english": "using; by means of"
         },
         {
           "id": "s001-w008",
           "text": "a",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ə/",
+          "chinese": "一个",
+          "english": "a (article)"
         },
         {
           "id": "s001-w009",
           "text": "photo",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈfoʊtoʊ/",
+          "chinese": "照片",
+          "english": "photograph"
         },
         {
           "id": "s001-w010",
           "text": "demonstration",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌdɛmənˈstreɪʃən/",
+          "chinese": "演示",
+          "english": "a visual showing"
         }
       ],
       "blanks": {
@@ -179,177 +179,177 @@ export const lesson001 = {
         {
           "id": "s002-w001",
           "text": "Please",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/pliz/",
+          "chinese": "请",
+          "english": "polite request"
         },
         {
           "id": "s002-w002",
           "text": "be",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/bi/",
+          "chinese": "被",
+          "english": "linking verb"
         },
         {
           "id": "s002-w003",
           "text": "advised",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ədˈvaɪzd/",
+          "chinese": "告知",
+          "english": "be informed (formal)"
         },
         {
           "id": "s002-w004",
           "text": "this",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðɪs/",
+          "chinese": "这次",
+          "english": "this"
         },
         {
           "id": "s002-w005",
           "text": "demonstration",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌdɛmənˈstreɪʃən/",
+          "chinese": "演示",
+          "english": "a visual showing"
         },
         {
           "id": "s002-w006",
           "text": "contains",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/kənˈteɪnz/",
+          "chinese": "包含",
+          "english": "includes"
         },
         {
           "id": "s002-w007",
           "text": "graphic",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɡræfɪk/",
+          "chinese": "露骨的",
+          "english": "vivid; explicit"
         },
         {
           "id": "s002-w008",
           "text": "images",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɪmɪdʒɪz/",
+          "chinese": "图像",
+          "english": "pictures"
         },
         {
           "id": "s002-w009",
           "text": "of",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/əv/",
+          "chinese": "的",
+          "english": "of"
         },
         {
           "id": "s002-w010",
           "text": "Italian",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪˈtæljən/",
+          "chinese": "意大利的",
+          "english": "relating to Italy"
         },
         {
           "id": "s002-w011",
           "text": "foods",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/fudz/",
+          "chinese": "食物",
+          "english": "food items"
         },
         {
           "id": "s002-w012",
           "text": "being",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈbiɪŋ/",
+          "chinese": "被",
+          "english": "passive auxiliary"
         },
         {
           "id": "s002-w013",
           "text": "violated",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈvaɪəˌleɪtɪd/",
+          "chinese": "蹂躏",
+          "english": "treated badly; desecrated"
         },
         {
           "id": "s002-w014",
           "text": "and",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ænd/",
+          "chinese": "和",
+          "english": "and"
         },
         {
           "id": "s002-w015",
           "text": "may",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/meɪ/",
+          "chinese": "可能",
+          "english": "might"
         },
         {
           "id": "s002-w016",
           "text": "be",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/bi/",
+          "chinese": "会",
+          "english": "modal auxiliary"
         },
         {
           "id": "s002-w017",
           "text": "disturbing",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/dɪˈstɜrbɪŋ/",
+          "chinese": "令人不适",
+          "english": "upsetting"
         },
         {
           "id": "s002-w018",
           "text": "for",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/fɔr/",
+          "chinese": "对",
+          "english": "for"
         },
         {
           "id": "s002-w019",
           "text": "Italian",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪˈtæljən/",
+          "chinese": "意大利的",
+          "english": "relating to Italy"
         },
         {
           "id": "s002-w020",
           "text": "viewers",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈvjurərz/",
+          "chinese": "观众",
+          "english": "people watching"
         },
         {
           "id": "s002-w021",
           "text": "and",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ænd/",
+          "chinese": "和",
+          "english": "and"
         },
         {
           "id": "s002-w022",
           "text": "self",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/sɛlf/",
+          "chinese": "自称",
+          "english": "self-"
         },
         {
           "id": "s002-w023",
           "text": "described",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/dɪˈskraɪbd/",
+          "chinese": "描述的",
+          "english": "described"
         },
         {
           "id": "s002-w024",
           "text": "cultured",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈkʌltʃərd/",
+          "chinese": "有品位的",
+          "english": "refined; educated"
         },
         {
           "id": "s002-w025",
           "text": "gastronomes",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɡæstrənoʊmz/",
+          "chinese": "美食家",
+          "english": "lovers of fine food"
         }
       ],
       "blanks": {
@@ -446,107 +446,107 @@ export const lesson001 = {
         {
           "id": "s003-w001",
           "text": "There's",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðɛrz/",
+          "chinese": "有",
+          "english": "there is"
         },
         {
           "id": "s003-w002",
           "text": "a",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ə/",
+          "chinese": "一句",
+          "english": "a (article)"
         },
         {
           "id": "s003-w003",
           "text": "saying",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈseɪɪŋ/",
+          "chinese": "俗语",
+          "english": "a proverb"
         },
         {
           "id": "s003-w004",
           "text": "I",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/aɪ/",
+          "chinese": "我",
+          "english": "I"
         },
         {
           "id": "s003-w005",
           "text": "learned",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/lɜrnd/",
+          "chinese": "学到",
+          "english": "learned"
         },
         {
           "id": "s003-w006",
           "text": "while",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/waɪl/",
+          "chinese": "当…时",
+          "english": "while"
         },
         {
           "id": "s003-w007",
           "text": "I",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/aɪ/",
+          "chinese": "我",
+          "english": "I"
         },
         {
           "id": "s003-w008",
           "text": "was",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/wʌz/",
+          "chinese": "在",
+          "english": "was"
         },
         {
           "id": "s003-w009",
           "text": "in",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪn/",
+          "chinese": "在",
+          "english": "in"
         },
         {
           "id": "s003-w010",
           "text": "Italy",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɪtəli/",
+          "chinese": "意大利",
+          "english": "Italy"
         },
         {
           "id": "s003-w011",
           "text": "studying",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈstʌdiɪŋ/",
+          "chinese": "留学",
+          "english": "studying"
         },
         {
           "id": "s003-w012",
           "text": "abroad",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/əˈbrɔd/",
+          "chinese": "在国外",
+          "english": "abroad"
         },
         {
           "id": "s003-w013",
           "text": "my",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/maɪ/",
+          "chinese": "我的",
+          "english": "my"
         },
         {
           "id": "s003-w014",
           "text": "junior",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈdʒunjər/",
+          "chinese": "大三",
+          "english": "junior (third year)"
         },
         {
           "id": "s003-w015",
           "text": "year",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/jɪr/",
+          "chinese": "学年",
+          "english": "year"
         }
       ],
       "blanks": {
@@ -613,72 +613,72 @@ export const lesson001 = {
         {
           "id": "s004-w001",
           "text": "Every",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɛvri/",
+          "chinese": "每当",
+          "english": "every"
         },
         {
           "id": "s004-w002",
           "text": "time",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/taɪm/",
+          "chinese": "次",
+          "english": "time"
         },
         {
           "id": "s004-w003",
           "text": "somebody",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈsʌmbədi/",
+          "chinese": "有人",
+          "english": "somebody"
         },
         {
           "id": "s004-w004",
           "text": "puts",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/pʊts/",
+          "chinese": "放",
+          "english": "puts"
         },
         {
           "id": "s004-w005",
           "text": "pineapple",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈpaɪnæpl/",
+          "chinese": "菠萝",
+          "english": "pineapple"
         },
         {
           "id": "s004-w006",
           "text": "on",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɑn/",
+          "chinese": "在…上",
+          "english": "on"
         },
         {
           "id": "s004-w007",
           "text": "pizza",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈpitsə/",
+          "chinese": "披萨",
+          "english": "pizza"
         },
         {
           "id": "s004-w008",
           "text": "an",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ən/",
+          "chinese": "一位",
+          "english": "an"
         },
         {
           "id": "s004-w009",
           "text": "Italian",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪˈtæljən/",
+          "chinese": "意大利人",
+          "english": "Italian person"
         },
         {
           "id": "s004-w010",
           "text": "dies",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/daɪz/",
+          "chinese": "死去",
+          "english": "dies"
         }
       ],
       "blanks": {
@@ -730,156 +730,156 @@ export const lesson001 = {
         {
           "id": "s005-w001",
           "text": "Now",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/naʊ/",
+          "chinese": "那么",
+          "english": "now (transition)"
         },
         {
           "id": "s005-w002",
           "text": "if",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪf/",
+          "chinese": "如果",
+          "english": "if"
         },
         {
           "id": "s005-w003",
           "text": "this",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðɪs/",
+          "chinese": "这话",
+          "english": "this"
         },
         {
           "id": "s005-w004",
           "text": "were",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/wɜr/",
+          "chinese": "是（虚拟）",
+          "english": "were (subjunctive)"
         },
         {
           "id": "s005-w005",
           "text": "true",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tru/",
+          "chinese": "真的",
+          "english": "true"
         },
         {
           "id": "s005-w006",
           "text": "then",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðɛn/",
+          "chinese": "那么",
+          "english": "then"
         },
         {
           "id": "s005-w007",
           "text": "after",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈæftər/",
+          "chinese": "在…之后",
+          "english": "after"
         },
         {
           "id": "s005-w008",
           "text": "all",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɔl/",
+          "chinese": "全部",
+          "english": "all"
         },
         {
           "id": "s005-w009",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "那些",
+          "english": "the"
         },
         {
           "id": "s005-w010",
           "text": "images",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɪmɪdʒɪz/",
+          "chinese": "图片",
+          "english": "images"
         },
         {
           "id": "s005-w011",
           "text": "I",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/aɪ/",
+          "chinese": "我",
+          "english": "I"
         },
         {
           "id": "s005-w012",
           "text": "have",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/hæv/",
+          "chinese": "已经",
+          "english": "have"
         },
         {
           "id": "s005-w013",
           "text": "just",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/dʒʌst/",
+          "chinese": "刚",
+          "english": "just"
         },
         {
           "id": "s005-w014",
           "text": "shown",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ʃoʊn/",
+          "chinese": "展示",
+          "english": "shown"
         },
         {
           "id": "s005-w015",
           "text": "there",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðɛr/",
+          "chinese": "恐怕",
+          "english": "there"
         },
         {
           "id": "s005-w016",
           "text": "likely",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈlaɪkli/",
+          "chinese": "大概",
+          "english": "likely"
         },
         {
           "id": "s005-w017",
           "text": "aren't",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɑrnt/",
+          "chinese": "没有",
+          "english": "are not"
         },
         {
           "id": "s005-w018",
           "text": "many",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈmɛni/",
+          "chinese": "多少",
+          "english": "many"
         },
         {
           "id": "s005-w019",
           "text": "Italians",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪˈtæljənz/",
+          "chinese": "意大利人",
+          "english": "Italians"
         },
         {
           "id": "s005-w020",
           "text": "left",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/lɛft/",
+          "chinese": "剩下",
+          "english": "left; remaining"
         },
         {
           "id": "s005-w021",
           "text": "in",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪn/",
+          "chinese": "在",
+          "english": "in"
         },
         {
           "id": "s005-w022",
           "text": "Italy",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɪtəli/",
+          "chinese": "意大利",
+          "english": "Italy"
         }
       ],
       "blanks": {
@@ -967,240 +967,240 @@ export const lesson001 = {
         {
           "id": "s006-w001",
           "text": "While",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/waɪl/",
+          "chinese": "虽然",
+          "english": "while; although"
         },
         {
           "id": "s006-w002",
           "text": "putting",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈpʊtɪŋ/",
+          "chinese": "放",
+          "english": "putting"
         },
         {
           "id": "s006-w003",
           "text": "pineapple",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈpaɪnæpl/",
+          "chinese": "菠萝",
+          "english": "pineapple"
         },
         {
           "id": "s006-w004",
           "text": "on",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɑn/",
+          "chinese": "在…上",
+          "english": "on"
         },
         {
           "id": "s006-w005",
           "text": "pizza",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈpitsə/",
+          "chinese": "披萨",
+          "english": "pizza"
         },
         {
           "id": "s006-w006",
           "text": "might",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/maɪt/",
+          "chinese": "或许",
+          "english": "might"
         },
         {
           "id": "s006-w007",
           "text": "be",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/bi/",
+          "chinese": "是",
+          "english": "be"
         },
         {
           "id": "s006-w008",
           "text": "offensive",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/əˈfɛnsɪv/",
+          "chinese": "冒犯的",
+          "english": "offensive"
         },
         {
           "id": "s006-w009",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "对",
+          "english": "to"
         },
         {
           "id": "s006-w010",
           "text": "many",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈmɛni/",
+          "chinese": "许多",
+          "english": "many"
         },
         {
           "id": "s006-w011",
           "text": "Italians",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪˈtæljənz/",
+          "chinese": "意大利人",
+          "english": "Italians"
         },
         {
           "id": "s006-w012",
           "text": "particularly",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/pərˈtɪkjələrli/",
+          "chinese": "尤其",
+          "english": "particularly"
         },
         {
           "id": "s006-w013",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "那些",
+          "english": "the"
         },
         {
           "id": "s006-w014",
           "text": "pizza",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈpitsə/",
+          "chinese": "披萨",
+          "english": "pizza"
         },
         {
           "id": "s006-w015",
           "text": "proud",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/praʊd/",
+          "chinese": "自豪的",
+          "english": "proud"
         },
         {
           "id": "s006-w016",
           "text": "Neapolitans",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌniəˈpɑlɪtənz/",
+          "chinese": "那不勒斯人",
+          "english": "people from Naples"
         },
         {
           "id": "s006-w017",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "那些",
+          "english": "the"
         },
         {
           "id": "s006-w018",
           "text": "food",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/fud/",
+          "chinese": "食物",
+          "english": "food"
         },
         {
           "id": "s006-w019",
           "text": "photos",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈfoʊtoʊz/",
+          "chinese": "照片",
+          "english": "photos"
         },
         {
           "id": "s006-w020",
           "text": "that",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðæt/",
+          "chinese": "那",
+          "english": "that"
         },
         {
           "id": "s006-w021",
           "text": "I",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/aɪ/",
+          "chinese": "我",
+          "english": "I"
         },
         {
           "id": "s006-w022",
           "text": "have",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/hæv/",
+          "chinese": "已经",
+          "english": "have"
         },
         {
           "id": "s006-w023",
           "text": "just",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/dʒʌst/",
+          "chinese": "刚",
+          "english": "just"
         },
         {
           "id": "s006-w024",
           "text": "shown",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ʃoʊn/",
+          "chinese": "展示",
+          "english": "shown"
         },
         {
           "id": "s006-w025",
           "text": "are",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɑr/",
+          "chinese": "是",
+          "english": "are"
         },
         {
           "id": "s006-w026",
           "text": "each",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/itʃ/",
+          "chinese": "每一件",
+          "english": "each"
         },
         {
           "id": "s006-w027",
           "text": "considered",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/kənˈsɪdərd/",
+          "chinese": "被视为",
+          "english": "considered"
         },
         {
           "id": "s006-w028",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "为",
+          "english": "to"
         },
         {
           "id": "s006-w029",
           "text": "be",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/bi/",
+          "chinese": "是",
+          "english": "be"
         },
         {
           "id": "s006-w030",
           "text": "near",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/nɪr/",
+          "chinese": "近乎",
+          "english": "near; almost"
         },
         {
           "id": "s006-w031",
           "text": "universally",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌjunəˈvɜrsəli/",
+          "chinese": "普遍地",
+          "english": "universally"
         },
         {
           "id": "s006-w032",
           "text": "blasphemous",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈblæsfəməs/",
+          "chinese": "亵渎的",
+          "english": "showing great disrespect"
         },
         {
           "id": "s006-w033",
           "text": "culinary",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈkʌləˌnɛri/",
+          "chinese": "烹饪的",
+          "english": "relating to cooking"
         },
         {
           "id": "s006-w034",
           "text": "sins",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/sɪnz/",
+          "chinese": "罪孽",
+          "english": "sins"
         }
       ],
       "blanks": {
@@ -1324,114 +1324,114 @@ export const lesson001 = {
         {
           "id": "s007-w001",
           "text": "For",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/fɔr/",
+          "chinese": "为了",
+          "english": "for (context)"
         },
         {
           "id": "s007-w002",
           "text": "context",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈkɑntɛkst/",
+          "chinese": "背景",
+          "english": "context"
         },
         {
           "id": "s007-w003",
           "text": "what",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/wʌt/",
+          "chinese": "什么",
+          "english": "what"
         },
         {
           "id": "s007-w004",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "那",
+          "english": "the"
         },
         {
           "id": "s007-w005",
           "text": "seven",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈsɛvən/",
+          "chinese": "七",
+          "english": "seven"
         },
         {
           "id": "s007-w006",
           "text": "deadly",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈdɛdli/",
+          "chinese": "致命的",
+          "english": "deadly"
         },
         {
           "id": "s007-w007",
           "text": "sins",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/sɪnz/",
+          "chinese": "罪",
+          "english": "sins"
         },
         {
           "id": "s007-w008",
           "text": "are",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɑr/",
+          "chinese": "是",
+          "english": "are"
         },
         {
           "id": "s007-w009",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "之于",
+          "english": "to (comparison)"
         },
         {
           "id": "s007-w010",
           "text": "Christianity",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌkrɪstiˈænəti/",
+          "chinese": "基督教",
+          "english": "Christianity"
         },
         {
           "id": "s007-w011",
           "text": "these",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðiz/",
+          "chinese": "这些",
+          "english": "these"
         },
         {
           "id": "s007-w012",
           "text": "sins",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/sɪnz/",
+          "chinese": "罪",
+          "english": "sins"
         },
         {
           "id": "s007-w013",
           "text": "are",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɑr/",
+          "chinese": "是",
+          "english": "are"
         },
         {
           "id": "s007-w014",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "之于",
+          "english": "to (comparison)"
         },
         {
           "id": "s007-w015",
           "text": "Italian",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪˈtæljən/",
+          "chinese": "意大利的",
+          "english": "Italian"
         },
         {
           "id": "s007-w016",
           "text": "gastronomy",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɡæstrənəmi/",
+          "chinese": "美食文化",
+          "english": "the art of good eating"
         }
       ],
       "blanks": {
@@ -1501,149 +1501,149 @@ export const lesson001 = {
         {
           "id": "s008-w001",
           "text": "The",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "问题",
+          "english": "the"
         },
         {
           "id": "s008-w002",
           "text": "thing",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/θɪŋ/",
+          "chinese": "在于",
+          "english": "thing"
         },
         {
           "id": "s008-w003",
           "text": "is",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪz/",
+          "chinese": "是",
+          "english": "is"
         },
         {
           "id": "s008-w004",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "那些",
+          "english": "the"
         },
         {
           "id": "s008-w005",
           "text": "food",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/fud/",
+          "chinese": "饮食",
+          "english": "food"
         },
         {
           "id": "s008-w006",
           "text": "rules",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/rulz/",
+          "chinese": "规矩",
+          "english": "rules"
         },
         {
           "id": "s008-w007",
           "text": "in",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪn/",
+          "chinese": "在",
+          "english": "in"
         },
         {
           "id": "s008-w008",
           "text": "Italy",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɪtəli/",
+          "chinese": "意大利",
+          "english": "Italy"
         },
         {
           "id": "s008-w009",
           "text": "might",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/maɪt/",
+          "chinese": "可能",
+          "english": "might"
         },
         {
           "id": "s008-w010",
           "text": "seem",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/sim/",
+          "chinese": "显得",
+          "english": "seem"
         },
         {
           "id": "s008-w011",
           "text": "unnecessary",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ʌnˈnɛsəˌsɛri/",
+          "chinese": "多余的",
+          "english": "unnecessary"
         },
         {
           "id": "s008-w012",
           "text": "and",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ænd/",
+          "chinese": "而",
+          "english": "and"
         },
         {
           "id": "s008-w013",
           "text": "arbitrary",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɑrbəˌtrɛri/",
+          "chinese": "随意的",
+          "english": "arbitrary"
         },
         {
           "id": "s008-w014",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "对",
+          "english": "to"
         },
         {
           "id": "s008-w015",
           "text": "outsiders",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈaʊtˌsaɪdərz/",
+          "chinese": "外人",
+          "english": "outsiders"
         },
         {
           "id": "s008-w016",
           "text": "including",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪnˈkludɪŋ/",
+          "chinese": "包括",
+          "english": "including"
         },
         {
           "id": "s008-w017",
           "text": "myself",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/maɪˈsɛlf/",
+          "chinese": "我自己",
+          "english": "myself"
         },
         {
           "id": "s008-w018",
           "text": "when",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/wɛn/",
+          "chinese": "当",
+          "english": "when"
         },
         {
           "id": "s008-w019",
           "text": "I",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/aɪ/",
+          "chinese": "我",
+          "english": "I"
         },
         {
           "id": "s008-w020",
           "text": "first",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/fɜrst/",
+          "chinese": "初次",
+          "english": "first"
         },
         {
           "id": "s008-w021",
           "text": "arrived",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/əˈraɪvd/",
+          "chinese": "到达",
+          "english": "arrived"
         }
       ],
       "blanks": {
@@ -1728,86 +1728,86 @@ export const lesson001 = {
         {
           "id": "s009-w001",
           "text": "Many",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈmɛni/",
+          "chinese": "许多",
+          "english": "many"
         },
         {
           "id": "s009-w002",
           "text": "of",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/əv/",
+          "chinese": "的",
+          "english": "of"
         },
         {
           "id": "s009-w003",
           "text": "them",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðɛm/",
+          "chinese": "它们",
+          "english": "them"
         },
         {
           "id": "s009-w004",
           "text": "are",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɑr/",
+          "chinese": "是",
+          "english": "are"
         },
         {
           "id": "s009-w005",
           "text": "in",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪn/",
+          "chinese": "其实",
+          "english": "in (in fact)"
         },
         {
           "id": "s009-w006",
           "text": "fact",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/fækt/",
+          "chinese": "事实上",
+          "english": "fact"
         },
         {
           "id": "s009-w007",
           "text": "quite",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/kwaɪt/",
+          "chinese": "相当",
+          "english": "quite"
         },
         {
           "id": "s009-w008",
           "text": "senseful",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈsɛnsfəl/",
+          "chinese": "有道理的",
+          "english": "sensible; reasonable"
         },
         {
           "id": "s009-w009",
           "text": "when",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/wɛn/",
+          "chinese": "当",
+          "english": "when"
         },
         {
           "id": "s009-w010",
           "text": "understood",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌʌndərˈstʊd/",
+          "chinese": "被理解",
+          "english": "understood"
         },
         {
           "id": "s009-w011",
           "text": "in",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪn/",
+          "chinese": "在",
+          "english": "in"
         },
         {
           "id": "s009-w012",
           "text": "context",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈkɑntɛkst/",
+          "chinese": "背景下",
+          "english": "context"
         }
       ],
       "blanks": {
@@ -1865,219 +1865,219 @@ export const lesson001 = {
         {
           "id": "s010-w001",
           "text": "As",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/æz/",
+          "chinese": "随着",
+          "english": "as"
         },
         {
           "id": "s010-w002",
           "text": "I",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/aɪ/",
+          "chinese": "我",
+          "english": "I"
         },
         {
           "id": "s010-w003",
           "text": "came",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/keɪm/",
+          "chinese": "逐渐",
+          "english": "came"
         },
         {
           "id": "s010-w004",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "去",
+          "english": "to"
         },
         {
           "id": "s010-w005",
           "text": "learn",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/lɜrn/",
+          "chinese": "明白",
+          "english": "learn"
         },
         {
           "id": "s010-w006",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "那些",
+          "english": "the"
         },
         {
           "id": "s010-w007",
           "text": "cultural",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈkʌltʃərəl/",
+          "chinese": "文化的",
+          "english": "cultural"
         },
         {
           "id": "s010-w008",
           "text": "Italian",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪˈtæljən/",
+          "chinese": "意大利的",
+          "english": "Italian"
         },
         {
           "id": "s010-w009",
           "text": "food",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/fud/",
+          "chinese": "饮食",
+          "english": "food"
         },
         {
           "id": "s010-w010",
           "text": "norms",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/nɔrmz/",
+          "chinese": "规范",
+          "english": "norms"
         },
         {
           "id": "s010-w011",
           "text": "are",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɑr/",
+          "chinese": "是",
+          "english": "are"
         },
         {
           "id": "s010-w012",
           "text": "rooted",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈrutɪd/",
+          "chinese": "植根于",
+          "english": "rooted"
         },
         {
           "id": "s010-w013",
           "text": "in",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪn/",
+          "chinese": "于",
+          "english": "in"
         },
         {
           "id": "s010-w014",
           "text": "some",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/sʌm/",
+          "chinese": "一些",
+          "english": "some"
         },
         {
           "id": "s010-w015",
           "text": "serious",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈsɪriəs/",
+          "chinese": "严肃的",
+          "english": "serious"
         },
         {
           "id": "s010-w016",
           "text": "and",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ænd/",
+          "chinese": "且",
+          "english": "and"
         },
         {
           "id": "s010-w017",
           "text": "well",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/wɛl/",
+          "chinese": "充分",
+          "english": "well"
         },
         {
           "id": "s010-w018",
           "text": "understood",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌʌndərˈstʊd/",
+          "chinese": "被理解的",
+          "english": "understood"
         },
         {
           "id": "s010-w019",
           "text": "principles",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈprɪnsəpəlz/",
+          "chinese": "原则",
+          "english": "principles"
         },
         {
           "id": "s010-w020",
           "text": "in",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪn/",
+          "chinese": "在",
+          "english": "in"
         },
         {
           "id": "s010-w021",
           "text": "math",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/mæθ/",
+          "chinese": "数学",
+          "english": "math"
         },
         {
           "id": "s010-w022",
           "text": "science",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈsaɪəns/",
+          "chinese": "科学",
+          "english": "science"
         },
         {
           "id": "s010-w023",
           "text": "logic",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈlɑdʒɪk/",
+          "chinese": "逻辑",
+          "english": "logic"
         },
         {
           "id": "s010-w024",
           "text": "and",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ænd/",
+          "chinese": "甚至",
+          "english": "and"
         },
         {
           "id": "s010-w025",
           "text": "even",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈivən/",
+          "chinese": "甚至",
+          "english": "even"
         },
         {
           "id": "s010-w026",
           "text": "have",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/hæv/",
+          "chinese": "有",
+          "english": "have"
         },
         {
           "id": "s010-w027",
           "text": "deep",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/dip/",
+          "chinese": "深厚的",
+          "english": "deep"
         },
         {
           "id": "s010-w028",
           "text": "historical",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/hɪˈstɔrɪkəl/",
+          "chinese": "历史的",
+          "english": "historical"
         },
         {
           "id": "s010-w029",
           "text": "and",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ænd/",
+          "chinese": "与",
+          "english": "and"
         },
         {
           "id": "s010-w030",
           "text": "cultural",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈkʌltʃərəl/",
+          "chinese": "文化的",
+          "english": "cultural"
         },
         {
           "id": "s010-w031",
           "text": "roots",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ruts/",
+          "chinese": "根源",
+          "english": "roots"
         }
       ],
       "blanks": {
@@ -2192,51 +2192,51 @@ export const lesson001 = {
         {
           "id": "s011-w001",
           "text": "Take",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/teɪk/",
+          "chinese": "以…为例",
+          "english": "take (for example)"
         },
         {
           "id": "s011-w002",
           "text": "for",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/fɔr/",
+          "chinese": "作为",
+          "english": "for"
         },
         {
           "id": "s011-w003",
           "text": "example",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪɡˈzæmpəl/",
+          "chinese": "例子",
+          "english": "example"
         },
         {
           "id": "s011-w004",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "那条",
+          "english": "the"
         },
         {
           "id": "s011-w005",
           "text": "infamous",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɪnfəməs/",
+          "chinese": "臭名昭著的",
+          "english": "infamous"
         },
         {
           "id": "s011-w006",
           "text": "cappuccino",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌkæpəˈtʃinoʊ/",
+          "chinese": "卡布奇诺",
+          "english": "espresso with steamed milk foam"
         },
         {
           "id": "s011-w007",
           "text": "rule",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/rul/",
+          "chinese": "规矩",
+          "english": "rule"
         }
       ],
       "blanks": {
@@ -2279,135 +2279,135 @@ export const lesson001 = {
         {
           "id": "s012-w001",
           "text": "In",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪn/",
+          "chinese": "在",
+          "english": "in"
         },
         {
           "id": "s012-w002",
           "text": "Italy",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɪtəli/",
+          "chinese": "意大利",
+          "english": "Italy"
         },
         {
           "id": "s012-w003",
           "text": "a",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ə/",
+          "chinese": "一杯",
+          "english": "a (article)"
         },
         {
           "id": "s012-w004",
           "text": "cappuccino",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌkæpəˈtʃinoʊ/",
+          "chinese": "卡布奇诺",
+          "english": "cappuccino"
         },
         {
           "id": "s012-w005",
           "text": "is",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪz/",
+          "chinese": "是",
+          "english": "is"
         },
         {
           "id": "s012-w006",
           "text": "more",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/mɔr/",
+          "chinese": "或多或少",
+          "english": "more"
         },
         {
           "id": "s012-w007",
           "text": "or",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɔr/",
+          "chinese": "或",
+          "english": "or"
         },
         {
           "id": "s012-w008",
           "text": "less",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/lɛs/",
+          "chinese": "少",
+          "english": "less"
         },
         {
           "id": "s012-w009",
           "text": "strictly",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈstrɪktli/",
+          "chinese": "严格地",
+          "english": "strictly"
         },
         {
           "id": "s012-w010",
           "text": "considered",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/kənˈsɪdərd/",
+          "chinese": "被视为",
+          "english": "considered"
         },
         {
           "id": "s012-w011",
           "text": "a",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ə/",
+          "chinese": "一种",
+          "english": "a (article)"
         },
         {
           "id": "s012-w012",
           "text": "breakfast",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈbrɛkfəst/",
+          "chinese": "早餐",
+          "english": "breakfast"
         },
         {
           "id": "s012-w013",
           "text": "drink",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/drɪŋk/",
+          "chinese": "饮品",
+          "english": "drink"
         },
         {
           "id": "s012-w014",
           "text": "After",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈæftər/",
+          "chinese": "在…之后",
+          "english": "after"
         },
         {
           "id": "s012-w015",
           "text": "about",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/əˈbaʊt/",
+          "chinese": "大约",
+          "english": "about"
         },
         {
           "id": "s012-w016",
           "text": "11",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪˈlɛvən/",
+          "chinese": "十一点",
+          "english": "eleven (hour)"
         },
         {
           "id": "s012-w017",
           "text": "00",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/oʊ ˈklɑk/",
+          "chinese": "整点",
+          "english": "o'clock (on the hour)"
         },
         {
           "id": "s012-w018",
           "text": "a",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/eɪ/",
+          "chinese": "上午",
+          "english": "a.m. (ante meridiem)"
         },
         {
           "id": "s012-w019",
           "text": "m",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɛm/",
+          "chinese": "午前",
+          "english": "meridiem (in a.m.)"
         }
       ],
       "blanks": {
@@ -2486,79 +2486,79 @@ export const lesson001 = {
         {
           "id": "s013-w001",
           "text": "or",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɔr/",
+          "chinese": "左右",
+          "english": "or (so)"
         },
         {
           "id": "s013-w002",
           "text": "so",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/soʊ/",
+          "chinese": "大约",
+          "english": "so (approximately)"
         },
         {
           "id": "s013-w003",
           "text": "it's",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪts/",
+          "chinese": "它",
+          "english": "it is"
         },
         {
           "id": "s013-w004",
           "text": "not",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/nɑt/",
+          "chinese": "不该",
+          "english": "not"
         },
         {
           "id": "s013-w005",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "被",
+          "english": "to (infinitive)"
         },
         {
           "id": "s013-w006",
           "text": "be",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/bi/",
+          "chinese": "被",
+          "english": "be"
         },
         {
           "id": "s013-w007",
           "text": "consumed",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/kənˈsumd/",
+          "chinese": "饮用",
+          "english": "consumed"
         },
         {
           "id": "s013-w008",
           "text": "until",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ənˈtɪl/",
+          "chinese": "直到",
+          "english": "until"
         },
         {
           "id": "s013-w009",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "下一个",
+          "english": "the"
         },
         {
           "id": "s013-w010",
           "text": "following",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈfɑloʊɪŋ/",
+          "chinese": "接下来的",
+          "english": "following"
         },
         {
           "id": "s013-w011",
           "text": "morning",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈmɔrnɪŋ/",
+          "chinese": "早上",
+          "english": "morning"
         }
       ],
       "blanks": {
@@ -2613,184 +2613,184 @@ export const lesson001 = {
         {
           "id": "s014-w001",
           "text": "Now",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/naʊ/",
+          "chinese": "不过",
+          "english": "now (transition)"
         },
         {
           "id": "s014-w002",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "这种",
+          "english": "the"
         },
         {
           "id": "s014-w003",
           "text": "strict",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/strɪkt/",
+          "chinese": "严格的",
+          "english": "strict"
         },
         {
           "id": "s014-w004",
           "text": "adherence",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ədˈhɪrəns/",
+          "chinese": "遵守",
+          "english": "adherence"
         },
         {
           "id": "s014-w005",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "对",
+          "english": "to"
         },
         {
           "id": "s014-w006",
           "text": "punctuality",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌpʌŋktʃuˈæləti/",
+          "chinese": "守时",
+          "english": "punctuality"
         },
         {
           "id": "s014-w007",
           "text": "in",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪn/",
+          "chinese": "在",
+          "english": "in"
         },
         {
           "id": "s014-w008",
           "text": "this",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðɪs/",
+          "chinese": "这方面",
+          "english": "this"
         },
         {
           "id": "s014-w009",
           "text": "regard",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/rɪˈɡɑrd/",
+          "chinese": "方面",
+          "english": "regard"
         },
         {
           "id": "s014-w010",
           "text": "varies",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈvɛriz/",
+          "chinese": "因…而异",
+          "english": "varies"
         },
         {
           "id": "s014-w011",
           "text": "from",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/frʌm/",
+          "chinese": "从",
+          "english": "from"
         },
         {
           "id": "s014-w012",
           "text": "region",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈridʒən/",
+          "chinese": "地区",
+          "english": "region"
         },
         {
           "id": "s014-w013",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "到",
+          "english": "to"
         },
         {
           "id": "s014-w014",
           "text": "region",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈridʒən/",
+          "chinese": "地区",
+          "english": "region"
         },
         {
           "id": "s014-w015",
           "text": "with",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/wɪð/",
+          "chinese": "有些",
+          "english": "with"
         },
         {
           "id": "s014-w016",
           "text": "some",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/sʌm/",
+          "chinese": "一些",
+          "english": "some"
         },
         {
           "id": "s014-w017",
           "text": "northern",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈnɔrðərn/",
+          "chinese": "北方的",
+          "english": "northern"
         },
         {
           "id": "s014-w018",
           "text": "Italians",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪˈtæljənz/",
+          "chinese": "意大利人",
+          "english": "Italians"
         },
         {
           "id": "s014-w019",
           "text": "occasionally",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/əˈkeɪʒənəli/",
+          "chinese": "偶尔",
+          "english": "occasionally"
         },
         {
           "id": "s014-w020",
           "text": "having",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈhævɪŋ/",
+          "chinese": "喝",
+          "english": "having"
         },
         {
           "id": "s014-w021",
           "text": "a",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ə/",
+          "chinese": "一杯",
+          "english": "a (article)"
         },
         {
           "id": "s014-w022",
           "text": "cappuccino",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌkæpəˈtʃinoʊ/",
+          "chinese": "卡布奇诺",
+          "english": "cappuccino"
         },
         {
           "id": "s014-w023",
           "text": "as",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/æz/",
+          "chinese": "作为",
+          "english": "as"
         },
         {
           "id": "s014-w024",
           "text": "an",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ən/",
+          "chinese": "一份",
+          "english": "an"
         },
         {
           "id": "s014-w025",
           "text": "afternoon",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌæftərˈnun/",
+          "chinese": "下午",
+          "english": "afternoon"
         },
         {
           "id": "s014-w026",
           "text": "snack",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/snæk/",
+          "chinese": "点心",
+          "english": "snack"
         }
       ],
       "blanks": {
@@ -2890,191 +2890,191 @@ export const lesson001 = {
         {
           "id": "s015-w001",
           "text": "But",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/bʌt/",
+          "chinese": "但",
+          "english": "but"
         },
         {
           "id": "s015-w002",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "要点",
+          "english": "the"
         },
         {
           "id": "s015-w003",
           "text": "point",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/pɔɪnt/",
+          "chinese": "要点",
+          "english": "point"
         },
         {
           "id": "s015-w004",
           "text": "is",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪz/",
+          "chinese": "是",
+          "english": "is"
         },
         {
           "id": "s015-w005",
           "text": "that",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðæt/",
+          "chinese": "即",
+          "english": "that"
         },
         {
           "id": "s015-w006",
           "text": "it",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪt/",
+          "chinese": "它",
+          "english": "it"
         },
         {
           "id": "s015-w007",
           "text": "is",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪz/",
+          "chinese": "主要",
+          "english": "is"
         },
         {
           "id": "s015-w008",
           "text": "predominantly",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/prɪˈdɑmənəntli/",
+          "chinese": "主要地",
+          "english": "predominantly"
         },
         {
           "id": "s015-w009",
           "text": "considered",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/kənˈsɪdərd/",
+          "chinese": "被视为",
+          "english": "considered"
         },
         {
           "id": "s015-w010",
           "text": "breakfast",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈbrɛkfəst/",
+          "chinese": "早餐",
+          "english": "breakfast"
         },
         {
           "id": "s015-w011",
           "text": "drink",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/drɪŋk/",
+          "chinese": "饮品",
+          "english": "drink"
         },
         {
           "id": "s015-w012",
           "text": "that",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðæt/",
+          "chinese": "且",
+          "english": "that"
         },
         {
           "id": "s015-w013",
           "text": "is",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪz/",
+          "chinese": "不宜",
+          "english": "is"
         },
         {
           "id": "s015-w014",
           "text": "not",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/nɑt/",
+          "chinese": "不该",
+          "english": "not"
         },
         {
           "id": "s015-w015",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "被",
+          "english": "to"
         },
         {
           "id": "s015-w016",
           "text": "be",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/bi/",
+          "chinese": "被",
+          "english": "be"
         },
         {
           "id": "s015-w017",
           "text": "consumed",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/kənˈsumd/",
+          "chinese": "饮用",
+          "english": "consumed"
         },
         {
           "id": "s015-w018",
           "text": "in",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪn/",
+          "chinese": "在",
+          "english": "in"
         },
         {
           "id": "s015-w019",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "下午",
+          "english": "the"
         },
         {
           "id": "s015-w020",
           "text": "afternoon",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌæftərˈnun/",
+          "chinese": "下午",
+          "english": "afternoon"
         },
         {
           "id": "s015-w021",
           "text": "and",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ænd/",
+          "chinese": "尤其",
+          "english": "and"
         },
         {
           "id": "s015-w022",
           "text": "especially",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪˈspɛʃəli/",
+          "chinese": "尤其",
+          "english": "especially"
         },
         {
           "id": "s015-w023",
           "text": "anywhere",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈɛniˌwɛr/",
+          "chinese": "任何",
+          "english": "anywhere"
         },
         {
           "id": "s015-w024",
           "text": "close",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/kloʊs/",
+          "chinese": "靠近",
+          "english": "close"
         },
         {
           "id": "s015-w025",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "正餐",
+          "english": "to"
         },
         {
           "id": "s015-w026",
           "text": "a",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ə/",
+          "chinese": "一顿",
+          "english": "a (article)"
         },
         {
           "id": "s015-w027",
           "text": "meal",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/mil/",
+          "chinese": "正餐",
+          "english": "meal"
         }
       ],
       "blanks": {
@@ -3177,23 +3177,23 @@ export const lesson001 = {
         {
           "id": "s016-w001",
           "text": "Why",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/waɪ/",
+          "chinese": "为什么",
+          "english": "why"
         },
         {
           "id": "s016-w002",
           "text": "you",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ju/",
+          "chinese": "你",
+          "english": "you"
         },
         {
           "id": "s016-w003",
           "text": "ask",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/æsk/",
+          "chinese": "问",
+          "english": "ask"
         }
       ],
       "blanks": {
@@ -3224,100 +3224,100 @@ export const lesson001 = {
         {
           "id": "s017-w001",
           "text": "Well",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/wɛl/",
+          "chinese": "要知道",
+          "english": "well (intro)"
         },
         {
           "id": "s017-w002",
           "text": "you",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ju/",
+          "chinese": "你",
+          "english": "you"
         },
         {
           "id": "s017-w003",
           "text": "see",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/si/",
+          "chinese": "看",
+          "english": "see"
         },
         {
           "id": "s017-w004",
           "text": "Italians",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪˈtæljənz/",
+          "chinese": "意大利人",
+          "english": "Italians"
         },
         {
           "id": "s017-w005",
           "text": "are",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɑr/",
+          "chinese": "非常",
+          "english": "are"
         },
         {
           "id": "s017-w006",
           "text": "obsessed",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/əbˈsɛst/",
+          "chinese": "痴迷",
+          "english": "obsessed"
         },
         {
           "id": "s017-w007",
           "text": "with",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/wɪð/",
+          "chinese": "于",
+          "english": "with"
         },
         {
           "id": "s017-w008",
           "text": "digestion",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/daɪˈdʒɛstʃən/",
+          "chinese": "消化",
+          "english": "digestion"
         },
         {
           "id": "s017-w009",
           "text": "They",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðeɪ/",
+          "chinese": "他们",
+          "english": "they"
         },
         {
           "id": "s017-w010",
           "text": "think",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/θɪŋk/",
+          "chinese": "琢磨",
+          "english": "think"
         },
         {
           "id": "s017-w011",
           "text": "about",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/əˈbaʊt/",
+          "chinese": "关于",
+          "english": "about"
         },
         {
           "id": "s017-w012",
           "text": "it",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪt/",
+          "chinese": "这件事",
+          "english": "it"
         },
         {
           "id": "s017-w013",
           "text": "a",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ə/",
+          "chinese": "很",
+          "english": "a (lot)"
         },
         {
           "id": "s017-w014",
           "text": "lot",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/lɑt/",
+          "chinese": "经常",
+          "english": "lot"
         }
       ],
       "blanks": {
@@ -3381,317 +3381,317 @@ export const lesson001 = {
         {
           "id": "s018-w001",
           "text": "As",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/æz/",
+          "chinese": "因此",
+          "english": "as"
         },
         {
           "id": "s018-w002",
           "text": "such",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/sʌtʃ/",
+          "chinese": "如此",
+          "english": "such"
         },
         {
           "id": "s018-w003",
           "text": "they've",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðeɪv/",
+          "chinese": "他们",
+          "english": "they have"
         },
         {
           "id": "s018-w004",
           "text": "come",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/kʌm/",
+          "chinese": "得出",
+          "english": "come"
         },
         {
           "id": "s018-w005",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "到",
+          "english": "to"
         },
         {
           "id": "s018-w006",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "一个",
+          "english": "the"
         },
         {
           "id": "s018-w007",
           "text": "conclusion",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/kənˈkluʒən/",
+          "chinese": "结论",
+          "english": "conclusion"
         },
         {
           "id": "s018-w008",
           "text": "that",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðæt/",
+          "chinese": "即",
+          "english": "that"
         },
         {
           "id": "s018-w009",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "卡布奇诺里",
+          "english": "the"
         },
         {
           "id": "s018-w010",
           "text": "large",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/lɑrdʒ/",
+          "chinese": "大量",
+          "english": "large"
         },
         {
           "id": "s018-w011",
           "text": "amount",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/əˈmaʊnt/",
+          "chinese": "量",
+          "english": "amount"
         },
         {
           "id": "s018-w012",
           "text": "of",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/əv/",
+          "chinese": "的",
+          "english": "of"
         },
         {
           "id": "s018-w013",
           "text": "milk",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/mɪlk/",
+          "chinese": "牛奶",
+          "english": "milk"
         },
         {
           "id": "s018-w014",
           "text": "in",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪn/",
+          "chinese": "在",
+          "english": "in"
         },
         {
           "id": "s018-w015",
           "text": "a",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ə/",
+          "chinese": "一杯",
+          "english": "a (article)"
         },
         {
           "id": "s018-w016",
           "text": "cappuccino",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˌkæpəˈtʃinoʊ/",
+          "chinese": "卡布奇诺",
+          "english": "cappuccino"
         },
         {
           "id": "s018-w017",
           "text": "can",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/kæn/",
+          "chinese": "可能",
+          "english": "can"
         },
         {
           "id": "s018-w018",
           "text": "be",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/bi/",
+          "chinese": "会",
+          "english": "be"
         },
         {
           "id": "s018-w019",
           "text": "heavy",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈhɛvi/",
+          "chinese": "较重",
+          "english": "heavy"
         },
         {
           "id": "s018-w020",
           "text": "on",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɑn/",
+          "chinese": "对",
+          "english": "on"
         },
         {
           "id": "s018-w021",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "胃",
+          "english": "the"
         },
         {
           "id": "s018-w022",
           "text": "stomach",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈstʌmək/",
+          "chinese": "胃",
+          "english": "stomach"
         },
         {
           "id": "s018-w023",
           "text": "making",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈmeɪkɪŋ/",
+          "chinese": "使得",
+          "english": "making"
         },
         {
           "id": "s018-w024",
           "text": "it",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪt/",
+          "chinese": "它",
+          "english": "it"
         },
         {
           "id": "s018-w025",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "理想的",
+          "english": "the"
         },
         {
           "id": "s018-w026",
           "text": "ideal",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/aɪˈdil/",
+          "chinese": "理想的",
+          "english": "ideal"
         },
         {
           "id": "s018-w027",
           "text": "breakfast",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈbrɛkfəst/",
+          "chinese": "早餐",
+          "english": "breakfast"
         },
         {
           "id": "s018-w028",
           "text": "drink",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/drɪŋk/",
+          "chinese": "饮品",
+          "english": "drink"
         },
         {
           "id": "s018-w029",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "以",
+          "english": "to"
         },
         {
           "id": "s018-w030",
           "text": "fill",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/fɪl/",
+          "chinese": "填饱",
+          "english": "fill"
         },
         {
           "id": "s018-w031",
           "text": "you",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ju/",
+          "chinese": "你",
+          "english": "you"
         },
         {
           "id": "s018-w032",
           "text": "up",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ʌp/",
+          "chinese": "饱",
+          "english": "up (fill up)"
         },
         {
           "id": "s018-w033",
           "text": "in",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪn/",
+          "chinese": "在",
+          "english": "in"
         },
         {
           "id": "s018-w034",
           "text": "the",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ðə/",
+          "chinese": "早上",
+          "english": "the"
         },
         {
           "id": "s018-w035",
           "text": "morning",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈmɔrnɪŋ/",
+          "chinese": "早上",
+          "english": "morning"
         },
         {
           "id": "s018-w036",
           "text": "when",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/wɛn/",
+          "chinese": "当",
+          "english": "when"
         },
         {
           "id": "s018-w037",
           "text": "little",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈlɪtəl/",
+          "chinese": "几乎不",
+          "english": "little"
         },
         {
           "id": "s018-w038",
           "text": "to",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/tu/",
+          "chinese": "到",
+          "english": "to"
         },
         {
           "id": "s018-w039",
           "text": "no",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/noʊ/",
+          "chinese": "没有",
+          "english": "no"
         },
         {
           "id": "s018-w040",
           "text": "food",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/fud/",
+          "chinese": "食物",
+          "english": "food"
         },
         {
           "id": "s018-w041",
           "text": "is",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ɪz/",
+          "chinese": "被",
+          "english": "is"
         },
         {
           "id": "s018-w042",
           "text": "consumed",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/kənˈsumd/",
+          "chinese": "吃",
+          "english": "consumed"
         },
         {
           "id": "s018-w043",
           "text": "besides",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/bɪˈsaɪdz/",
+          "chinese": "除了",
+          "english": "besides"
         },
         {
           "id": "s018-w044",
           "text": "a",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ə/",
+          "chinese": "一块",
+          "english": "a (article)"
         },
         {
           "id": "s018-w045",
           "text": "pastry",
-          "ipa": "",
-          "chinese": "",
-          "english": ""
+          "ipa": "/ˈpeɪstri/",
+          "chinese": "糕点",
+          "english": "pastry"
         }
       ],
       "blanks": {

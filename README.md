@@ -36,7 +36,14 @@ node scripts/build-lesson.mjs \
   --subtitle "英语极客"
 ```
 
-Optional: `node scripts/patch-lesson-enrich.mjs` after editing `scripts/lesson001-enrich.json`.
+Optional after build:
+
+```bash
+node scripts/patch-lesson-enrich.mjs          # sentence Chinese + vocab cards
+node scripts/apply-word-glosses.mjs           # per-word IPA / 中文 / English
+```
+
+Or with API: `OPENAI_API_KEY=... node scripts/enrich-word-glosses.mjs`
 
 ### Path A — audio or video
 
