@@ -1,58 +1,70 @@
 {
   "vocabulary": [
     {
-      "id": "v008",
-      "word": "interactive",
-      "ipa": "/ˌɪntərˈæktɪv/",
-      "chinese": "交互式的",
-      "english": "allowing two-way communication between user and system",
-      "meaningInContext": "用户可以点击、朗读、切换内容的网页"
-    },
-    {
-      "id": "v005",
-      "word": "swipe",
-      "ipa": "/swaɪp/",
-      "chinese": "滑动",
-      "english": "to move a finger across a touch screen",
-      "meaningInContext": "在触摸屏上切换句子或难度级别"
-    },
-    {
-      "id": "v004",
-      "word": "blanked",
-      "ipa": "/blæŋkt/",
-      "chinese": "被挖空的",
-      "english": "with parts hidden for practice",
-      "meaningInContext": "练习时部分单词被遮住"
-    },
-    {
       "id": "v001",
-      "word": "practice",
-      "ipa": "/ˈpræktɪs/",
-      "chinese": "练习",
-      "english": "repeated exercise to improve skill",
-      "meaningInContext": "本课核心的填空朗读练习"
+      "word": "gastronomy",
+      "ipa": "/ˈɡæstrənəmi/",
+      "chinese": "美食学；饮食文化",
+      "english": "the art and science of good eating",
+      "meaningInContext": "意大利饮食文化的整套规范与“罪孽”",
+      "audioUrl": "/lessons/lesson001/v001.mp3"
     },
     {
       "id": "v002",
-      "word": "passage",
-      "ipa": "/ˈpæsɪdʒ/",
-      "chinese": "一段文字",
-      "english": "a short section of text",
-      "meaningInContext": "待学习的英语短文"
+      "word": "blasphemous",
+      "ipa": "/ˈblæsfəməs/",
+      "chinese": "亵渎的；大不敬的",
+      "english": "showing great disrespect toward something sacred",
+      "meaningInContext": "形容对意大利饮食传统的严重冒犯",
+      "audioUrl": "/lessons/lesson001/v002.mp3"
+    },
+    {
+      "id": "v003",
+      "word": "Neapolitans",
+      "ipa": "/ˌniːəˈpɒlɪtənz/",
+      "chinese": "那不勒斯人",
+      "english": "people from Naples, Italy",
+      "meaningInContext": "以披萨自豪的那不勒斯人",
+      "audioUrl": "/lessons/lesson001/v003.mp3"
+    },
+    {
+      "id": "v004",
+      "word": "cappuccino",
+      "ipa": "/ˌkæpuˈtʃiːnoʊ/",
+      "chinese": "卡布奇诺",
+      "english": "espresso with steamed milk foam",
+      "meaningInContext": "在意大利主要被视为早餐饮品",
+      "audioUrl": "/lessons/lesson001/v004.mp3"
+    },
+    {
+      "id": "v005",
+      "word": "digestion",
+      "ipa": "/daɪˈdʒestʃən/",
+      "chinese": "消化",
+      "english": "the process of breaking down food in the body",
+      "meaningInContext": "意大利人非常在意饭后与饮品的消化问题",
+      "audioUrl": "/lessons/lesson001/v005.mp3"
     }
   ],
   "sentences": {
-    "s001": "我想做一个交互式网页。",
-    "s002": "这个页面是用来学习一小段英文材料的。",
-    "s003": "每个句子都会被拆开，并一句一句地学习。",
-    "s004": "用户可以先学生词，再听全文音频。",
-    "s005": "倾听环节帮助他们感受自然的发音和节奏。",
-    "s006": "练习卡片在单词上方显示中文和音标。",
-    "s007": "三个难度标签控制有多少词被挖空。",
-    "s008": "在触摸屏上可以上下滑动切换句子。",
-    "s009": "左右滑动可在初、中、高级别之间切换。",
-    "s010": "Speak 按钮会保持语音识别，直到你点击 Stop。",
-    "s011": "读对的词会变绿，包括原本被挖空的词。",
-    "s012": "练习结束后，再播放一遍全文，体会进步。"
+    "s001": "我想以一组照片演示开始这次演讲。",
+    "s002": "请注意，本演示包含意大利食物遭受“蹂躏”的露骨画面，可能令意大利观众及自诩有品位的食客感到不适。",
+    "s003": "大三在意大利留学时，我学到一句俗语。",
+    "s004": "每当有人在披萨上放菠萝，就有一位意大利人死去。",
+    "s005": "倘若这话当真，在我刚展示的那些图片之后，意大利恐怕剩不下多少意大利人了。",
+    "s006": "在披萨上加菠萝或许冒犯许多意大利人，尤其以披萨为荣的那不勒斯人；但我刚展示的食物照片，每一件都被视为近乎全民共识的饮食亵渎。",
+    "s007": "打个比方：七宗罪之于基督教，这些“罪”之于意大利美食文化。",
+    "s008": "问题是，意大利的饮食规矩对外国人——包括初到时的我——可能显得多余而随意。",
+    "s009": "其实一旦理解背景，其中许多规则相当有道理。",
+    "s010": "我逐渐明白，意大利饮食文化的规范植根于数学、科学、逻辑等严肃原则，并有深厚的历史与文化根源。",
+    "s011": "以臭名昭著的卡布奇诺规矩为例。",
+    "s012": "在意大利，卡布奇诺或多或少被严格视为早餐饮品。",
+    "s013": "大约上午十一点之后，就不该再喝，要等到第二天早上。",
+    "s014": "至于守时的严格程度因地区而异，有些北方人偶尔会下午喝杯卡布奇诺当点心。",
+    "s015": "但要点是：它主要被视为早餐，下午不宜喝，尤其不能靠近正餐时间。",
+    "s016": "你问为什么？",
+    "s017": "要知道，意大利人非常在意消化。",
+    "s018": "他们经常琢磨这件事。",
+    "s019": "因此他们得出结论：卡布奇诺里的大量牛奶较重，适合早餐填饱肚子——早上除糕点外几乎不吃别的的时候。"
   }
 }
