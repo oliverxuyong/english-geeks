@@ -1,5 +1,5 @@
-import { useRef, useState } from "react";
-import { playMediaUrl } from "../utils/playAudio";
+import { useEffect, useRef, useState } from "react";
+import { playMediaUrl, releaseAudio, subscribePlaybackStop } from "../utils/playAudio";
 
 export function useStoppableAudio(url, { onError } = {}) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -9,10 +9,13 @@ export function useStoppableAudio(url, { onError } = {}) {
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
+      releaseAudio(audioRef.current);
       audioRef.current = null;
     }
     setIsPlaying(false);
   }
+
+  useEffect(() => subscribePlaybackStop(stop), []);
 
   function toggle() {
     if (isPlaying) {

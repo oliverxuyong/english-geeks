@@ -111,10 +111,6 @@ export function PracticeSection({ lesson }) {
         </div>
 
         <div className="practice-toolbar">
-          <button type="button" onClick={isListening ? stopSpeaking : startSpeaking}>
-            {isListening ? "Stop" : "Speak"}
-          </button>
-
           <button
             type="button"
             onMouseDown={() => setShowFullText(true)}
@@ -155,6 +151,13 @@ export function PracticeSection({ lesson }) {
         <div className="button-row navigation-row">
           <button type="button" onClick={goPrevious} disabled={sentenceIndex === 0}>
             Previous
+          </button>
+          <button
+            type="button"
+            className="nav-speak-button"
+            onClick={isListening ? stopSpeaking : startSpeaking}
+          >
+            {isListening ? "Stop" : "Speak"}
           </button>
           <button
             type="button"

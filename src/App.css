@@ -149,6 +149,14 @@ button:disabled {
 .navigation-row {
   border-top: 1px solid #e5e5e5;
   padding-top: 14px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.navigation-row .nav-speak-button {
+  flex-shrink: 0;
 }
 
 .word-line {
