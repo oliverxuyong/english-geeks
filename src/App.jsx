@@ -17,11 +17,7 @@ function App() {
 
       <main className="layout">
         <VocabularySection lesson={lesson} />
-        <ListeningSection
-          lesson={lesson}
-          title="2. First Listening"
-          playOnce
-        />
+        <ListeningSection lesson={lesson} title="2. First Listening" />
         <PracticeSection lesson={lesson} />
         <FinalListeningSection lesson={lesson} />
       </main>

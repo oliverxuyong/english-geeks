@@ -1,17 +1,9 @@
-import { useRef } from "react";
-import { playMediaUrl } from "../utils/playAudio";
+import { useStoppableAudio } from "../hooks/useStoppableAudio";
 
 export function FinalListeningSection({ lesson }) {
-  const audioRef = useRef(null);
-
-  function handlePlay() {
-    audioRef.current?.pause();
-    audioRef.current = playMediaUrl(lesson.fullAudioUrl, {
-      onError: () => {
-        alert("Full audio is not available yet.");
-      },
-    });
-  }
+  const { isPlaying, toggle } = useStoppableAudio(lesson.fullAudioUrl, {
+    onError: () => alert("Full audio is not available yet."),
+  });
 
   return (
     <section className="panel" id="step-listen-2">
@@ -21,8 +13,8 @@ export function FinalListeningSection({ lesson }) {
           <track kind="captions" />
         </video>
       ) : (
-        <button type="button" onClick={handlePlay}>
-          Play Again
+        <button type="button" onClick={toggle}>
+          {isPlaying ? "Stop Playing" : "Play Again"}
         </button>
       )}
     </section>
