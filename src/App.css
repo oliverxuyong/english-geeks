@@ -180,6 +180,22 @@ button:disabled {
   cursor: pointer;
 }
 
+.word-token-slotted {
+  font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+
+.word-char {
+  display: inline-block;
+  min-width: 1ch;
+  text-align: center;
+}
+
+.word-char-blank {
+  color: #888;
+}
+
 .word-token:hover {
   background: #f0f0f0;
 }

@@ -1,5 +1,5 @@
 import { speakWord } from "../utils/playAudio";
-import { formatBlankDisplay } from "../utils/formatBlankDisplay";
+import { BLANK_PLACEHOLDER, buildWordCharSlots } from "../utils/formatBlankDisplay";
 import { calculateMatchScore } from "../utils/lcsMatch";
 
 const LEVEL_LABELS = {
@@ -106,22 +106,32 @@ export function PracticeCard({
       <div className="word-line">
         {sentence.words.map((word, wordIndex) => {
           const isMatched = matchedWordIndexes.has(wordIndex);
-          const displayText =
-            showFullText || isMatched
-              ? word.text
-              : formatBlankDisplay(word.text, sentence.blanks[level][wordIndex]);
+          const reveal = showFullText || isMatched;
+          const slots = buildWordCharSlots(
+            word.text,
+            sentence.blanks[level][wordIndex],
+          );
 
           return (
             <div className="word-column" key={word.id}>
               {showIPA && word.ipa && <span className="word-ipa">{word.ipa}</span>}
               <button
-                className={`word-token ${
+                className={`word-token word-token-slotted ${
                   selectedWord?.id === word.id ? "word-token-selected" : ""
                 } ${isMatched ? "word-token-matched" : ""}`}
                 type="button"
                 onClick={() => setSelectedWord(word)}
               >
-                {displayText}
+                {slots.map((slot, charIndex) => (
+                  <span
+                    key={`${word.id}-${charIndex}`}
+                    className={
+                      slot.hidden && !reveal ? "word-char word-char-blank" : "word-char"
+                    }
+                  >
+                    {slot.hidden && !reveal ? BLANK_PLACEHOLDER : slot.char}
+                  </span>
+                ))}
               </button>
             </div>
           );

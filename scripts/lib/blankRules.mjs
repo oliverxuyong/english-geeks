@@ -8,7 +8,7 @@ const FUNCTION_WORDS = new Set([
 ]);
 
 function isContentWord(word) {
-  const w = word.toLowerCase().replace(/[^a-z']/g, "");
+  const w = word.toLowerCase().replace(/[^'a-z]/g, "");
   return w.length > 0 && !FUNCTION_WORDS.has(w);
 }
 
@@ -18,7 +18,7 @@ function spacedBlanks(count) {
 }
 
 function blankToken(word, style) {
-  const letters = word.replace(/[^a-zA-Z']/g, "");
+  const letters = word.replace(/[^'a-zA-Z]/g, "");
   if (!letters.length) return word;
 
   if (style === "full") {
