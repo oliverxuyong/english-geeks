@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { findMatchedWordIndexes } from "../utils/lcsMatch";
+import { setSpeechRecognitionStop } from "../utils/playAudio";
 
 const SILENCE_MS = 1400;
 
@@ -155,6 +156,11 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
   }, [startRecognition, stopSpeaking]);
 
   useEffect(() => () => stopSpeaking(), [stopSpeaking]);
+
+  useEffect(() => {
+    setSpeechRecognitionStop(stopSpeaking);
+    return () => setSpeechRecognitionStop(null);
+  }, [stopSpeaking]);
 
   return {
     recognizedText,

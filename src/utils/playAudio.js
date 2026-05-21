@@ -3,6 +3,16 @@
 const stopListeners = new Set();
 let activeAudio = null;
 let voicesPrimed = false;
+let stopSpeechRecognition = null;
+
+/** Practice STT registers stopSpeaking; playback calls this to end listening cleanly. */
+export function setSpeechRecognitionStop(fn) {
+  stopSpeechRecognition = fn;
+}
+
+function stopSttBeforePlayback() {
+  stopSpeechRecognition?.();
+}
 
 export function subscribePlaybackStop(listener) {
   stopListeners.add(listener);
@@ -50,6 +60,7 @@ export function primeSpeechVoices() {
 }
 
 function speakWithSynthesis(text) {
+  stopSttBeforePlayback();
   if (!window.speechSynthesis) return;
   primeSpeechVoices();
 
@@ -70,6 +81,7 @@ function speakWithSynthesis(text) {
 }
 
 export function speakWord(text, audioUrl) {
+  stopSttBeforePlayback();
   stopActiveAudio();
   for (const listener of stopListeners) listener();
 
@@ -109,6 +121,7 @@ export function playMediaUrl(url, { onEnded, onError } = {}) {
     return null;
   }
 
+  stopSttBeforePlayback();
   stopAllPlayback();
 
   const audio = new Audio(url);
