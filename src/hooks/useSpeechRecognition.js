@@ -3,6 +3,19 @@ import { findMatchedWordIndexes } from "../utils/lcsMatch";
 
 const SILENCE_MS = 1400;
 
+function joinResultTranscripts(results, startIndex = 0) {
+  const parts = [];
+  for (let i = startIndex; i < results.length; i++) {
+    let text = results[i][0].transcript.trim();
+    if (!text) continue;
+    if (parts.length > 0) {
+      text = text.charAt(0).toLowerCase() + text.slice(1);
+    }
+    parts.push(text);
+  }
+  return parts.join(" ");
+}
+
 export function useSpeechRecognition({ words, onMatchUpdate }) {
   const [recognizedText, setRecognizedText] = useState("");
   const [isListening, setIsListening] = useState(false);
@@ -34,6 +47,12 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
     }, SILENCE_MS);
   }, [clearSilenceTimer]);
 
+  const clearRecognitionSession = useCallback(() => {
+    segmentStartIndexRef.current = 0;
+    setRecognizedText("");
+    onMatchUpdate?.(new Set());
+  }, [onMatchUpdate]);
+
   const stopSpeaking = useCallback(() => {
     shouldListenRef.current = false;
     clearSilenceTimer();
@@ -47,11 +66,10 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
     }
     recognitionRef.current = null;
     attemptEndedRef.current = false;
-    segmentStartIndexRef.current = 0;
     setIsListening(false);
     setAttemptEnded(false);
-    setRecognizedText("");
-  }, [clearSilenceTimer]);
+    clearRecognitionSession();
+  }, [clearRecognitionSession, clearSilenceTimer]);
 
   const startRecognition = useCallback(() => {
     const SpeechRecognition =
@@ -69,20 +87,18 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
         setAttemptEnded(false);
         segmentStartIndexRef.current = event.resultIndex;
         setRecognizedText("");
+        onMatchUpdate?.(new Set());
       }
 
-      let burstTranscript = "";
-      for (let i = segmentStartIndexRef.current; i < event.results.length; i++) {
-        burstTranscript += event.results[i][0].transcript;
-      }
-
-      let fullTranscript = "";
-      for (let i = 0; i < event.results.length; i++) {
-        fullTranscript += event.results[i][0].transcript;
-      }
+      const burstTranscript = joinResultTranscripts(
+        event.results,
+        segmentStartIndexRef.current,
+      );
 
       setRecognizedText(burstTranscript);
-      onMatchUpdate?.(findMatchedWordIndexes(wordsRef.current, fullTranscript));
+      onMatchUpdate?.(
+        findMatchedWordIndexes(wordsRef.current, burstTranscript),
+      );
       scheduleAttemptEnd();
     };
 
@@ -132,7 +148,6 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
     }
 
     stopSpeaking();
-    setRecognizedText("");
     setAttemptEnded(false);
     shouldListenRef.current = true;
     setIsListening(true);
