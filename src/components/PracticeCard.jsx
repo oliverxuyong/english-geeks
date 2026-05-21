@@ -37,10 +37,6 @@ export function PracticeCard({
       onTouchEnd={onTouchEnd}
     >
       <div className="practice-card-top">
-        <span className="swipe-hint swipe-hint-vertical" aria-hidden="true">
-          ↑↓ sentence
-        </span>
-
         <div className="practice-card-toolbar">
           <button
             type="button"
@@ -96,7 +92,11 @@ export function PracticeCard({
             <strong>{isListening ? "Listening…" : "Recognized:"}</strong>
             <span className="match-score">{matchScore}% matched</span>
           </div>
-          <p>{recognizedText || "…"}</p>
+          {recognizedText ? (
+            <p>{recognizedText}</p>
+          ) : isListening && !attemptEnded ? (
+            <p>…</p>
+          ) : null}
           {attemptEnded && isListening && (
             <p className="attempt-cue">Pause detected — keep reading or tap Stop.</p>
           )}

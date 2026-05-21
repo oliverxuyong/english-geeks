@@ -12,7 +12,7 @@ export const lesson001 = {
       "chinese": "美食学；饮食文化",
       "english": "the art and science of good eating",
       "meaningInContext": "意大利饮食文化的整套规范与“罪孽”",
-      "audioUrl": "/lessons/lesson001/v001.mp3"
+      "audioUrl": "/lessons/lesson001/v001.m4a"
     },
     {
       "id": "v002",
@@ -21,7 +21,7 @@ export const lesson001 = {
       "chinese": "亵渎的；大不敬的",
       "english": "showing great disrespect toward something sacred",
       "meaningInContext": "形容对意大利饮食传统的严重冒犯",
-      "audioUrl": "/lessons/lesson001/v002.mp3"
+      "audioUrl": "/lessons/lesson001/v002.m4a"
     },
     {
       "id": "v003",
@@ -30,7 +30,7 @@ export const lesson001 = {
       "chinese": "那不勒斯人",
       "english": "people from Naples, Italy",
       "meaningInContext": "以披萨自豪的那不勒斯人",
-      "audioUrl": "/lessons/lesson001/v003.mp3"
+      "audioUrl": "/lessons/lesson001/v003.m4a"
     },
     {
       "id": "v004",
@@ -39,7 +39,7 @@ export const lesson001 = {
       "chinese": "卡布奇诺",
       "english": "espresso with steamed milk foam",
       "meaningInContext": "在意大利主要被视为早餐饮品",
-      "audioUrl": "/lessons/lesson001/v004.mp3"
+      "audioUrl": "/lessons/lesson001/v004.m4a"
     },
     {
       "id": "v005",
@@ -48,7 +48,7 @@ export const lesson001 = {
       "chinese": "消化",
       "english": "the process of breaking down food in the body",
       "meaningInContext": "意大利人非常在意饭后与饮品的消化问题",
-      "audioUrl": "/lessons/lesson001/v005.mp3"
+      "audioUrl": "/lessons/lesson001/v005.m4a"
     }
   ],
   "sentences": [

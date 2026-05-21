@@ -12,19 +12,12 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
   const shouldListenRef = useRef(false);
   const silenceTimerRef = useRef(null);
   const wordsRef = useRef(words);
+  const attemptEndedRef = useRef(false);
+  const segmentStartIndexRef = useRef(0);
 
   useEffect(() => {
     wordsRef.current = words;
   }, [words]);
-
-  const applyTranscript = useCallback(
-    (transcript) => {
-      setRecognizedText(transcript);
-      const matches = findMatchedWordIndexes(wordsRef.current, transcript);
-      onMatchUpdate?.(matches);
-    },
-    [onMatchUpdate]
-  );
 
   const clearSilenceTimer = useCallback(() => {
     if (silenceTimerRef.current) {
@@ -36,6 +29,7 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
   const scheduleAttemptEnd = useCallback(() => {
     clearSilenceTimer();
     silenceTimerRef.current = setTimeout(() => {
+      attemptEndedRef.current = true;
       setAttemptEnded(true);
     }, SILENCE_MS);
   }, [clearSilenceTimer]);
@@ -52,6 +46,8 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
       }
     }
     recognitionRef.current = null;
+    attemptEndedRef.current = false;
+    segmentStartIndexRef.current = 0;
     setIsListening(false);
     setAttemptEnded(false);
     setRecognizedText("");
@@ -68,12 +64,25 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
     recognition.continuous = true;
 
     recognition.onresult = (event) => {
-      let transcript = "";
-      for (let i = 0; i < event.results.length; i++) {
-        transcript += event.results[i][0].transcript;
+      if (attemptEndedRef.current) {
+        attemptEndedRef.current = false;
+        setAttemptEnded(false);
+        segmentStartIndexRef.current = event.resultIndex;
+        setRecognizedText("");
       }
-      setAttemptEnded(false);
-      applyTranscript(transcript);
+
+      let burstTranscript = "";
+      for (let i = segmentStartIndexRef.current; i < event.results.length; i++) {
+        burstTranscript += event.results[i][0].transcript;
+      }
+
+      let fullTranscript = "";
+      for (let i = 0; i < event.results.length; i++) {
+        fullTranscript += event.results[i][0].transcript;
+      }
+
+      setRecognizedText(burstTranscript);
+      onMatchUpdate?.(findMatchedWordIndexes(wordsRef.current, fullTranscript));
       scheduleAttemptEnd();
     };
 
@@ -98,7 +107,7 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
 
     recognitionRef.current = recognition;
     recognition.start();
-  }, [applyTranscript, scheduleAttemptEnd, stopSpeaking]);
+  }, [onMatchUpdate, scheduleAttemptEnd, stopSpeaking]);
 
   const startSpeaking = useCallback(() => {
     if (!window.isSecureContext) {

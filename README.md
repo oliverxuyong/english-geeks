@@ -70,7 +70,7 @@ Deterministic in `scripts/lib/blankRules.mjs`: beginner hides ~last 25% of token
 |------|----------|
 | 1 Vocabulary | Cards with 🔊 — MP3 from `audioUrl`, else `speechSynthesis` |
 | 2 First listen | `fullAudioUrl`, play-once guard |
-| 3 Practice | One card; tabs 初/中/高; ↑↓ swipe sentences, ←→ swipe levels; per-word IPA; Speak until Stop |
+| 3 Practice | One card; tabs 初/中/高; ←→ swipe levels; Prev/Next sentence; per-word IPA; Speak until Stop |
 | 4 Final listen | Replay audio or `fullVideoUrl` |
 
 ## Mobile / HTTPS

@@ -1,19 +1,24 @@
-/** Play pre-generated MP3; fall back to speechSynthesis when URL missing or load fails. */
+/** Play pre-generated audio; fall back to speechSynthesis when URL missing or load fails. */
 
 const stopListeners = new Set();
 let activeAudio = null;
+let voicesPrimed = false;
 
 export function subscribePlaybackStop(listener) {
   stopListeners.add(listener);
   return () => stopListeners.delete(listener);
 }
 
-export function stopAllPlayback() {
+function stopActiveAudio() {
   if (activeAudio) {
     activeAudio.pause();
     activeAudio.currentTime = 0;
     activeAudio = null;
   }
+}
+
+export function stopAllPlayback() {
+  stopActiveAudio();
   if (typeof window !== "undefined" && window.speechSynthesis) {
     window.speechSynthesis.cancel();
   }
@@ -33,26 +38,69 @@ export function releaseAudio(audio) {
   if (audio && activeAudio === audio) activeAudio = null;
 }
 
-export function speakWord(text, audioUrl) {
-  stopAllPlayback();
-  if (audioUrl) {
-    const audio = new Audio(audioUrl);
-    trackAudio(audio);
-    audio.play().catch(() => {
-      if (activeAudio === audio) activeAudio = null;
-      speakWithSynthesis(text);
-    });
-    return;
-  }
-  speakWithSynthesis(text);
+export function primeSpeechVoices() {
+  if (voicesPrimed || typeof window === "undefined" || !window.speechSynthesis) return;
+  voicesPrimed = true;
+  window.speechSynthesis.getVoices();
+  window.speechSynthesis.addEventListener(
+    "voiceschanged",
+    () => window.speechSynthesis.getVoices(),
+    { once: true }
+  );
 }
 
 function speakWithSynthesis(text) {
   if (!window.speechSynthesis) return;
-  window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "en-US";
-  window.speechSynthesis.speak(utterance);
+  primeSpeechVoices();
+
+  const synth = window.speechSynthesis;
+  const run = () => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "en-US";
+    if (synth.paused) synth.resume();
+    synth.speak(utterance);
+  };
+
+  if (synth.speaking || synth.pending) {
+    synth.cancel();
+    setTimeout(run, 50);
+    return;
+  }
+  run();
+}
+
+export function speakWord(text, audioUrl) {
+  stopActiveAudio();
+  for (const listener of stopListeners) listener();
+
+  if (!audioUrl) {
+    speakWithSynthesis(text);
+    return;
+  }
+
+  const audio = new Audio(audioUrl);
+  let clipOk = false;
+
+  const cancelFallback = () => {
+    clipOk = true;
+    clearTimeout(failTimer);
+  };
+
+  const fallback = () => {
+    if (clipOk) return;
+    clipOk = true;
+    clearTimeout(failTimer);
+    audio.pause();
+    releaseAudio(audio);
+    speakWithSynthesis(text);
+  };
+
+  trackAudio(audio);
+  audio.addEventListener("error", fallback, { once: true });
+  audio.addEventListener("playing", cancelFallback, { once: true });
+  const failTimer = setTimeout(fallback, 1500);
+
+  audio.play().catch(fallback);
 }
 
 export function playMediaUrl(url, { onEnded, onError } = {}) {

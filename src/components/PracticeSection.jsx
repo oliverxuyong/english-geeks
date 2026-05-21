@@ -79,10 +79,7 @@ export function PracticeSection({ lesson }) {
     const deltaX = t.clientX - touchStart.x;
     const deltaY = t.clientY - touchStart.y;
 
-    if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) >= MIN_SWIPE) {
-      if (deltaY < 0) goNext();
-      else goPrevious();
-    } else if (Math.abs(deltaX) >= MIN_SWIPE) {
+    if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) >= MIN_SWIPE) {
       if (deltaX < 0) goToNextLevel();
       else goToPreviousLevel();
     }
