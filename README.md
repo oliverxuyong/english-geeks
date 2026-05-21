@@ -45,6 +45,13 @@ node scripts/apply-word-glosses.mjs           # per-word IPA / 中文 / English
 
 Or with API: `OPENAI_API_KEY=... node scripts/enrich-word-glosses.mjs`
 
+Per-sentence clips (Path B has no audio until you run one of these):
+
+```bash
+./scripts/generate-sentence-audio.sh   # macOS say → s001.m4a … (updates lesson URLs)
+# Or Path A with --media + ffmpeg (Whisper timings, slices from source recording)
+```
+
 ### Path A — audio or video
 
 Requires `OPENAI_API_KEY`, `ffmpeg` on PATH:

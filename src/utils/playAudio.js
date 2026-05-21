@@ -108,9 +108,10 @@ export function speakWord(text, audioUrl) {
   };
 
   trackAudio(audio);
+  audio.addEventListener("ended", cancelFallback, { once: true });
   audio.addEventListener("error", fallback, { once: true });
   audio.addEventListener("playing", cancelFallback, { once: true });
-  const failTimer = setTimeout(fallback, 1500);
+  const failTimer = setTimeout(fallback, 800);
 
   audio.play().catch(fallback);
 }

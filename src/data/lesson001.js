@@ -57,7 +57,7 @@ export const lesson001 = {
       "index": 1,
       "english": "I'd like to begin this talk with a photo demonstration.",
       "chinese": "我想以一组照片演示开始这次演讲。",
-      "audioUrl": "/lessons/lesson001/s001.mp3",
+      "audioUrl": "/lessons/lesson001/s001.m4a",
       "words": [
         {
           "id": "s001-w001",
@@ -174,7 +174,7 @@ export const lesson001 = {
       "index": 2,
       "english": "Please be advised, this demonstration contains graphic images of Italian foods being violated and may be disturbing for Italian viewers and self-described cultured gastronomes.",
       "chinese": "请注意，本演示包含意大利食物遭受“蹂躏”的露骨画面，可能令意大利观众及自诩有品位的食客感到不适。",
-      "audioUrl": "/lessons/lesson001/s002.mp3",
+      "audioUrl": "/lessons/lesson001/s002.m4a",
       "words": [
         {
           "id": "s002-w001",
@@ -441,7 +441,7 @@ export const lesson001 = {
       "index": 3,
       "english": "There's a saying I learned while I was in Italy studying abroad my junior year.",
       "chinese": "大三在意大利留学时，我学到一句俗语。",
-      "audioUrl": "/lessons/lesson001/s003.mp3",
+      "audioUrl": "/lessons/lesson001/s003.m4a",
       "words": [
         {
           "id": "s003-w001",
@@ -608,7 +608,7 @@ export const lesson001 = {
       "index": 4,
       "english": "Every time somebody puts pineapple on pizza, an Italian dies.",
       "chinese": "每当有人在披萨上放菠萝，就有一位意大利人死去。",
-      "audioUrl": "/lessons/lesson001/s004.mp3",
+      "audioUrl": "/lessons/lesson001/s004.m4a",
       "words": [
         {
           "id": "s004-w001",
@@ -725,7 +725,7 @@ export const lesson001 = {
       "index": 5,
       "english": "Now, if this were true, then after all the images I have just shown, there likely aren't many Italians left in Italy.",
       "chinese": "倘若这话当真，在我刚展示的那些图片之后，意大利恐怕剩不下多少意大利人了。",
-      "audioUrl": "/lessons/lesson001/s005.mp3",
+      "audioUrl": "/lessons/lesson001/s005.m4a",
       "words": [
         {
           "id": "s005-w001",
@@ -962,7 +962,7 @@ export const lesson001 = {
       "index": 6,
       "english": "While putting pineapple on pizza might be offensive to many Italians, particularly the pizza proud Neapolitans, the food photos that I have just shown are each considered to be near universally blasphemous culinary sins.",
       "chinese": "在披萨上加菠萝或许冒犯许多意大利人，尤其以披萨为荣的那不勒斯人；但我刚展示的食物照片，每一件都被视为近乎全民共识的饮食亵渎。",
-      "audioUrl": "/lessons/lesson001/s006.mp3",
+      "audioUrl": "/lessons/lesson001/s006.m4a",
       "words": [
         {
           "id": "s006-w001",
@@ -1319,7 +1319,7 @@ export const lesson001 = {
       "index": 7,
       "english": "For context, what the seven deadly sins are to Christianity, these sins are to Italian gastronomy.",
       "chinese": "打个比方：七宗罪之于基督教，这些“罪”之于意大利美食文化。",
-      "audioUrl": "/lessons/lesson001/s007.mp3",
+      "audioUrl": "/lessons/lesson001/s007.m4a",
       "words": [
         {
           "id": "s007-w001",
@@ -1496,7 +1496,7 @@ export const lesson001 = {
       "index": 8,
       "english": "The thing is, the food rules in Italy might seem unnecessary and arbitrary to outsiders, including myself when I first arrived.",
       "chinese": "问题是，意大利的饮食规矩对外国人——包括初到时的我——可能显得多余而随意。",
-      "audioUrl": "/lessons/lesson001/s008.mp3",
+      "audioUrl": "/lessons/lesson001/s008.m4a",
       "words": [
         {
           "id": "s008-w001",
@@ -1723,7 +1723,7 @@ export const lesson001 = {
       "index": 9,
       "english": "Many of them are in fact quite senseful when understood in context.",
       "chinese": "其实一旦理解背景，其中许多规则相当有道理。",
-      "audioUrl": "/lessons/lesson001/s009.mp3",
+      "audioUrl": "/lessons/lesson001/s009.m4a",
       "words": [
         {
           "id": "s009-w001",
@@ -1860,7 +1860,7 @@ export const lesson001 = {
       "index": 10,
       "english": "As I came to learn, the cultural Italian food norms are rooted in some serious and well understood principles in math, science, logic, and even have deep historical and cultural roots.",
       "chinese": "我逐渐明白，意大利饮食文化的规范植根于数学、科学、逻辑等严肃原则，并有深厚的历史与文化根源。",
-      "audioUrl": "/lessons/lesson001/s010.mp3",
+      "audioUrl": "/lessons/lesson001/s010.m4a",
       "words": [
         {
           "id": "s010-w001",
@@ -2187,7 +2187,7 @@ export const lesson001 = {
       "index": 11,
       "english": "Take for example the infamous cappuccino rule.",
       "chinese": "以臭名昭著的卡布奇诺规矩为例。",
-      "audioUrl": "/lessons/lesson001/s011.mp3",
+      "audioUrl": "/lessons/lesson001/s011.m4a",
       "words": [
         {
           "id": "s011-w001",
@@ -2274,7 +2274,7 @@ export const lesson001 = {
       "index": 12,
       "english": "In Italy, a cappuccino is more or less strictly considered a breakfast drink. After about 11:00 a.m.",
       "chinese": "在意大利，卡布奇诺或多或少被严格视为早餐饮品。",
-      "audioUrl": "/lessons/lesson001/s012.mp3",
+      "audioUrl": "/lessons/lesson001/s012.m4a",
       "words": [
         {
           "id": "s012-w001",
@@ -2481,7 +2481,7 @@ export const lesson001 = {
       "index": 13,
       "english": "or so, it's not to be consumed until the following morning.",
       "chinese": "大约上午十一点之后，就不该再喝，要等到第二天早上。",
-      "audioUrl": "/lessons/lesson001/s013.mp3",
+      "audioUrl": "/lessons/lesson001/s013.m4a",
       "words": [
         {
           "id": "s013-w001",
@@ -2608,7 +2608,7 @@ export const lesson001 = {
       "index": 14,
       "english": "Now, the strict adherence to punctuality in this regard varies from region to region with some northern Italians occasionally having a cappuccino as an afternoon snack.",
       "chinese": "至于守时的严格程度因地区而异，有些北方人偶尔会下午喝杯卡布奇诺当点心。",
-      "audioUrl": "/lessons/lesson001/s014.mp3",
+      "audioUrl": "/lessons/lesson001/s014.m4a",
       "words": [
         {
           "id": "s014-w001",
@@ -2885,7 +2885,7 @@ export const lesson001 = {
       "index": 15,
       "english": "But the point is that it is predominantly considered breakfast drink that is not to be consumed in the afternoon and especially anywhere close to a meal.",
       "chinese": "但要点是：它主要被视为早餐，下午不宜喝，尤其不能靠近正餐时间。",
-      "audioUrl": "/lessons/lesson001/s015.mp3",
+      "audioUrl": "/lessons/lesson001/s015.m4a",
       "words": [
         {
           "id": "s015-w001",
@@ -3172,7 +3172,7 @@ export const lesson001 = {
       "index": 16,
       "english": "Why, you ask?",
       "chinese": "你问为什么？",
-      "audioUrl": "/lessons/lesson001/s016.mp3",
+      "audioUrl": "/lessons/lesson001/s016.m4a",
       "words": [
         {
           "id": "s016-w001",
@@ -3219,7 +3219,7 @@ export const lesson001 = {
       "index": 17,
       "english": "Well, you see, Italians are obsessed with digestion. They think about it a lot.",
       "chinese": "要知道，意大利人非常在意消化。",
-      "audioUrl": "/lessons/lesson001/s017.mp3",
+      "audioUrl": "/lessons/lesson001/s017.m4a",
       "words": [
         {
           "id": "s017-w001",
@@ -3376,7 +3376,7 @@ export const lesson001 = {
       "index": 18,
       "english": "As such, they've come to the conclusion that the large amount of milk in a cappuccino can be heavy on the stomach, making it the ideal breakfast drink to fill you up in the morning when little to no food is consumed besides a pastry.",
       "chinese": "他们经常琢磨这件事。",
-      "audioUrl": "/lessons/lesson001/s018.mp3",
+      "audioUrl": "/lessons/lesson001/s018.m4a",
       "words": [
         {
           "id": "s018-w001",

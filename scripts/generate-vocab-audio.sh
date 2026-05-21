@@ -10,7 +10,7 @@ trap 'rm -rf "$TMP"' EXIT
 gen() {
   local id="$1" word="$2"
   say -v Samantha -o "$TMP/${id}.aiff" "$word"
-  afconvert "$TMP/${id}.aiff" "$TMP/${id}.m4a" -f m4af -d aac
+  afconvert "$TMP/${id}.aiff" "$TMP/${id}.m4a" -f m4af -d "aac "
   cp "$TMP/${id}.m4a" "$DIR/${id}.m4a"
   echo "  $DIR/${id}.m4a ($(wc -c <"$DIR/${id}.m4a" | tr -d ' ') bytes)"
 }
