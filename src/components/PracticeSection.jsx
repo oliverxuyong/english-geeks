@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { PracticeCard } from "./PracticeCard";
 import { useSpeechRecognition } from "../hooks/useSpeechRecognition";
 
@@ -9,6 +9,7 @@ const LEVELS = [
 ];
 
 const MIN_SWIPE = 60;
+const FULL_TEXT_LONG_PRESS_MS = 1500;
 
 export function PracticeSection({ lesson }) {
   const [activeLevel, setActiveLevel] = useState("intermediate");
@@ -16,6 +17,10 @@ export function PracticeSection({ lesson }) {
   const [showTranslation, setShowTranslation] = useState(true);
   const [showIPA, setShowIPA] = useState(false);
   const [showFullText, setShowFullText] = useState(false);
+  const [fullTextPinned, setFullTextPinned] = useState(false);
+  const fullTextPressTimerRef = useRef(null);
+  const fullTextLockedRef = useRef(false);
+  const skipHideOnClickRef = useRef(false);
   const [selectedWord, setSelectedWord] = useState(null);
   const [matchedWordIndexes, setMatchedWordIndexes] = useState(() => new Set());
   const [touchStart, setTouchStart] = useState(null);
@@ -33,12 +38,23 @@ export function PracticeSection({ lesson }) {
     onMatchUpdate: setMatchedWordIndexes,
   });
 
+  const clearFullText = useCallback(() => {
+    if (fullTextPressTimerRef.current) {
+      clearTimeout(fullTextPressTimerRef.current);
+      fullTextPressTimerRef.current = null;
+    }
+    fullTextLockedRef.current = false;
+    skipHideOnClickRef.current = false;
+    setShowFullText(false);
+    setFullTextPinned(false);
+  }, []);
+
   const clearSentenceState = useCallback(() => {
     setSelectedWord(null);
-    setShowFullText(false);
+    clearFullText();
     setMatchedWordIndexes(new Set());
     stopSpeaking();
-  }, [stopSpeaking]);
+  }, [clearFullText, stopSpeaking]);
 
   function goPrevious() {
     clearSentenceState();
@@ -52,10 +68,66 @@ export function PracticeSection({ lesson }) {
 
   function changeLevel(newLevel) {
     setSelectedWord(null);
-    setShowFullText(false);
+    clearFullText();
     setMatchedWordIndexes(new Set());
     setActiveLevel(newLevel);
   }
+
+  const handleFullTextPressStart = useCallback(
+    (event) => {
+      event.stopPropagation();
+      if (fullTextPinned) return;
+
+      setShowFullText(true);
+      if (fullTextPressTimerRef.current) {
+        clearTimeout(fullTextPressTimerRef.current);
+      }
+      fullTextPressTimerRef.current = setTimeout(() => {
+        fullTextPressTimerRef.current = null;
+        fullTextLockedRef.current = true;
+        skipHideOnClickRef.current = true;
+        setFullTextPinned(true);
+
+        const finishLongPressGesture = () => {
+          requestAnimationFrame(() => {
+            skipHideOnClickRef.current = false;
+          });
+        };
+        window.addEventListener("mouseup", finishLongPressGesture, { once: true });
+        window.addEventListener("touchend", finishLongPressGesture, { once: true });
+        window.addEventListener("pointerup", finishLongPressGesture, { once: true });
+      }, FULL_TEXT_LONG_PRESS_MS);
+    },
+    [fullTextPinned],
+  );
+
+  const handleFullTextPressEnd = useCallback(
+    (event) => {
+      event.stopPropagation();
+      if (fullTextLockedRef.current) return;
+
+      if (fullTextPressTimerRef.current) {
+        clearTimeout(fullTextPressTimerRef.current);
+        fullTextPressTimerRef.current = null;
+        setShowFullText(false);
+      }
+    },
+    [],
+  );
+
+  const handleFullTextClick = useCallback(
+    (event) => {
+      event.stopPropagation();
+      if (skipHideOnClickRef.current) {
+        skipHideOnClickRef.current = false;
+        return;
+      }
+      if (fullTextPinned) {
+        clearFullText();
+      }
+    },
+    [clearFullText, fullTextPinned],
+  );
 
   function goToPreviousLevel() {
     const idx = LEVELS.findIndex((l) => l.id === activeLevel);
@@ -116,8 +188,10 @@ export function PracticeSection({ lesson }) {
           showIPA={showIPA}
           onToggleIPA={() => setShowIPA((v) => !v)}
           showFullText={showFullText}
-          onFullTextPressStart={() => setShowFullText(true)}
-          onFullTextPressEnd={() => setShowFullText(false)}
+          fullTextPinned={fullTextPinned}
+          onFullTextPressStart={handleFullTextPressStart}
+          onFullTextPressEnd={handleFullTextPressEnd}
+          onFullTextClick={handleFullTextClick}
           selectedWord={selectedWord}
           setSelectedWord={setSelectedWord}
           recognizedText={recognizedText}

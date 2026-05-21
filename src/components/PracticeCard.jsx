@@ -17,8 +17,10 @@ export function PracticeCard({
   showIPA,
   onToggleIPA,
   showFullText,
+  fullTextPinned,
   onFullTextPressStart,
   onFullTextPressEnd,
+  onFullTextClick,
   selectedWord,
   setSelectedWord,
   recognizedText,
@@ -40,13 +42,15 @@ export function PracticeCard({
         <div className="practice-card-toolbar">
           <button
             type="button"
-            onMouseDown={onFullTextPressStart}
-            onMouseUp={onFullTextPressEnd}
-            onMouseLeave={onFullTextPressEnd}
-            onTouchStart={onFullTextPressStart}
-            onTouchEnd={onFullTextPressEnd}
+            onClick={fullTextPinned ? onFullTextClick : undefined}
+            onMouseDown={fullTextPinned ? undefined : onFullTextPressStart}
+            onMouseUp={fullTextPinned ? undefined : onFullTextPressEnd}
+            onMouseLeave={fullTextPinned ? undefined : onFullTextPressEnd}
+            onTouchStart={fullTextPinned ? undefined : onFullTextPressStart}
+            onTouchEnd={fullTextPinned ? undefined : onFullTextPressEnd}
+            onTouchCancel={fullTextPinned ? undefined : onFullTextPressEnd}
           >
-            Full Text
+            {fullTextPinned ? "Hide Full Text" : "Full Text"}
           </button>
 
           <button type="button" onClick={onToggleTranslation}>
