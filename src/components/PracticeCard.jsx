@@ -86,23 +86,6 @@ export function PracticeCard({
 
       {showTranslation && <p className="translation">{sentence.chinese}</p>}
 
-      {(recognizedText || isListening) && (
-        <div className={`recognized-box ${attemptEnded ? "recognized-box-attempt-ended" : ""}`}>
-          <div className="recognized-header">
-            <strong>{isListening ? "Listening…" : "Recognized:"}</strong>
-            <span className="match-score">{matchScore}% matched</span>
-          </div>
-          {recognizedText ? (
-            <p>{recognizedText}</p>
-          ) : isListening && !attemptEnded ? (
-            <p>…</p>
-          ) : null}
-          {attemptEnded && isListening && (
-            <p className="attempt-cue">Pause detected — keep reading or tap Stop.</p>
-          )}
-        </div>
-      )}
-
       <div className="word-line">
         {sentence.words.map((word, wordIndex) => {
           const isMatched = matchedWordIndexes.has(wordIndex);
@@ -137,6 +120,23 @@ export function PracticeCard({
           );
         })}
       </div>
+
+      {(recognizedText || isListening) && (
+        <div className={`recognized-box ${attemptEnded ? "recognized-box-attempt-ended" : ""}`}>
+          <div className="recognized-header">
+            <strong>{isListening ? "Listening…" : "Recognized:"}</strong>
+            <span className="match-score">{matchScore}% matched</span>
+          </div>
+          {recognizedText ? (
+            <p>{recognizedText}</p>
+          ) : isListening && !attemptEnded ? (
+            <p>…</p>
+          ) : null}
+          {attemptEnded && isListening && (
+            <p className="attempt-cue">Pause detected — keep reading or tap Stop.</p>
+          )}
+        </div>
+      )}
 
       {selectedWord && (
         <div className="word-popup">

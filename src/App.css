@@ -422,9 +422,9 @@ button:disabled {
   align-items: flex-end;
 }
 
-.recognized-box {
-  margin-top: 0;
-  margin-bottom: 12px;
+.single-practice-card .recognized-box {
+  margin-top: 16px;
+  margin-bottom: 0;
 }
 
 .recognized-box-attempt-ended {
