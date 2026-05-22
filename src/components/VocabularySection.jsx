@@ -38,16 +38,12 @@ export function VocabularySection({ lesson }) {
             </div>
             <p className="ipa">{item.ipa}</p>
             <p>
-              <strong>中文：</strong>
-              {item.chinese}
+              <strong>En: </strong>
+              {item.english}.
             </p>
             <p>
-              <strong>English：</strong>
-              {item.english}
-            </p>
-            <p>
-              <strong>In this lesson：</strong>
-              {item.meaningInContext}
+              <strong>中: </strong>
+              {item.chinese}。本文中指{item.meaningInContext}
             </p>
           </div>
         ))}

@@ -1,0 +1,2 @@
+# Use 3.5–3.7 for Python 3.9–3.12; upgrade to spacy 4.x if you use Python 3.10+
+spacy>=3.5.0,<3.8.0

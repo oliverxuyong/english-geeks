@@ -50,7 +50,7 @@ export function PracticeCard({
             onTouchEnd={fullTextPinned ? undefined : onFullTextPressEnd}
             onTouchCancel={fullTextPinned ? undefined : onFullTextPressEnd}
           >
-            {fullTextPinned ? "Hide Full Text" : "Full Text"}
+            {fullTextPinned ? "Hide F.Txt" : "Full Text"}
           </button>
 
           <button type="button" onClick={onToggleTranslation}>
@@ -61,10 +61,6 @@ export function PracticeCard({
             {showIPA ? "Hide IPA" : "Show IPA"}
           </button>
         </div>
-
-        <span className="swipe-hint swipe-hint-horizontal" aria-hidden="true">
-          ←→ level
-        </span>
       </div>
 
       <div className="practice-card-header">
@@ -156,13 +152,14 @@ export function PracticeCard({
           </div>
           {selectedWord.ipa && <p className="ipa">{selectedWord.ipa}</p>}
           <p>
-            <strong>中文：</strong>
-            {selectedWord.chinese || "—"}
-          </p>
-          <p>
-            <strong>English：</strong>
+            <strong>En：</strong>
             {selectedWord.english || "—"}
           </p>
+          <p>
+            <strong>中：</strong>
+            {selectedWord.chinese || "—"}
+          </p>
+
         </div>
       )}
     </div>

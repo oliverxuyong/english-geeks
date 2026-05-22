@@ -204,7 +204,7 @@ export function PracticeSection({ lesson }) {
 
         <div className="button-row navigation-row">
           <button type="button" onClick={goPrevious} disabled={sentenceIndex === 0}>
-            Previous
+            Prev
           </button>
           <button
             type="button"

@@ -41,6 +41,15 @@ Optional after build:
 ```bash
 node scripts/patch-lesson-enrich.mjs          # sentence Chinese + vocab cards
 node scripts/apply-word-glosses.mjs           # per-word IPA / 中文 / English
+node scripts/apply-spacy-blanks.mjs           # spaCy blanks (needs requirements-spacy.txt)
+```
+
+spaCy setup (one-time, for grammar-based blanks). Prefer the project venv (system `pip` often fails on macOS):
+
+```bash
+./scripts/setup-spacy.sh
+export PYTHON="$(pwd)/.venv-spacy/bin/python"
+node scripts/apply-spacy-blanks.mjs
 ```
 
 Or with API: `OPENAI_API_KEY=... node scripts/enrich-word-glosses.mjs`
@@ -65,7 +74,7 @@ Whisper provides segment timestamps; ffmpeg cuts `s001.mp3`, … and copies `ful
 
 ### Blank rules
 
-Deterministic in `scripts/lib/blankRules.mjs`: beginner hides ~last 25% of tokens; intermediate hides content words; advanced hides most with letter stubs.
+Practice blanks: spaCy `scripts/lib/blank_out_designated_words.py` when installed (level **2** = beginner, **4** = intermediate, **5** = advanced); otherwise fallback in `scripts/lib/blankRules.mjs`.
 
 ### Enrich (optional)
 
@@ -96,7 +105,7 @@ src/
   utils/lcsMatch.js, playAudio.js
 scripts/
   build-lesson.mjs
-  lib/            # tokenize, blankRules, emitLesson
+  lib/            # tokenize, blank_out_designated_words.py, spacyBlankRules, emitLesson
 public/lessons/   # generated audio assets
 docs/LESSON_SCHEMA.md
 ```

@@ -14,7 +14,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { execSync, spawnSync } from "node:child_process";
 import { splitSentences, tokenizeWords, padId, buildWordRecords } from "./lib/tokenize.mjs";
-import { buildBlanks } from "./lib/blankRules.mjs";
+import { buildBlanksWithSpacy } from "./lib/spacyBlankRules.mjs";
 import { emitLessonJs, ensurePublicDir, audioUrl } from "./lib/emitLesson.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -199,7 +199,7 @@ function buildLessonFromSentences(sentenceTexts, opts, timings = null) {
     const index = idx + 1;
     const tokens = tokenizeWords(english);
     const words = buildWordRecords(index, tokens);
-    const blanks = buildBlanks(tokens);
+    const blanks = buildBlanksWithSpacy(tokens, english);
     const sid = padId(index);
 
     return {
