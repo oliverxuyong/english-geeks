@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { PracticeCard } from "./PracticeCard";
 import { useSpeechRecognition } from "../hooks/useSpeechRecognition";
 
@@ -9,6 +9,7 @@ const LEVELS = [
 ];
 
 const MIN_SWIPE = 60;
+const AXIS_LOCK_THRESHOLD = 10;
 const FULL_TEXT_LONG_PRESS_MS = 1500;
 
 export function PracticeSection({ lesson }) {
@@ -23,7 +24,8 @@ export function PracticeSection({ lesson }) {
   const skipHideOnClickRef = useRef(false);
   const [selectedWord, setSelectedWord] = useState(null);
   const [matchedWordIndexes, setMatchedWordIndexes] = useState(() => new Set());
-  const [touchStart, setTouchStart] = useState(null);
+  const touchStartRef = useRef(null);
+  const swipeAxisRef = useRef(null);
 
   const sentence = lesson.sentences[sentenceIndex];
 
@@ -139,12 +141,46 @@ export function PracticeSection({ lesson }) {
     if (idx < LEVELS.length - 1) changeLevel(LEVELS[idx + 1].id);
   }
 
+  useEffect(() => {
+    function handleDocumentTouchMove(event) {
+      const touchStart = touchStartRef.current;
+      if (!touchStart) return;
+
+      const t = event.touches[0];
+      if (!t) return;
+
+      const deltaX = t.clientX - touchStart.x;
+      const deltaY = t.clientY - touchStart.y;
+
+      if (swipeAxisRef.current === null) {
+        const absX = Math.abs(deltaX);
+        const absY = Math.abs(deltaY);
+        if (absX < AXIS_LOCK_THRESHOLD && absY < AXIS_LOCK_THRESHOLD) return;
+        swipeAxisRef.current = absX > absY ? "horizontal" : "vertical";
+      }
+
+      if (swipeAxisRef.current === "horizontal") {
+        event.preventDefault();
+      }
+    }
+
+    document.addEventListener("touchmove", handleDocumentTouchMove, { passive: false });
+    return () => document.removeEventListener("touchmove", handleDocumentTouchMove);
+  }, []);
+
+  function clearTouchGesture() {
+    touchStartRef.current = null;
+    swipeAxisRef.current = null;
+  }
+
   function handleTouchStart(event) {
     const t = event.touches[0];
-    setTouchStart({ x: t.clientX, y: t.clientY });
+    touchStartRef.current = { x: t.clientX, y: t.clientY };
+    swipeAxisRef.current = null;
   }
 
   function handleTouchEnd(event) {
+    const touchStart = touchStartRef.current;
     if (!touchStart) return;
 
     const t = event.changedTouches[0];
@@ -156,7 +192,11 @@ export function PracticeSection({ lesson }) {
       else goToNextLevel();
     }
 
-    setTouchStart(null);
+    clearTouchGesture();
+  }
+
+  function handleTouchCancel() {
+    clearTouchGesture();
   }
 
   return (
@@ -186,6 +226,7 @@ export function PracticeSection({ lesson }) {
           attemptEnded={attemptEnded}
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
+          onTouchCancel={handleTouchCancel}
         />
 
         <div className="button-row navigation-row">

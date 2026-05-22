@@ -33,6 +33,7 @@ export function PracticeCard({
   attemptEnded,
   onTouchStart,
   onTouchEnd,
+  onTouchCancel,
 }) {
   const matchScore = calculateMatchScore(sentence.words, matchedWordIndexes);
   const [peekWordId, setPeekWordId] = useState(null);
@@ -76,6 +77,7 @@ export function PracticeCard({
       className="practice-card single-practice-card"
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
+      onTouchCancel={onTouchCancel}
     >
       <div className="practice-card-top">
         <div className="practice-card-toolbar">
