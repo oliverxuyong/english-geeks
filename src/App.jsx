@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 import { lesson001 } from "./data/lesson001";
 import { VocabularySection } from "./components/VocabularySection";
@@ -7,6 +8,18 @@ import { FinalListeningSection } from "./components/FinalListeningSection";
 
 function App() {
   const lesson = lesson001;
+
+  useEffect(() => {
+    function blockButtonContextMenu(event) {
+      if (!(event.target instanceof Element)) return;
+      const button = event.target.closest("button");
+      if (!button || button.closest(".word-line")) return;
+      event.preventDefault();
+    }
+
+    document.addEventListener("contextmenu", blockButtonContextMenu);
+    return () => document.removeEventListener("contextmenu", blockButtonContextMenu);
+  }, []);
 
   return (
     <div className="app">

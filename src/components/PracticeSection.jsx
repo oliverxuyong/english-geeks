@@ -152,8 +152,8 @@ export function PracticeSection({ lesson }) {
     const deltaY = t.clientY - touchStart.y;
 
     if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) >= MIN_SWIPE) {
-      if (deltaX < 0) goToNextLevel();
-      else goToPreviousLevel();
+      if (deltaX < 0) goToPreviousLevel();
+      else goToNextLevel();
     }
 
     setTouchStart(null);
@@ -164,23 +164,9 @@ export function PracticeSection({ lesson }) {
       <h2>3. Practice</h2>
 
       <div className="practice-section">
-        <div className="level-tabs" role="tablist" aria-label="Practice level">
-          {LEVELS.map((level) => (
-            <button
-              key={level.id}
-              type="button"
-              role="tab"
-              aria-selected={activeLevel === level.id}
-              className={`level-tab ${activeLevel === level.id ? "level-tab-active" : ""}`}
-              onClick={() => changeLevel(level.id)}
-            >
-              {level.label}
-            </button>
-          ))}
-        </div>
-
         <PracticeCard
           level={activeLevel}
+          onLevelChange={changeLevel}
           sentence={sentence}
           sentenceCount={lesson.sentences.length}
           showTranslation={showTranslation}

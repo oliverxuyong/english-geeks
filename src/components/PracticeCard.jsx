@@ -1,15 +1,19 @@
+import { useEffect, useRef, useState } from "react";
 import { speakWord } from "../utils/playAudio";
 import { BLANK_PLACEHOLDER, buildWordCharSlots } from "../utils/formatBlankDisplay";
 import { calculateMatchScore } from "../utils/lcsMatch";
 
-const LEVEL_LABELS = {
-  beginner: "初",
-  intermediate: "中",
-  advanced: "高",
-};
+const WORD_PEEK_MS = 700;
+
+const LEVEL_OPTIONS = [
+  { id: "beginner", label: "Beginner" },
+  { id: "intermediate", label: "Intermediate" },
+  { id: "advanced", label: "Advanced" },
+];
 
 export function PracticeCard({
   level,
+  onLevelChange,
   sentence,
   sentenceCount,
   showTranslation,
@@ -31,6 +35,41 @@ export function PracticeCard({
   onTouchEnd,
 }) {
   const matchScore = calculateMatchScore(sentence.words, matchedWordIndexes);
+  const [peekWordId, setPeekWordId] = useState(null);
+  const peekTimeoutRef = useRef(null);
+
+  useEffect(() => {
+    setPeekWordId(null);
+    if (peekTimeoutRef.current) {
+      clearTimeout(peekTimeoutRef.current);
+      peekTimeoutRef.current = null;
+    }
+  }, [sentence.id]);
+
+  useEffect(
+    () => () => {
+      if (peekTimeoutRef.current) clearTimeout(peekTimeoutRef.current);
+    },
+    [],
+  );
+
+  function startWordPeek(word) {
+    setPeekWordId(word.id);
+    if (peekTimeoutRef.current) clearTimeout(peekTimeoutRef.current);
+    peekTimeoutRef.current = setTimeout(() => {
+      setPeekWordId(null);
+      peekTimeoutRef.current = null;
+    }, WORD_PEEK_MS);
+  }
+
+  function handleWordClick(word) {
+    startWordPeek(word);
+  }
+
+  function handleWordDoubleClick(word) {
+    setSelectedWord(word);
+    startWordPeek(word);
+  }
 
   return (
     <div
@@ -64,9 +103,6 @@ export function PracticeCard({
       </div>
 
       <div className="practice-card-header">
-        <h3>
-          {capitalize(level)} <span className="level-zh">({LEVEL_LABELS[level]})</span>
-        </h3>
         <div className="practice-card-header-right">
           {sentence.audioUrl && (
             <button
@@ -84,12 +120,54 @@ export function PracticeCard({
         </div>
       </div>
 
+      <div className="practice-card-level" role="tablist" aria-label="Practice level">
+        {LEVEL_OPTIONS.map((opt) => {
+          const isActive = level === opt.id;
+          return (
+            <button
+              key={opt.id}
+              type="button"
+              role="tab"
+              aria-selected={isActive}
+              className={`practice-level-segment practice-level-segment--${opt.id} ${
+                isActive ? "is-active" : "is-inactive"
+              }`}
+              onClick={() => onLevelChange(opt.id)}
+              onTouchStart={(e) => e.stopPropagation()}
+              onTouchEnd={(e) => e.stopPropagation()}
+            >
+              {isActive && opt.id === "intermediate" && (
+                <span className="practice-level-arrow" aria-hidden="true">
+                  ←
+                </span>
+              )}
+              {isActive && opt.id === "advanced" && (
+                <span className="practice-level-arrow" aria-hidden="true">
+                  ←
+                </span>
+              )}
+              <span className="practice-level-label">{opt.label}</span>
+              {isActive && opt.id === "beginner" && (
+                <span className="practice-level-arrow" aria-hidden="true">
+                  →
+                </span>
+              )}
+              {isActive && opt.id === "intermediate" && (
+                <span className="practice-level-arrow" aria-hidden="true">
+                  →
+                </span>
+              )}
+            </button>
+          );
+        })}
+      </div>
+
       {showTranslation && <p className="translation">{sentence.chinese}</p>}
 
       <div className="word-line">
         {sentence.words.map((word, wordIndex) => {
           const isMatched = matchedWordIndexes.has(wordIndex);
-          const reveal = showFullText || isMatched;
+          const reveal = showFullText || isMatched || peekWordId === word.id;
           const slots = buildWordCharSlots(
             word.text,
             sentence.blanks[level][wordIndex],
@@ -103,7 +181,8 @@ export function PracticeCard({
                   selectedWord?.id === word.id ? "word-token-selected" : ""
                 } ${isMatched ? "word-token-matched" : ""}`}
                 type="button"
-                onClick={() => setSelectedWord(word)}
+                onClick={() => handleWordClick(word)}
+                onDoubleClick={() => handleWordDoubleClick(word)}
               >
                 {slots.map((slot, charIndex) => (
                   <span
@@ -164,8 +243,4 @@ export function PracticeCard({
       )}
     </div>
   );
-}
-
-function capitalize(text) {
-  return text.charAt(0).toUpperCase() + text.slice(1);
 }
