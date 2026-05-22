@@ -1,0 +1,59 @@
+---
+description: Git commit messages must document user questions and implementation summary
+alwaysApply: true
+---
+
+# Git commit message format (english-geeks)
+
+When the user asks you to **create a git commit**, use this structure. Do not use a one-line-only message unless they explicitly ask for that.
+
+## Required structure
+
+```
+<One-line title: what THIS commit changes, imperative mood>
+
+## 用户提出的问题
+
+1. …
+2. …
+
+## 实现总结
+
+- What was implemented or fixed, and where (key files / mechanisms).
+- If the conversation covered more than this diff, note which items are in **this** commit vs already committed.
+
+## 本 commit 变更文件
+
+- `path/to/file`
+```
+
+## How to fill each section
+
+- **用户提出的问题**: Numbered list of the user's requests from the current conversation that relate to this work (including clarifying questions). Use their wording when possible.
+- **实现总结**: Plain-language summary for future readers; cite main components (`PracticeSection.jsx`, `App.css`, etc.) without dumping huge diffs.
+- **本 commit 变更文件**: Only files staged for **this** commit (from `git status` / `git diff --cached`). Not the whole branch history.
+
+## Commit workflow
+
+- Follow the repo's git safety rules (no amend unless allowed, no push unless asked, HEREDOC for the message).
+- Title line = summary of the staged diff; body = sections above.
+- Write in clear Chinese for section headers and content when the user has been working in Chinese; keep file paths and identifiers literal.
+
+## Example (abbreviated)
+
+```
+Fix horizontal level swipe scrolling the page.
+
+## 用户提出的问题
+
+1. practice-card 左右滑切换难度时不应带动整页上下滚动。
+
+## 实现总结
+
+- 在 `PracticeSection.jsx` 判定横向主轴后对 `touchmove` 调用 `preventDefault()`，避免纵向滚动。
+
+## 本 commit 变更文件
+
+- `src/components/PracticeSection.jsx`
+- `src/components/PracticeCard.jsx`
+```

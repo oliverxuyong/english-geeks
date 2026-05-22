@@ -18,6 +18,8 @@ npm run preview  # serve production build locally
 
 Deploy `dist/` to GitHub Pages, Netlify, or any static host. Share the HTTPS link (e.g. WeChat article).
 
+**Production (Netlify + `englishgeeks.aigine.com`):** see [docs/DEPLOY_NETLIFY.md](docs/DEPLOY_NETLIFY.md). Repo includes `netlify.toml`; DNS CNAME on Alibaba Cloud points `englishgeeks` → your `*.netlify.app` site. Tencent (China) can be added later with split DNS.
+
 ## Lesson data schema
 
 See [docs/LESSON_SCHEMA.md](docs/LESSON_SCHEMA.md). Lessons live in `src/data/lessonXXX.js`; audio in `public/lessons/{lessonId}/` (`full.mp3`, `s001.mp3`, `v001.mp3`).

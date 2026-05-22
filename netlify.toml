@@ -1,0 +1,15 @@
+# Netlify — English Geeks static site
+# Custom domain: englishgeeks.aigine.com (DNS at Alibaba Cloud)
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA: all routes serve index.html (future-proof if routing is added)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
