@@ -12,6 +12,13 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.local
+scripts/.whisper-out/
+# Source media for Path A (keep locally; use public/lessons/*/full.mp4 in repo)
+scripts/*.mp4
+scripts/*.mov
+scripts/*.mkv
 
 # Editor directories and files
 .vscode/*

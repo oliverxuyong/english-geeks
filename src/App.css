@@ -32,6 +32,28 @@ body {
   color: #666;
 }
 
+.lesson-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #444;
+}
+
+.lesson-picker-label {
+  font-weight: 600;
+}
+
+.lesson-picker select {
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background: white;
+  cursor: pointer;
+}
+
 .layout {
   width: min(1100px, 100%);
   margin: 0 auto;

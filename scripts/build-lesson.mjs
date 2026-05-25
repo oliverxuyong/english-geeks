@@ -13,12 +13,43 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { execSync, spawnSync } from "node:child_process";
+import ffmpegStatic from "ffmpeg-static";
 import { splitSentences, tokenizeWords, padId, buildWordRecords } from "./lib/tokenize.mjs";
 import { buildBlanksWithSpacy } from "./lib/spacyBlankRules.mjs";
 import { emitLessonJs, ensurePublicDir, audioUrl } from "./lib/emitLesson.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
+
+function loadDotEnv() {
+  for (const name of [".env.local", ".env"]) {
+    const envPath = path.join(ROOT, name);
+    if (!fs.existsSync(envPath)) continue;
+    for (const line of fs.readFileSync(envPath, "utf8").split("\n")) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith("#")) continue;
+      const eq = trimmed.indexOf("=");
+      if (eq === -1) continue;
+      const key = trimmed.slice(0, eq).trim();
+      let val = trimmed.slice(eq + 1).trim();
+      if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+        val = val.slice(1, -1);
+      }
+      if (!(key in process.env)) process.env[key] = val;
+    }
+  }
+}
+
+loadDotEnv();
+
+const FFMPEG = (() => {
+  try {
+    execSync("ffmpeg -version", { stdio: "ignore" });
+    return "ffmpeg";
+  } catch {
+    return ffmpegStatic ?? "ffmpeg";
+  }
+})();
 
 function parseArgs(argv) {
   const opts = {
@@ -55,19 +86,103 @@ Options: --title, --subtitle, --out, --enrich, --draft`);
   return opts;
 }
 
+const VIDEO_EXT = new Set([".mp4", ".mov", ".webm", ".mkv", ".m4v"]);
+
+function isVideoFile(filePath) {
+  return VIDEO_EXT.has(path.extname(filePath).toLowerCase());
+}
+
 function hasFfmpeg() {
-  try {
-    execSync("ffmpeg -version", { stdio: "ignore" });
-    return true;
-  } catch {
-    return false;
+  return Boolean(FFMPEG && fs.existsSync(FFMPEG));
+}
+
+function runFfmpeg(args) {
+  const result = spawnSync(FFMPEG, args, { stdio: "inherit" });
+  if (result.status !== 0) {
+    throw new Error(`ffmpeg failed: ffmpeg ${args.join(" ")}`);
   }
 }
 
-async function transcribeWhisper(mediaPath) {
+/** Extract full-length MP3 from video or copy audio file as full.mp3 */
+function writeFullAudio(mediaPath, fullMp3Out) {
+  if (isVideoFile(mediaPath)) {
+    runFfmpeg(["-y", "-i", mediaPath, "-vn", "-acodec", "libmp3lame", "-q:a", "4", fullMp3Out]);
+  } else {
+    runFfmpeg(["-y", "-i", mediaPath, "-acodec", "libmp3lame", "-q:a", "4", fullMp3Out]);
+  }
+}
+
+/** Copy or transcode video to full.mp4 for Step 4 */
+function writeFullVideo(mediaPath, fullMp4Out) {
+  const ext = path.extname(mediaPath).toLowerCase();
+  if (ext === ".mp4") {
+    fs.copyFileSync(mediaPath, fullMp4Out);
+    return;
+  }
+  runFfmpeg(["-y", "-i", mediaPath, "-c:v", "libx264", "-c:a", "aac", "-movflags", "+faststart", fullMp4Out]);
+}
+
+function envWithFfmpeg() {
+  const ffmpegDir = path.dirname(FFMPEG);
+  return { ...process.env, PATH: `${ffmpegDir}${path.delimiter}${process.env.PATH ?? ""}` };
+}
+
+function transcribeLocalWhisper(mediaPath) {
+  const python = process.env.PYTHON ?? "python3";
+  const outDir = path.join(ROOT, "scripts", ".whisper-out");
+  fs.mkdirSync(outDir, { recursive: true });
+
+  let audioForWhisper = mediaPath;
+  if (isVideoFile(mediaPath) && hasFfmpeg()) {
+    audioForWhisper = path.join(outDir, "_whisper_input.mp3");
+    writeFullAudio(mediaPath, audioForWhisper);
+  }
+
+  console.log("Path A: local Whisper (openai-whisper) — slower than API; install: pip install openai-whisper");
+  const result = spawnSync(
+    python,
+    [
+      "-m",
+      "whisper",
+      audioForWhisper,
+      "--model",
+      process.env.WHISPER_MODEL ?? "base",
+      "--output_format",
+      "json",
+      "--output_dir",
+      outDir,
+    ],
+    { stdio: "inherit", encoding: "utf8", env: envWithFfmpeg() }
+  );
+
+  if (result.status !== 0) {
+    throw new Error(
+      "Local Whisper failed. Set OPENAI_API_KEY for API transcription, or: pip install openai-whisper"
+    );
+  }
+
+  const jsonPath = path.join(
+    outDir,
+    `${path.basename(audioForWhisper, path.extname(audioForWhisper))}.json`,
+  );
+  if (!fs.existsSync(jsonPath)) {
+    throw new Error(`Local Whisper output not found: ${jsonPath}`);
+  }
+
+  const data = JSON.parse(fs.readFileSync(jsonPath, "utf8"));
+  return {
+    segments: (data.segments ?? []).map((seg) => ({
+      text: seg.text,
+      start: seg.start,
+      end: seg.end,
+    })),
+  };
+}
+
+async function transcribeWhisperApi(mediaPath) {
   const key = process.env.OPENAI_API_KEY;
   if (!key) {
-    throw new Error("OPENAI_API_KEY required for Whisper transcription (--media).");
+    throw new Error("OPENAI_API_KEY required for Whisper API transcription (--media).");
   }
 
   const buffer = fs.readFileSync(mediaPath);
@@ -92,6 +207,14 @@ async function transcribeWhisper(mediaPath) {
   return res.json();
 }
 
+async function transcribeWhisper(mediaPath) {
+  if (process.env.OPENAI_API_KEY) {
+    return transcribeWhisperApi(mediaPath);
+  }
+  console.warn("OPENAI_API_KEY not set; using local openai-whisper.");
+  return transcribeLocalWhisper(mediaPath);
+}
+
 function segmentsToSentences(segments) {
   return segments.map((seg) => ({
     english: seg.text.trim(),
@@ -102,25 +225,61 @@ function segmentsToSentences(segments) {
 
 function cutAudio(input, output, start, end) {
   spawnSync(
-    "ffmpeg",
+    FFMPEG,
     ["-y", "-i", input, "-ss", String(start), "-to", String(end), "-c:a", "libmp3lame", "-q:a", "4", output],
     { stdio: "inherit" }
   );
 }
 
-function pickVocabulary(sentences, max = 8) {
+const VOCAB_STOP = new Set([
+  "about", "after", "again", "being", "could", "every", "everyone", "first",
+  "going", "great", "having", "honest", "honestly", "really", "right", "should",
+  "something", "still", "thank", "thanks", "their", "there", "these", "think",
+  "those", "through", "today", "together", "truth", "truthfully", "understand",
+  "under", "until", "watching", "we're", "weve", "what", "when", "where", "which",
+  "while", "with", "without", "would", "you're", "your", "yours", "able", "actually",
+  "because", "before", "being", "doing", "going", "pretty", "quite", "some", "such",
+  "that", "this", "they", "them", "then", "than", "have", "been", "were", "here",
+  "just", "like", "last", "life", "live", "make", "many", "more", "most", "much",
+  "only", "other", "over", "same", "someone", "take", "takes", "team", "teams",
+  "tell", "time", "times", "very", "want", "weekend", "women", "fantastic", "absolutely",
+]);
+
+function normalizeVocabKey(text) {
+  return text.toLowerCase().replace(/[^a-z']/g, "");
+}
+
+function vocabularyDifficulty(key) {
+  if (key.length < 5 || VOCAB_STOP.has(key)) return -1;
+  let score = key.length;
+  if (key.length >= 9) score += 4;
+  else if (key.length >= 7) score += 2;
+  if (/(tion|ment|ance|ence|ship|ious|able|ical|ative)$/.test(key)) score += 3;
+  if (/(ph|gh|str|scr|squ)/.test(key)) score += 1;
+  return score;
+}
+
+function pickVocabulary(sentences, max = 5) {
   const freq = new Map();
   for (const s of sentences) {
     for (const w of s.words) {
-      const key = w.text.toLowerCase().replace(/[^a-z']/g, "");
-      if (key.length < 5) continue;
+      const key = normalizeVocabKey(w.text);
+      const difficulty = vocabularyDifficulty(key);
+      if (difficulty < 0) continue;
       freq.set(key, (freq.get(key) ?? 0) + 1);
     }
   }
 
-  const ranked = [...freq.entries()].sort((a, b) => b[1] - a[1]).slice(0, max);
+  const ranked = [...freq.entries()]
+    .map(([word, count]) => ({
+      word,
+      score: vocabularyDifficulty(word) / Math.sqrt(count),
+    }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, max);
+
   let v = 1;
-  return ranked.map(([word]) => ({
+  return ranked.map(({ word }) => ({
     id: `v${padId(v++)}`,
     word,
     ipa: "",
@@ -279,9 +438,16 @@ async function main() {
   const { lesson, publicDir } = buildLessonFromSentences(sentenceTexts, opts, timings);
 
   if (mediaPath && hasFfmpeg()) {
-    const fullOut = path.join(publicDir, "full.mp3");
-    fs.copyFileSync(mediaPath, fullOut);
-    console.log("Wrote", fullOut);
+    const fullMp3 = path.join(publicDir, "full.mp3");
+    writeFullAudio(mediaPath, fullMp3);
+    console.log("Wrote", fullMp3);
+
+    if (isVideoFile(mediaPath)) {
+      const fullMp4 = path.join(publicDir, "full.mp4");
+      writeFullVideo(mediaPath, fullMp4);
+      lesson.fullVideoUrl = audioUrl(opts.id, "full.mp4");
+      console.log("Wrote", fullMp4);
+    }
 
     for (const s of lesson.sentences) {
       if (s._start == null) continue;
@@ -291,7 +457,7 @@ async function main() {
       delete s._end;
     }
   } else if (mediaPath) {
-    console.warn("ffmpeg not found; skipped per-sentence clips.");
+    console.warn("ffmpeg not found; skipped full audio, video, and per-sentence clips.");
   }
 
   if (opts.enrich) {

@@ -1,29 +1,32 @@
 #!/usr/bin/env node
-/** Merge scripts/lesson001-enrich.json into src/data/lesson001.js */
+/** Merge scripts/{lessonId}-enrich.json into src/data/{lessonId}.js */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const lessonPath = path.join(root, "src/data/lesson001.js");
-const enrichPath = path.join(root, "scripts/lesson001-enrich.json");
+const lessonId = process.argv[2] ?? "lesson001";
+const lessonPath = path.join(root, "src/data", `${lessonId}.js`);
+const enrichPath = path.join(root, "scripts", `${lessonId}-enrich.json`);
+
+if (!fs.existsSync(enrichPath)) {
+  console.error(`Missing ${enrichPath}`);
+  process.exit(1);
+}
 
 const enrich = JSON.parse(fs.readFileSync(enrichPath, "utf8"));
 const mod = await import(lessonPath);
-const lesson = mod.lesson001;
+const lesson = mod[lessonId];
 
-for (const v of enrich.vocabulary) {
-  const target = lesson.vocabulary.find((x) => x.id === v.id);
-  if (target) Object.assign(target, v);
+if (enrich.vocabulary) {
+  lesson.vocabulary = enrich.vocabulary;
 }
-
-lesson.vocabulary = enrich.vocabulary;
 
 for (const s of lesson.sentences) {
-  if (enrich.sentences[s.id]) s.chinese = enrich.sentences[s.id];
+  if (enrich.sentences?.[s.id]) s.chinese = enrich.sentences[s.id];
 }
 
-const out = `export const lesson001 = ${JSON.stringify(lesson, null, 2)};\n`;
+const out = `export const ${lessonId} = ${JSON.stringify(lesson, null, 2)};\n`;
 fs.writeFileSync(lessonPath, out);
 console.log("Patched", lessonPath);
-console.log("Tip: run node scripts/apply-word-glosses.mjs to restore per-word glosses.");
+console.log("Tip: run node scripts/enrich-word-glosses.mjs", lessonId);

@@ -1,0 +1,65 @@
+{
+  "vocabulary": [
+    {
+      "id": "v001",
+      "word": "demonstration",
+      "ipa": "/ˌdɛmənˈstreɪʃən/",
+      "chinese": "演示；表演",
+      "english": "a public show of skill, especially in flying",
+      "meaningInContext": "F-22 飞行演示队的公开飞行表演",
+      "audioUrl": "/lessons/lesson002/v001.m4a"
+    },
+    {
+      "id": "v002",
+      "word": "acrobatic",
+      "ipa": "/ˌækrəˈbætɪk/",
+      "chinese": "特技的；杂技的",
+      "english": "involving difficult athletic movements in the air",
+      "meaningInContext": "编队特技飞行动作",
+      "audioUrl": "/lessons/lesson002/v002.m4a"
+    },
+    {
+      "id": "v003",
+      "word": "enlistment",
+      "ipa": "/ɪnˈlaɪstmənt/",
+      "chinese": "入伍；服役",
+      "english": "the act of joining the armed forces",
+      "meaningInContext": "从军服役期间难忘的经历",
+      "audioUrl": "/lessons/lesson002/v003.m4a"
+    },
+    {
+      "id": "v004",
+      "word": "civilians",
+      "ipa": "/səˈvɪljənz/",
+      "chinese": "平民",
+      "english": "people who are not in the military",
+      "meaningInContext": "观看航展的普通观众",
+      "audioUrl": "/lessons/lesson002/v004.m4a"
+    },
+    {
+      "id": "v005",
+      "word": "sacrifices",
+      "ipa": "/ˈsækrɪfaɪsɪz/",
+      "chinese": "牺牲",
+      "english": "things given up, especially lives, for others' benefit",
+      "meaningInContext": "先辈为自由付出的生命与牺牲",
+      "audioUrl": "/lessons/lesson002/v005.m4a"
+    }
+  ],
+  "sentences": {
+    "s001": "那么你能告诉我，你在航展上飞的是什么机型，它和你为部队所做的工作有何关系，以及它如何向各地身着制服的男女军人致敬吗？",
+    "s002": "当然。我是 F-22 演示队的指挥官兼飞行员。",
+    "s003": "你们眼前我们身后这架飞机，其实此刻背景里正在飞的那架也是。",
+    "s004": "过去两年我一直担任指挥官。说实话，这个周末对我意味着什么——我们能来到这里，全因有先辈捐躯牺牲，为我们争取到今天享有的自由。",
+    "s005": "能来到这场航展，与主办方以及本周末到场的所有人一起庆祝，感觉棒极了。",
+    "s006": "当然。你们在空中做的那些动作相当专业，飞得很近。",
+    "s007": "你们领头飞行，编队跟随，还做着各种特技动作。",
+    "s008": "在承受过载（G 力）并努力保持专注时，你如何为这样的事情做心理准备？",
+    "s009": "老实说，这跟团队运动很像。我们有一支出色的队伍。要把飞机准备好、为架次锁定状态，需要全员上阵；说实话，我很幸运有这样一支优秀的团队帮助我。",
+    "s010": "你希望平民观众从观看你们的表演中得到什么？",
+    "s011": "我希望大家这个周末花点时间思考——我们为什么能去海边、一起度过美好时光；要真正明白，若没有先前列出的牺牲，这一切都不可能实现。",
+    "s012": "当然。在缅怀为我们勇敢献出生命的男女军人之际，你能谈谈服役和驾驶这些战机过程中最难忘的时刻吗？",
+    "s013": "我想日复一日，最宝贵的只是成为这么优秀团队的一员。2016 年，我因观看 F-22 演示队的表演而加入空军；如今我站在围栏的另一边。",
+    "s014": "我们正在他人生命中点燃同样的火花。这是莫大的荣誉。"
+  }
+}
