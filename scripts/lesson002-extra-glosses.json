@@ -133,5 +133,13 @@
   "would": { "ipa": "/wʊd/", "chinese": "会", "english": "modal past" },
   "years": { "ipa": "/jɪrz/", "chinese": "年", "english": "years" },
   "you're": { "ipa": "/jʊr/", "chinese": "你是；你们在", "english": "you are" },
-  "your": { "ipa": "/jʊr/", "chinese": "你的；你们的", "english": "belonging to you" }
+  "your": { "ipa": "/jʊr/", "chinese": "你的；你们的", "english": "belonging to you" },
+  "sea": { "ipa": "/si/", "chinese": "海", "english": "sea (Air and Sea Show)" },
+  "uh": { "ipa": "/ʌ/", "chinese": "嗯", "english": "filler (hesitation)" },
+  "um": { "ipa": "/ʌm/", "chinese": "嗯", "english": "filler (hesitation)" },
+  "which": { "ipa": "/wɪtʃ/", "chinese": "那支（队）", "english": "which (relative pronoun)" },
+  "those": { "ipa": "/ðoʊz/", "chinese": "那些", "english": "those (demonstrative)" },
+  "trailing": { "ipa": "/ˈtreɪlɪŋ/", "chinese": "尾随", "english": "flying behind in formation" },
+  "hopefully": { "ipa": "/ˈhoʊpfəli/", "chinese": "希望", "english": "I hope; with luck" },
+  "lighting": { "ipa": "/ˈlaɪtɪŋ/", "chinese": "点燃", "english": "igniting (a spark)" }
 }

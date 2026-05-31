@@ -2,8 +2,24 @@
 
 const stopListeners = new Set();
 let activeAudio = null;
+let activeToggleKey = null;
 let voicesPrimed = false;
 let stopSpeechRecognition = null;
+
+function playbackKey(audioUrl, playbackRate) {
+  return `${audioUrl}|${playbackRate}`;
+}
+
+function notifyStopListeners() {
+  for (const listener of stopListeners) listener();
+}
+
+export function isPlaybackActive() {
+  if (activeAudio && !activeAudio.paused && !activeAudio.ended) return true;
+  const synth = typeof window !== "undefined" ? window.speechSynthesis : null;
+  if (synth?.speaking || synth?.pending) return true;
+  return false;
+}
 
 /** Practice STT registers stopSpeaking; playback calls this to end listening cleanly. */
 export function setSpeechRecognitionStop(fn) {
@@ -32,13 +48,16 @@ export function stopAllPlayback() {
   if (typeof window !== "undefined" && window.speechSynthesis) {
     window.speechSynthesis.cancel();
   }
-  for (const listener of stopListeners) listener();
+  activeToggleKey = null;
+  notifyStopListeners();
 }
 
 function trackAudio(audio) {
   activeAudio = audio;
   const release = () => {
     if (activeAudio === audio) activeAudio = null;
+    activeToggleKey = null;
+    notifyStopListeners();
   };
   audio.addEventListener("ended", release);
   audio.addEventListener("error", release);
@@ -59,7 +78,7 @@ export function primeSpeechVoices() {
   );
 }
 
-function speakWithSynthesis(text) {
+function speakWithSynthesis(text, playbackRate = 1) {
   stopSttBeforePlayback();
   if (!window.speechSynthesis) return;
   primeSpeechVoices();
@@ -68,6 +87,13 @@ function speakWithSynthesis(text) {
   const run = () => {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "en-US";
+    utterance.rate = playbackRate;
+    const finish = () => {
+      activeToggleKey = null;
+      notifyStopListeners();
+    };
+    utterance.addEventListener("end", finish);
+    utterance.addEventListener("error", finish);
     if (synth.paused) synth.resume();
     synth.speak(utterance);
   };
@@ -80,17 +106,28 @@ function speakWithSynthesis(text) {
   run();
 }
 
-export function speakWord(text, audioUrl) {
+export function toggleSpeakWord(text, audioUrl, { playbackRate = 1 } = {}) {
+  const key = playbackKey(audioUrl, playbackRate);
+  if (activeToggleKey === key && isPlaybackActive()) {
+    stopAllPlayback();
+    return;
+  }
+  speakWord(text, audioUrl, { playbackRate });
+}
+
+export function speakWord(text, audioUrl, { playbackRate = 1 } = {}) {
   stopSttBeforePlayback();
   stopActiveAudio();
-  for (const listener of stopListeners) listener();
+  notifyStopListeners();
+  activeToggleKey = playbackKey(audioUrl, playbackRate);
 
   if (!audioUrl) {
-    speakWithSynthesis(text);
+    speakWithSynthesis(text, playbackRate);
     return;
   }
 
   const audio = new Audio(audioUrl);
+  audio.playbackRate = playbackRate;
   let clipOk = false;
 
   const cancelFallback = () => {
@@ -104,7 +141,7 @@ export function speakWord(text, audioUrl) {
     clearTimeout(failTimer);
     audio.pause();
     releaseAudio(audio);
-    speakWithSynthesis(text);
+    speakWithSynthesis(text, playbackRate);
   };
 
   trackAudio(audio);

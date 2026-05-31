@@ -32,7 +32,7 @@ Pipeline script: `scripts/build-lesson.mjs` (not shipped to users).
 
 ```bash
 node scripts/build-lesson.mjs \
-  --text scripts/sample-passage.txt \
+  --text scripts/lesson001-passage.txt \
   --id lesson001 \
   --title "English Geeks" \
   --subtitle "英语极客"

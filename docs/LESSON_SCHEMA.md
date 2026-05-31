@@ -53,7 +53,7 @@ Lessons live in `src/data/lessonXXX.js` and reference audio under `public/lesson
 
 ```bash
 # Path B — pasted text (no media)
-node scripts/build-lesson.mjs --text scripts/sample-passage.txt --id lesson001 --title "English Geeks"
+node scripts/build-lesson.mjs --text scripts/lesson001-passage.txt --id lesson001 --title "English Geeks"
 
 # Path A — audio/video (needs OPENAI_API_KEY, ffmpeg)
 node scripts/build-lesson.mjs --media path/to/recording.mp3 --id lesson002

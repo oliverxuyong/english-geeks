@@ -50,8 +50,25 @@ function App() {
             ))}
           </select>
         </label>
+        {lesson.headerImageUrl && (
+          <img
+            className="hero-header-image"
+            src={lesson.headerImageUrl}
+            alt="F-22 demonstration team pilot interviewed at Homestead air show"
+          />
+        )}
         <h1>{lesson.title}</h1>
-        <p>{lesson.subtitle}</p>
+        <p className="hero-subtitle">{lesson.subtitle}</p>
+        {lesson.briefing && (
+          <div className="hero-briefing-wrap">
+            {lesson.briefingDate && (
+              <time className="hero-briefing-date" dateTime="2026-05-23">
+                {lesson.briefingDate}
+              </time>
+            )}
+            <p className="hero-briefing">{lesson.briefing}</p>
+          </div>
+        )}
       </header>
 
       <main className="layout" key={lessonId}>

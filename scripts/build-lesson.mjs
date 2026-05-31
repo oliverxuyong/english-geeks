@@ -2,7 +2,7 @@
 /**
  * Build lesson JSON + public audio assets.
  *
- * Path B: node scripts/build-lesson.mjs --text scripts/sample-passage.txt --id lesson001
+ * Path B: node scripts/build-lesson.mjs --text scripts/lesson001-passage.txt --id lesson001
  * Path A: node scripts/build-lesson.mjs --media recording.mp3 --id lesson002
  *
  * Env: OPENAI_API_KEY (Whisper + optional enrich), DEEPL_API_KEY (optional translate)

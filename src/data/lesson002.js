@@ -1,17 +1,17 @@
 export const lesson002 = {
   "id": "lesson002",
-  "title": "Lesson 002",
-  "subtitle": "英语极客",
+  "title": "Air Show on Memorial Day",
+  "subtitle": "纪念日的飞行表演",
   "fullAudioUrl": "/lessons/lesson002/full.mp3",
   "fullVideoUrl": "/lessons/lesson002/full.mp4",
   "vocabulary": [
     {
       "id": "v001",
-      "word": "demonstration",
-      "ipa": "/ˌdɛmənˈstreɪʃən/",
-      "chinese": "演示；表演",
-      "english": "a public show of skill, especially in flying",
-      "meaningInContext": "F-22 飞行演示队的公开飞行表演",
+      "word": "G-Force",
+      "ipa": "/ˈdʒi fɔrs/",
+      "chinese": "G 力；过载",
+      "english": "gravitational force felt as multiples of normal gravity",
+      "meaningInContext": "承受过载时如何保持专注、做好心理准备",
       "audioUrl": "/lessons/lesson002/v001.m4a"
     },
     {
@@ -34,29 +34,38 @@ export const lesson002 = {
     },
     {
       "id": "v004",
-      "word": "civilians",
-      "ipa": "/səˈvɪljənz/",
-      "chinese": "平民",
-      "english": "people who are not in the military",
-      "meaningInContext": "观看航展的普通观众",
+      "word": "all hands on deck",
+      "ipa": "/ɔl hændz ɑn dɛk/",
+      "chinese": "全员上阵",
+      "english": "everyone must help; full team effort",
+      "meaningInContext": "把飞机准备好、为架次进入状态需要全队出动",
       "audioUrl": "/lessons/lesson002/v004.m4a"
     },
     {
       "id": "v005",
-      "word": "sacrifices",
-      "ipa": "/ˈsækrɪfaɪsɪz/",
-      "chinese": "牺牲",
-      "english": "things given up, especially lives, for others' benefit",
-      "meaningInContext": "先辈为自由付出的生命与牺牲",
+      "word": "legitimate",
+      "ipa": "/ləˈdʒɪtəmɪt/",
+      "chinese": "厉害的；专业的（口语）",
+      "english": "impressive; seriously skilled (informal)",
+      "meaningInContext": "主持人口语：你们在空中做的动作相当厉害",
       "audioUrl": "/lessons/lesson002/v005.m4a"
+    },
+    {
+      "id": "v006",
+      "word": "sortie",
+      "ipa": "/ˈsɔrti/",
+      "chinese": "架次；出动",
+      "english": "a single operational flight mission",
+      "meaningInContext": "飞机就位后锁定状态，准备执行一次飞行架次",
+      "audioUrl": "/lessons/lesson002/v006.m4a"
     }
   ],
   "sentences": [
     {
       "id": "s001",
       "index": 1,
-      "english": "So can you tell me what you're flying in the air show how that relates to what you do for your service and how it honors men and women in uniform everywhere?",
-      "chinese": "那么你能告诉我，你在航展上飞的是什么机型，它和你为部队所做的工作有何关系，以及它如何向各地身着制服的男女军人致敬吗？",
+      "english": "So, can you tell me what you're flying in the air show, how that relates to what you do for your service, and how it honors men and women in uniform everywhere?",
+      "chinese": "那么，你能说说你在航展上飞的是什么、这和你为部队所做的工作有什么关系，以及它如何向各地身着制服的男女军人致敬吗？",
       "audioUrl": "/lessons/lesson002/s001.mp3",
       "words": [
         {
@@ -365,7 +374,7 @@ export const lesson002 = {
           "__",
           "___",
           "a__",
-          "s___",
+          "show",
           "h__",
           "t___",
           "r______",
@@ -392,8 +401,8 @@ export const lesson002 = {
     {
       "id": "s002",
       "index": 2,
-      "english": "Absolutely. So I'm the commander in pilot of the F-22 demonstration team.",
-      "chinese": "当然。我是 F-22 演示队的指挥官兼飞行员。",
+      "english": "Absolutely. So, I'm the commander and pilot of the F-22 demonstration team, which you see right here behind us, and actually that plane flying there in the background right now.",
+      "chinese": "当然。我是 F-22 演示队的指挥官兼飞行员，你们身后就能看到；其实背景里此刻正在飞的那架飞机也是。",
       "audioUrl": "/lessons/lesson002/s002.mp3",
       "words": [
         {
@@ -433,10 +442,10 @@ export const lesson002 = {
         },
         {
           "id": "s002-w006",
-          "text": "in",
-          "ipa": "/ɪn/",
-          "chinese": "在",
-          "english": "in"
+          "text": "and",
+          "ipa": "/ænd/",
+          "chinese": "尤其",
+          "english": "and"
         },
         {
           "id": "s002-w007",
@@ -486,6 +495,132 @@ export const lesson002 = {
           "ipa": "/tim/",
           "chinese": "团队",
           "english": "a group working together"
+        },
+        {
+          "id": "s002-w014",
+          "text": "which",
+          "ipa": "/wɪtʃ/",
+          "chinese": "那支（队）",
+          "english": "which (relative pronoun)"
+        },
+        {
+          "id": "s002-w015",
+          "text": "you",
+          "ipa": "/ju/",
+          "chinese": "你",
+          "english": "you"
+        },
+        {
+          "id": "s002-w016",
+          "text": "see",
+          "ipa": "/si/",
+          "chinese": "看",
+          "english": "see"
+        },
+        {
+          "id": "s002-w017",
+          "text": "right",
+          "ipa": "/raɪt/",
+          "chinese": "这里；右边",
+          "english": "right here"
+        },
+        {
+          "id": "s002-w018",
+          "text": "here",
+          "ipa": "/hɪr/",
+          "chinese": "这里",
+          "english": "at this place"
+        },
+        {
+          "id": "s002-w019",
+          "text": "behind",
+          "ipa": "/bɪˈhaɪnd/",
+          "chinese": "在…后面",
+          "english": "at the back of"
+        },
+        {
+          "id": "s002-w020",
+          "text": "us",
+          "ipa": "/ʌs/",
+          "chinese": "我们",
+          "english": "us (object)"
+        },
+        {
+          "id": "s002-w021",
+          "text": "and",
+          "ipa": "/ænd/",
+          "chinese": "尤其",
+          "english": "and"
+        },
+        {
+          "id": "s002-w022",
+          "text": "actually",
+          "ipa": "/ˈæktʃuəli/",
+          "chinese": "其实",
+          "english": "in fact"
+        },
+        {
+          "id": "s002-w023",
+          "text": "that",
+          "ipa": "/ðæt/",
+          "chinese": "即",
+          "english": "that"
+        },
+        {
+          "id": "s002-w024",
+          "text": "plane",
+          "ipa": "/pleɪn/",
+          "chinese": "飞机",
+          "english": "airplane"
+        },
+        {
+          "id": "s002-w025",
+          "text": "flying",
+          "ipa": "/ˈflaɪɪŋ/",
+          "chinese": "飞行",
+          "english": "operating aircraft"
+        },
+        {
+          "id": "s002-w026",
+          "text": "there",
+          "ipa": "/ðɛr/",
+          "chinese": "恐怕",
+          "english": "there"
+        },
+        {
+          "id": "s002-w027",
+          "text": "in",
+          "ipa": "/ɪn/",
+          "chinese": "在",
+          "english": "in"
+        },
+        {
+          "id": "s002-w028",
+          "text": "the",
+          "ipa": "/ðə/",
+          "chinese": "早上",
+          "english": "the"
+        },
+        {
+          "id": "s002-w029",
+          "text": "background",
+          "ipa": "/ˈbækˌɡraʊnd/",
+          "chinese": "背景",
+          "english": "the rear area"
+        },
+        {
+          "id": "s002-w030",
+          "text": "right",
+          "ipa": "/raɪt/",
+          "chinese": "这里；右边",
+          "english": "right here"
+        },
+        {
+          "id": "s002-w031",
+          "text": "now",
+          "ipa": "/naʊ/",
+          "chinese": "不过",
+          "english": "now (transition)"
         }
       ],
       "blanks": {
@@ -495,184 +630,15 @@ export const lesson002 = {
           "I'_",
           "t__",
           "commander",
-          "i_",
+          "a__",
           "pilot",
           "o_",
           "t__",
           "F",
           "22",
           "demonstration",
-          "team"
-        ],
-        "intermediate": [
-          "A_________",
-          "S_",
-          "I'_",
-          "t__",
-          "c________",
-          "i_",
-          "p____",
-          "o_",
-          "t__",
-          "F",
-          "22",
-          "d____________",
-          "t___"
-        ],
-        "advanced": [
-          "__________",
-          "__",
-          "I__",
-          "___",
-          "c________",
-          "__",
-          "pilot",
-          "__",
-          "___",
-          "F",
-          "22",
-          "d____________",
-          "team"
-        ]
-      }
-    },
-    {
-      "id": "s003",
-      "index": 3,
-      "english": "What you see right here behind us and actually that plane flying there in the background right now.",
-      "chinese": "你们眼前我们身后这架飞机，其实此刻背景里正在飞的那架也是。",
-      "audioUrl": "/lessons/lesson002/s003.mp3",
-      "words": [
-        {
-          "id": "s003-w001",
-          "text": "What",
-          "ipa": "/wʌt/",
-          "chinese": "什么",
-          "english": "what"
-        },
-        {
-          "id": "s003-w002",
-          "text": "you",
-          "ipa": "/ju/",
-          "chinese": "你",
-          "english": "you"
-        },
-        {
-          "id": "s003-w003",
-          "text": "see",
-          "ipa": "/si/",
-          "chinese": "看",
-          "english": "see"
-        },
-        {
-          "id": "s003-w004",
-          "text": "right",
-          "ipa": "/raɪt/",
-          "chinese": "这里；右边",
-          "english": "right here"
-        },
-        {
-          "id": "s003-w005",
-          "text": "here",
-          "ipa": "/hɪr/",
-          "chinese": "这里",
-          "english": "at this place"
-        },
-        {
-          "id": "s003-w006",
-          "text": "behind",
-          "ipa": "/bɪˈhaɪnd/",
-          "chinese": "在…后面",
-          "english": "at the back of"
-        },
-        {
-          "id": "s003-w007",
-          "text": "us",
-          "ipa": "/ʌs/",
-          "chinese": "我们",
-          "english": "us (object)"
-        },
-        {
-          "id": "s003-w008",
-          "text": "and",
-          "ipa": "/ænd/",
-          "chinese": "尤其",
-          "english": "and"
-        },
-        {
-          "id": "s003-w009",
-          "text": "actually",
-          "ipa": "/ˈæktʃuəli/",
-          "chinese": "其实",
-          "english": "in fact"
-        },
-        {
-          "id": "s003-w010",
-          "text": "that",
-          "ipa": "/ðæt/",
-          "chinese": "即",
-          "english": "that"
-        },
-        {
-          "id": "s003-w011",
-          "text": "plane",
-          "ipa": "/pleɪn/",
-          "chinese": "飞机",
-          "english": "airplane"
-        },
-        {
-          "id": "s003-w012",
-          "text": "flying",
-          "ipa": "/ˈflaɪɪŋ/",
-          "chinese": "飞行",
-          "english": "operating aircraft"
-        },
-        {
-          "id": "s003-w013",
-          "text": "there",
-          "ipa": "/ðɛr/",
-          "chinese": "恐怕",
-          "english": "there"
-        },
-        {
-          "id": "s003-w014",
-          "text": "in",
-          "ipa": "/ɪn/",
-          "chinese": "在",
-          "english": "in"
-        },
-        {
-          "id": "s003-w015",
-          "text": "the",
-          "ipa": "/ðə/",
-          "chinese": "早上",
-          "english": "the"
-        },
-        {
-          "id": "s003-w016",
-          "text": "background",
-          "ipa": "/ˈbækˌɡraʊnd/",
-          "chinese": "背景",
-          "english": "the rear area"
-        },
-        {
-          "id": "s003-w017",
-          "text": "right",
-          "ipa": "/raɪt/",
-          "chinese": "这里；右边",
-          "english": "right here"
-        },
-        {
-          "id": "s003-w018",
-          "text": "now",
-          "ipa": "/naʊ/",
-          "chinese": "不过",
-          "english": "now (transition)"
-        }
-      ],
-      "blanks": {
-        "beginner": [
-          "What",
+          "team",
+          "which",
           "you",
           "see",
           "r___t",
@@ -692,7 +658,20 @@ export const lesson002 = {
           "n__"
         ],
         "intermediate": [
-          "What",
+          "A_________",
+          "S_",
+          "I'_",
+          "t__",
+          "c________",
+          "a__",
+          "p____",
+          "o_",
+          "t__",
+          "F",
+          "22",
+          "d____________",
+          "t___",
+          "which",
           "you",
           "see",
           "r____",
@@ -712,7 +691,20 @@ export const lesson002 = {
           "n__"
         ],
         "advanced": [
-          "What",
+          "__________",
+          "__",
+          "I__",
+          "___",
+          "c________",
+          "a__",
+          "p____",
+          "__",
+          "___",
+          "F",
+          "22",
+          "d____________",
+          "team",
+          "which",
           "y__",
           "s__",
           "_____",
@@ -734,343 +726,357 @@ export const lesson002 = {
       }
     },
     {
-      "id": "s004",
-      "index": 4,
-      "english": "I've been the commander for the last two years and what it means to me this weekend truthfully is just we're only here because of what the people who died and went before us were able to give us the freedoms that were they're able to give us.",
-      "chinese": "过去两年我一直担任指挥官。说实话，这个周末对我意味着什么——我们能来到这里，全因有先辈捐躯牺牲，为我们争取到今天享有的自由。",
-      "audioUrl": "/lessons/lesson002/s004.mp3",
+      "id": "s003",
+      "index": 3,
+      "english": "Uh, I've been the commander for the last two years, and what it means to me this weekend, truthfully, is just we're only here because of what the people who died and went before us were able to uh to give us, the freedoms that they're able to give us.",
+      "chinese": "嗯，过去两年我一直担任指挥官。说实话，这个周末对我意味着什么——我们能来到这里，全因那些牺牲、先行走在我们前面的人，才把自由留给了我们。",
+      "audioUrl": "/lessons/lesson002/s003.mp3",
       "words": [
         {
-          "id": "s004-w001",
+          "id": "s003-w001",
+          "text": "Uh",
+          "ipa": "/ʌ/",
+          "chinese": "嗯",
+          "english": "filler (hesitation)"
+        },
+        {
+          "id": "s003-w002",
           "text": "I've",
           "ipa": "/aɪv/",
           "chinese": "我已经",
           "english": "I have"
         },
         {
-          "id": "s004-w002",
+          "id": "s003-w003",
           "text": "been",
           "ipa": "/bɪn/",
           "chinese": "一直是",
           "english": "past participle of be"
         },
         {
-          "id": "s004-w003",
+          "id": "s003-w004",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s004-w004",
+          "id": "s003-w005",
           "text": "commander",
           "ipa": "/kəˈmændər/",
           "chinese": "指挥官",
           "english": "leader of a unit"
         },
         {
-          "id": "s004-w005",
+          "id": "s003-w006",
           "text": "for",
           "ipa": "/fɔr/",
           "chinese": "作为",
           "english": "for"
         },
         {
-          "id": "s004-w006",
+          "id": "s003-w007",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s004-w007",
+          "id": "s003-w008",
           "text": "last",
           "ipa": "/læst/",
           "chinese": "过去的",
           "english": "most recent"
         },
         {
-          "id": "s004-w008",
+          "id": "s003-w009",
           "text": "two",
           "ipa": "/tu/",
           "chinese": "两",
           "english": "the number two"
         },
         {
-          "id": "s004-w009",
+          "id": "s003-w010",
           "text": "years",
           "ipa": "/jɪrz/",
           "chinese": "年",
           "english": "years"
         },
         {
-          "id": "s004-w010",
+          "id": "s003-w011",
           "text": "and",
           "ipa": "/ænd/",
           "chinese": "尤其",
           "english": "and"
         },
         {
-          "id": "s004-w011",
+          "id": "s003-w012",
           "text": "what",
           "ipa": "/wʌt/",
           "chinese": "什么",
           "english": "what"
         },
         {
-          "id": "s004-w012",
+          "id": "s003-w013",
           "text": "it",
           "ipa": "/ɪt/",
           "chinese": "它",
           "english": "it"
         },
         {
-          "id": "s004-w013",
+          "id": "s003-w014",
           "text": "means",
           "ipa": "/minz/",
           "chinese": "意味着",
           "english": "signifies"
         },
         {
-          "id": "s004-w014",
+          "id": "s003-w015",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s004-w015",
+          "id": "s003-w016",
           "text": "me",
           "ipa": "/mi/",
           "chinese": "我",
           "english": "me (object)"
         },
         {
-          "id": "s004-w016",
+          "id": "s003-w017",
           "text": "this",
           "ipa": "/ðɪs/",
           "chinese": "这方面",
           "english": "this"
         },
         {
-          "id": "s004-w017",
+          "id": "s003-w018",
           "text": "weekend",
           "ipa": "/ˈwikˌɛnd/",
           "chinese": "周末",
           "english": "Saturday and Sunday"
         },
         {
-          "id": "s004-w018",
+          "id": "s003-w019",
           "text": "truthfully",
           "ipa": "/ˈtruθfəli/",
           "chinese": "说实话",
           "english": "honestly"
         },
         {
-          "id": "s004-w019",
+          "id": "s003-w020",
           "text": "is",
           "ipa": "/ɪz/",
           "chinese": "被",
           "english": "is"
         },
         {
-          "id": "s004-w020",
+          "id": "s003-w021",
           "text": "just",
           "ipa": "/dʒʌst/",
           "chinese": "刚",
           "english": "just"
         },
         {
-          "id": "s004-w021",
+          "id": "s003-w022",
           "text": "we're",
           "ipa": "/wɪr/",
           "chinese": "我们是",
           "english": "we are"
         },
         {
-          "id": "s004-w022",
+          "id": "s003-w023",
           "text": "only",
           "ipa": "/ˈoʊnli/",
           "chinese": "仅仅",
           "english": "solely"
         },
         {
-          "id": "s004-w023",
+          "id": "s003-w024",
           "text": "here",
           "ipa": "/hɪr/",
           "chinese": "这里",
           "english": "at this place"
         },
         {
-          "id": "s004-w024",
+          "id": "s003-w025",
           "text": "because",
           "ipa": "/bɪˈkɔz/",
           "chinese": "因为",
           "english": "for the reason that"
         },
         {
-          "id": "s004-w025",
+          "id": "s003-w026",
           "text": "of",
           "ipa": "/əv/",
           "chinese": "的",
           "english": "of"
         },
         {
-          "id": "s004-w026",
+          "id": "s003-w027",
           "text": "what",
           "ipa": "/wʌt/",
           "chinese": "什么",
           "english": "what"
         },
         {
-          "id": "s004-w027",
+          "id": "s003-w028",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s004-w028",
+          "id": "s003-w029",
           "text": "people",
           "ipa": "/ˈpipəl/",
           "chinese": "人们",
           "english": "persons"
         },
         {
-          "id": "s004-w029",
+          "id": "s003-w030",
           "text": "who",
           "ipa": "/hu/",
           "chinese": "那些",
           "english": "who (relative)"
         },
         {
-          "id": "s004-w030",
+          "id": "s003-w031",
           "text": "died",
           "ipa": "/daɪd/",
           "chinese": "牺牲；去世",
           "english": "passed away"
         },
         {
-          "id": "s004-w031",
+          "id": "s003-w032",
           "text": "and",
           "ipa": "/ænd/",
           "chinese": "尤其",
           "english": "and"
         },
         {
-          "id": "s004-w032",
+          "id": "s003-w033",
           "text": "went",
           "ipa": "/wɛnt/",
           "chinese": "去了；献出了",
           "english": "past of go"
         },
         {
-          "id": "s004-w033",
+          "id": "s003-w034",
           "text": "before",
           "ipa": "/bɪˈfɔr/",
           "chinese": "在…之前",
           "english": "earlier than"
         },
         {
-          "id": "s004-w034",
+          "id": "s003-w035",
           "text": "us",
           "ipa": "/ʌs/",
           "chinese": "我们",
           "english": "us (object)"
         },
         {
-          "id": "s004-w035",
+          "id": "s003-w036",
           "text": "were",
           "ipa": "/wɜr/",
           "chinese": "是（虚拟）",
           "english": "were (subjunctive)"
         },
         {
-          "id": "s004-w036",
+          "id": "s003-w037",
           "text": "able",
           "ipa": "/ˈeɪbəl/",
           "chinese": "能够",
           "english": "capable of"
         },
         {
-          "id": "s004-w037",
+          "id": "s003-w038",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s004-w038",
+          "id": "s003-w039",
+          "text": "uh",
+          "ipa": "/ʌ/",
+          "chinese": "嗯",
+          "english": "filler (hesitation)"
+        },
+        {
+          "id": "s003-w040",
+          "text": "to",
+          "ipa": "/tu/",
+          "chinese": "到",
+          "english": "to"
+        },
+        {
+          "id": "s003-w041",
           "text": "give",
           "ipa": "/ɡɪv/",
           "chinese": "给予",
           "english": "to provide"
         },
         {
-          "id": "s004-w039",
+          "id": "s003-w042",
           "text": "us",
           "ipa": "/ʌs/",
           "chinese": "我们",
           "english": "us (object)"
         },
         {
-          "id": "s004-w040",
+          "id": "s003-w043",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s004-w041",
+          "id": "s003-w044",
           "text": "freedoms",
           "ipa": "/ˈfridəmz/",
           "chinese": "自由",
           "english": "liberties"
         },
         {
-          "id": "s004-w042",
+          "id": "s003-w045",
           "text": "that",
           "ipa": "/ðæt/",
           "chinese": "即",
           "english": "that"
         },
         {
-          "id": "s004-w043",
-          "text": "were",
-          "ipa": "/wɜr/",
-          "chinese": "是（虚拟）",
-          "english": "were (subjunctive)"
-        },
-        {
-          "id": "s004-w044",
+          "id": "s003-w046",
           "text": "they're",
           "ipa": "/ðɛr/",
           "chinese": "他们是",
           "english": "they are"
         },
         {
-          "id": "s004-w045",
+          "id": "s003-w047",
           "text": "able",
           "ipa": "/ˈeɪbəl/",
           "chinese": "能够",
           "english": "capable of"
         },
         {
-          "id": "s004-w046",
+          "id": "s003-w048",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s004-w047",
+          "id": "s003-w049",
           "text": "give",
           "ipa": "/ɡɪv/",
           "chinese": "给予",
           "english": "to provide"
         },
         {
-          "id": "s004-w048",
+          "id": "s003-w050",
           "text": "us",
           "ipa": "/ʌs/",
           "chinese": "我们",
@@ -1079,6 +1085,7 @@ export const lesson002 = {
       ],
       "blanks": {
         "beginner": [
+          "U_",
           "I'__",
           "b___",
           "t__",
@@ -1116,12 +1123,13 @@ export const lesson002 = {
           "w___",
           "a___",
           "t_",
+          "u_",
+          "t_",
           "give",
           "us",
           "t__",
           "freedoms",
           "that",
-          "w___",
           "they'__",
           "a___",
           "t_",
@@ -1129,6 +1137,7 @@ export const lesson002 = {
           "us"
         ],
         "intermediate": [
+          "U_",
           "I'__",
           "b___",
           "t__",
@@ -1166,12 +1175,13 @@ export const lesson002 = {
           "w___",
           "a___",
           "t_",
+          "u_",
+          "t_",
           "give",
           "us",
           "t__",
-          "freedoms",
+          "f_______",
           "that",
-          "w___",
           "they'__",
           "a___",
           "t_",
@@ -1179,6 +1189,7 @@ export const lesson002 = {
           "us"
         ],
         "advanced": [
+          "__",
           "I___",
           "____",
           "___",
@@ -1216,12 +1227,13 @@ export const lesson002 = {
           "____",
           "____",
           "__",
+          "__",
+          "__",
           "g___",
-          "u_",
+          "us",
           "___",
-          "freedoms",
-          "t___",
-          "____",
+          "f_______",
+          "that",
           "t______",
           "____",
           "__",
@@ -1231,189 +1243,203 @@ export const lesson002 = {
       }
     },
     {
-      "id": "s005",
-      "index": 5,
-      "english": "So to be out here at the Hyundai Air and C show being able to celebrate with them and with everybody here this weekend is phenomenal.",
-      "chinese": "能来到这场航展，与主办方以及本周末到场的所有人一起庆祝，感觉棒极了。",
-      "audioUrl": "/lessons/lesson002/s005.mp3",
+      "id": "s004",
+      "index": 4,
+      "english": "So to be out here at the Hyundai Air and Sea Show, uh, being able to celebrate with them and with everybody here this weekend is, uh, phenomenal.",
+      "chinese": "能来到现代汽车海空展，和主办方以及本周末到场的所有人一起庆祝，感觉太棒了。",
+      "audioUrl": "/lessons/lesson002/s004.mp3",
       "words": [
         {
-          "id": "s005-w001",
+          "id": "s004-w001",
           "text": "So",
           "ipa": "/soʊ/",
           "chinese": "那么",
           "english": "so (to start a question)"
         },
         {
-          "id": "s005-w002",
+          "id": "s004-w002",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s005-w003",
+          "id": "s004-w003",
           "text": "be",
           "ipa": "/bi/",
           "chinese": "会",
           "english": "be"
         },
         {
-          "id": "s005-w004",
+          "id": "s004-w004",
           "text": "out",
           "ipa": "/aʊt/",
           "chinese": "外出",
           "english": "outside"
         },
         {
-          "id": "s005-w005",
+          "id": "s004-w005",
           "text": "here",
           "ipa": "/hɪr/",
           "chinese": "这里",
           "english": "at this place"
         },
         {
-          "id": "s005-w006",
+          "id": "s004-w006",
           "text": "at",
           "ipa": "/æt/",
           "chinese": "在",
           "english": "at (location)"
         },
         {
-          "id": "s005-w007",
+          "id": "s004-w007",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s005-w008",
+          "id": "s004-w008",
           "text": "Hyundai",
           "ipa": "/ˈhʌndeɪ/",
           "chinese": "现代",
           "english": "Hyundai (sponsor name)"
         },
         {
-          "id": "s005-w009",
+          "id": "s004-w009",
           "text": "Air",
           "ipa": "/ɛr/",
           "chinese": "空中；航空",
           "english": "the sky; aviation"
         },
         {
-          "id": "s005-w010",
+          "id": "s004-w010",
           "text": "and",
           "ipa": "/ænd/",
           "chinese": "尤其",
           "english": "and"
         },
         {
-          "id": "s005-w011",
-          "text": "C",
+          "id": "s004-w011",
+          "text": "Sea",
           "ipa": "/si/",
-          "chinese": "C",
-          "english": "letter C (in show name)"
+          "chinese": "海",
+          "english": "sea (Air and Sea Show)"
         },
         {
-          "id": "s005-w012",
-          "text": "show",
+          "id": "s004-w012",
+          "text": "Show",
           "ipa": "/ʃoʊ/",
           "chinese": "航展；表演",
           "english": "air show"
         },
         {
-          "id": "s005-w013",
+          "id": "s004-w013",
+          "text": "uh",
+          "ipa": "/ʌ/",
+          "chinese": "嗯",
+          "english": "filler (hesitation)"
+        },
+        {
+          "id": "s004-w014",
           "text": "being",
           "ipa": "/ˈbiɪŋ/",
           "chinese": "被",
           "english": "passive auxiliary"
         },
         {
-          "id": "s005-w014",
+          "id": "s004-w015",
           "text": "able",
           "ipa": "/ˈeɪbəl/",
           "chinese": "能够",
           "english": "capable of"
         },
         {
-          "id": "s005-w015",
+          "id": "s004-w016",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s005-w016",
+          "id": "s004-w017",
           "text": "celebrate",
           "ipa": "/ˈsɛləˌbreɪt/",
           "chinese": "庆祝",
           "english": "to honor with festivities"
         },
         {
-          "id": "s005-w017",
+          "id": "s004-w018",
           "text": "with",
           "ipa": "/wɪð/",
           "chinese": "于",
           "english": "with"
         },
         {
-          "id": "s005-w018",
+          "id": "s004-w019",
           "text": "them",
           "ipa": "/ðɛm/",
           "chinese": "它们",
           "english": "them"
         },
         {
-          "id": "s005-w019",
+          "id": "s004-w020",
           "text": "and",
           "ipa": "/ænd/",
           "chinese": "尤其",
           "english": "and"
         },
         {
-          "id": "s005-w020",
+          "id": "s004-w021",
           "text": "with",
           "ipa": "/wɪð/",
           "chinese": "于",
           "english": "with"
         },
         {
-          "id": "s005-w021",
+          "id": "s004-w022",
           "text": "everybody",
           "ipa": "/ˈɛvriˌbɑdi/",
           "chinese": "每个人",
           "english": "everyone present"
         },
         {
-          "id": "s005-w022",
+          "id": "s004-w023",
           "text": "here",
           "ipa": "/hɪr/",
           "chinese": "这里",
           "english": "at this place"
         },
         {
-          "id": "s005-w023",
+          "id": "s004-w024",
           "text": "this",
           "ipa": "/ðɪs/",
           "chinese": "这方面",
           "english": "this"
         },
         {
-          "id": "s005-w024",
+          "id": "s004-w025",
           "text": "weekend",
           "ipa": "/ˈwikˌɛnd/",
           "chinese": "周末",
           "english": "Saturday and Sunday"
         },
         {
-          "id": "s005-w025",
+          "id": "s004-w026",
           "text": "is",
           "ipa": "/ɪz/",
           "chinese": "被",
           "english": "is"
         },
         {
-          "id": "s005-w026",
+          "id": "s004-w027",
+          "text": "uh",
+          "ipa": "/ʌ/",
+          "chinese": "嗯",
+          "english": "filler (hesitation)"
+        },
+        {
+          "id": "s004-w028",
           "text": "phenomenal",
           "ipa": "/fəˈnɑmənəl/",
           "chinese": "极好的",
@@ -1432,8 +1458,9 @@ export const lesson002 = {
           "Hyundai",
           "Air",
           "a__",
-          "C",
-          "show",
+          "Sea",
+          "Show",
+          "u_",
           "b___g",
           "a___",
           "t_",
@@ -1447,6 +1474,7 @@ export const lesson002 = {
           "t___",
           "weekend",
           "i_",
+          "u_",
           "p________l"
         ],
         "intermediate": [
@@ -1460,8 +1488,9 @@ export const lesson002 = {
           "Hyundai",
           "Air",
           "a__",
-          "C",
-          "s___",
+          "Sea",
+          "Show",
+          "u_",
           "b____",
           "a___",
           "t_",
@@ -1475,6 +1504,7 @@ export const lesson002 = {
           "t___",
           "w______",
           "i_",
+          "u_",
           "p_________"
         ],
         "advanced": [
@@ -1488,8 +1518,9 @@ export const lesson002 = {
           "Hyundai",
           "Air",
           "a__",
-          "C",
-          "show",
+          "Sea",
+          "Show",
+          "__",
           "_____",
           "____",
           "__",
@@ -1503,149 +1534,381 @@ export const lesson002 = {
           "____",
           "w______",
           "__",
+          "__",
           "__________"
         ]
       }
     },
     {
-      "id": "s006",
-      "index": 6,
-      "english": "Absolutely. Now you guys are doing some pretty legitimate things up there in the air you're flying close together.",
-      "chinese": "当然。你们在空中做的那些动作相当专业，飞得很近。",
-      "audioUrl": "/lessons/lesson002/s006.mp3",
+      "id": "s005",
+      "index": 5,
+      "english": "Absolutely. Now, you guys are doing some pretty legitimate things up there in the air. You're flying close together. You're leading, you're trailing, you're doing all sorts of things acrobatic wise. Um, so how do you prepare mentally for something like that as you're pulling G-Force and trying to stay focused?",
+      "chinese": "当然。你们在空中做的那些动作相当厉害，飞得很近。你们领头、尾随，还做着各种特技飞行动作。嗯，在承受 G 力并努力保持专注时，你如何为这种事做心理准备？",
+      "audioUrl": "/lessons/lesson002/s005.mp3",
       "words": [
         {
-          "id": "s006-w001",
+          "id": "s005-w001",
           "text": "Absolutely",
           "ipa": "/ˈæbsəˌlutli/",
           "chinese": "当然；绝对",
           "english": "certainly; completely"
         },
         {
-          "id": "s006-w002",
+          "id": "s005-w002",
           "text": "Now",
           "ipa": "/naʊ/",
           "chinese": "不过",
           "english": "now (transition)"
         },
         {
-          "id": "s006-w003",
+          "id": "s005-w003",
           "text": "you",
           "ipa": "/ju/",
           "chinese": "你",
           "english": "you"
         },
         {
-          "id": "s006-w004",
+          "id": "s005-w004",
           "text": "guys",
           "ipa": "/ɡaɪz/",
           "chinese": "你们；队友",
           "english": "people (informal)"
         },
         {
-          "id": "s006-w005",
+          "id": "s005-w005",
           "text": "are",
           "ipa": "/ɑr/",
           "chinese": "非常",
           "english": "are"
         },
         {
-          "id": "s006-w006",
+          "id": "s005-w006",
           "text": "doing",
           "ipa": "/ˈduɪŋ/",
           "chinese": "正在做",
           "english": "performing"
         },
         {
-          "id": "s006-w007",
+          "id": "s005-w007",
           "text": "some",
           "ipa": "/sʌm/",
           "chinese": "一些",
           "english": "some"
         },
         {
-          "id": "s006-w008",
+          "id": "s005-w008",
           "text": "pretty",
           "ipa": "/ˈprɪti/",
           "chinese": "相当",
           "english": "fairly; quite"
         },
         {
-          "id": "s006-w009",
+          "id": "s005-w009",
           "text": "legitimate",
           "ipa": "/ləˈdʒɪtəmɪt/",
           "chinese": "专业的；正经的",
           "english": "genuine; skilled"
         },
         {
-          "id": "s006-w010",
+          "id": "s005-w010",
           "text": "things",
           "ipa": "/θɪŋz/",
           "chinese": "事情",
           "english": "things; actions"
         },
         {
-          "id": "s006-w011",
+          "id": "s005-w011",
           "text": "up",
           "ipa": "/ʌp/",
           "chinese": "饱",
           "english": "up (fill up)"
         },
         {
-          "id": "s006-w012",
+          "id": "s005-w012",
           "text": "there",
           "ipa": "/ðɛr/",
           "chinese": "恐怕",
           "english": "there"
         },
         {
-          "id": "s006-w013",
+          "id": "s005-w013",
           "text": "in",
           "ipa": "/ɪn/",
           "chinese": "在",
           "english": "in"
         },
         {
-          "id": "s006-w014",
+          "id": "s005-w014",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s006-w015",
+          "id": "s005-w015",
           "text": "air",
           "ipa": "/ɛr/",
           "chinese": "空中；航空",
           "english": "the sky; aviation"
         },
         {
-          "id": "s006-w016",
-          "text": "you're",
+          "id": "s005-w016",
+          "text": "You're",
           "ipa": "/jʊr/",
           "chinese": "你是；你们在",
           "english": "you are"
         },
         {
-          "id": "s006-w017",
+          "id": "s005-w017",
           "text": "flying",
           "ipa": "/ˈflaɪɪŋ/",
           "chinese": "飞行",
           "english": "operating aircraft"
         },
         {
-          "id": "s006-w018",
+          "id": "s005-w018",
           "text": "close",
           "ipa": "/kloʊs/",
           "chinese": "靠近",
           "english": "close"
         },
         {
-          "id": "s006-w019",
+          "id": "s005-w019",
           "text": "together",
           "ipa": "/təˈɡɛðər/",
           "chinese": "一起",
           "english": "with each other"
+        },
+        {
+          "id": "s005-w020",
+          "text": "You're",
+          "ipa": "/jʊr/",
+          "chinese": "你是；你们在",
+          "english": "you are"
+        },
+        {
+          "id": "s005-w021",
+          "text": "leading",
+          "ipa": "/ˈlidɪŋ/",
+          "chinese": "领头",
+          "english": "flying in front"
+        },
+        {
+          "id": "s005-w022",
+          "text": "you're",
+          "ipa": "/jʊr/",
+          "chinese": "你是；你们在",
+          "english": "you are"
+        },
+        {
+          "id": "s005-w023",
+          "text": "trailing",
+          "ipa": "/ˈtreɪlɪŋ/",
+          "chinese": "尾随",
+          "english": "flying behind in formation"
+        },
+        {
+          "id": "s005-w024",
+          "text": "you're",
+          "ipa": "/jʊr/",
+          "chinese": "你是；你们在",
+          "english": "you are"
+        },
+        {
+          "id": "s005-w025",
+          "text": "doing",
+          "ipa": "/ˈduɪŋ/",
+          "chinese": "正在做",
+          "english": "performing"
+        },
+        {
+          "id": "s005-w026",
+          "text": "all",
+          "ipa": "/ɔl/",
+          "chinese": "全部",
+          "english": "all"
+        },
+        {
+          "id": "s005-w027",
+          "text": "sorts",
+          "ipa": "/sɔrts/",
+          "chinese": "各种",
+          "english": "kinds (all sorts of)"
+        },
+        {
+          "id": "s005-w028",
+          "text": "of",
+          "ipa": "/əv/",
+          "chinese": "的",
+          "english": "of"
+        },
+        {
+          "id": "s005-w029",
+          "text": "things",
+          "ipa": "/θɪŋz/",
+          "chinese": "事情",
+          "english": "things; actions"
+        },
+        {
+          "id": "s005-w030",
+          "text": "acrobatic",
+          "ipa": "/ˌækrəˈbætɪk/",
+          "chinese": "特技的",
+          "english": "involving aerial stunts"
+        },
+        {
+          "id": "s005-w031",
+          "text": "wise",
+          "ipa": "/waɪz/",
+          "chinese": "方面",
+          "english": "-wise (in manner of)"
+        },
+        {
+          "id": "s005-w032",
+          "text": "Um",
+          "ipa": "/ʌm/",
+          "chinese": "嗯",
+          "english": "filler (hesitation)"
+        },
+        {
+          "id": "s005-w033",
+          "text": "so",
+          "ipa": "/soʊ/",
+          "chinese": "那么",
+          "english": "so (to start a question)"
+        },
+        {
+          "id": "s005-w034",
+          "text": "how",
+          "ipa": "/haʊ/",
+          "chinese": "如何",
+          "english": "in what way"
+        },
+        {
+          "id": "s005-w035",
+          "text": "do",
+          "ipa": "/du/",
+          "chinese": "做",
+          "english": "to perform"
+        },
+        {
+          "id": "s005-w036",
+          "text": "you",
+          "ipa": "/ju/",
+          "chinese": "你",
+          "english": "you"
+        },
+        {
+          "id": "s005-w037",
+          "text": "prepare",
+          "ipa": "/prɪˈpɛr/",
+          "chinese": "准备",
+          "english": "to get ready"
+        },
+        {
+          "id": "s005-w038",
+          "text": "mentally",
+          "ipa": "/ˈmɛntəli/",
+          "chinese": "心理上",
+          "english": "in the mind"
+        },
+        {
+          "id": "s005-w039",
+          "text": "for",
+          "ipa": "/fɔr/",
+          "chinese": "作为",
+          "english": "for"
+        },
+        {
+          "id": "s005-w040",
+          "text": "something",
+          "ipa": "/ˈsʌmθɪŋ/",
+          "chinese": "某事",
+          "english": "a thing"
+        },
+        {
+          "id": "s005-w041",
+          "text": "like",
+          "ipa": "/laɪk/",
+          "chinese": "想要",
+          "english": "to want; prefer"
+        },
+        {
+          "id": "s005-w042",
+          "text": "that",
+          "ipa": "/ðæt/",
+          "chinese": "即",
+          "english": "that"
+        },
+        {
+          "id": "s005-w043",
+          "text": "as",
+          "ipa": "/æz/",
+          "chinese": "因此",
+          "english": "as"
+        },
+        {
+          "id": "s005-w044",
+          "text": "you're",
+          "ipa": "/jʊr/",
+          "chinese": "你是；你们在",
+          "english": "you are"
+        },
+        {
+          "id": "s005-w045",
+          "text": "pulling",
+          "ipa": "/ˈpʊlɪŋ/",
+          "chinese": "承受",
+          "english": "experiencing (G-force)"
+        },
+        {
+          "id": "s005-w046",
+          "text": "G",
+          "ipa": "/dʒi/",
+          "chinese": "G",
+          "english": "gravitational force (G)"
+        },
+        {
+          "id": "s005-w047",
+          "text": "Force",
+          "ipa": "/fɔrs/",
+          "chinese": "力",
+          "english": "physical force; G-force"
+        },
+        {
+          "id": "s005-w048",
+          "text": "and",
+          "ipa": "/ænd/",
+          "chinese": "尤其",
+          "english": "and"
+        },
+        {
+          "id": "s005-w049",
+          "text": "trying",
+          "ipa": "/ˈtraɪɪŋ/",
+          "chinese": "努力",
+          "english": "attempting"
+        },
+        {
+          "id": "s005-w050",
+          "text": "to",
+          "ipa": "/tu/",
+          "chinese": "到",
+          "english": "to"
+        },
+        {
+          "id": "s005-w051",
+          "text": "stay",
+          "ipa": "/steɪ/",
+          "chinese": "保持",
+          "english": "to remain"
+        },
+        {
+          "id": "s005-w052",
+          "text": "focused",
+          "ipa": "/ˈfoʊkəst/",
+          "chinese": "专注的",
+          "english": "concentrated"
         }
       ],
       "blanks": {
@@ -1665,161 +1928,14 @@ export const lesson002 = {
           "i_",
           "t__",
           "air",
-          "you'__",
+          "You'__",
           "flying",
           "c___e",
-          "t______r"
-        ],
-        "intermediate": [
-          "A_________",
-          "N__",
-          "you",
-          "g___",
-          "a__",
-          "do",
-          "s___",
-          "p_____",
-          "l_________",
-          "things",
-          "u_",
-          "t____",
-          "i_",
-          "t__",
-          "a__",
-          "you'__",
-          "fly",
-          "c____",
-          "t_______"
-        ],
-        "advanced": [
-          "__________",
-          "___",
-          "y__",
-          "g___",
-          "___",
-          "d____",
-          "____",
-          "______",
-          "__________",
-          "things",
-          "__",
-          "_____",
-          "__",
-          "___",
-          "air",
-          "y_____",
-          "f_____",
-          "_____",
-          "________"
-        ]
-      }
-    },
-    {
-      "id": "s007",
-      "index": 7,
-      "english": "You're leading your trail and you're doing all sorts of things acrobatic wise.",
-      "chinese": "你们领头飞行，编队跟随，还做着各种特技动作。",
-      "audioUrl": "/lessons/lesson002/s007.mp3",
-      "words": [
-        {
-          "id": "s007-w001",
-          "text": "You're",
-          "ipa": "/jʊr/",
-          "chinese": "你是；你们在",
-          "english": "you are"
-        },
-        {
-          "id": "s007-w002",
-          "text": "leading",
-          "ipa": "/ˈlidɪŋ/",
-          "chinese": "领头",
-          "english": "flying in front"
-        },
-        {
-          "id": "s007-w003",
-          "text": "your",
-          "ipa": "/jʊr/",
-          "chinese": "你的；你们的",
-          "english": "belonging to you"
-        },
-        {
-          "id": "s007-w004",
-          "text": "trail",
-          "ipa": "/treɪl/",
-          "chinese": "尾随；编队",
-          "english": "aircraft following behind"
-        },
-        {
-          "id": "s007-w005",
-          "text": "and",
-          "ipa": "/ænd/",
-          "chinese": "尤其",
-          "english": "and"
-        },
-        {
-          "id": "s007-w006",
-          "text": "you're",
-          "ipa": "/jʊr/",
-          "chinese": "你是；你们在",
-          "english": "you are"
-        },
-        {
-          "id": "s007-w007",
-          "text": "doing",
-          "ipa": "/ˈduɪŋ/",
-          "chinese": "正在做",
-          "english": "performing"
-        },
-        {
-          "id": "s007-w008",
-          "text": "all",
-          "ipa": "/ɔl/",
-          "chinese": "全部",
-          "english": "all"
-        },
-        {
-          "id": "s007-w009",
-          "text": "sorts",
-          "ipa": "/sɔrts/",
-          "chinese": "各种",
-          "english": "kinds (all sorts of)"
-        },
-        {
-          "id": "s007-w010",
-          "text": "of",
-          "ipa": "/əv/",
-          "chinese": "的",
-          "english": "of"
-        },
-        {
-          "id": "s007-w011",
-          "text": "things",
-          "ipa": "/θɪŋz/",
-          "chinese": "事情",
-          "english": "things; actions"
-        },
-        {
-          "id": "s007-w012",
-          "text": "acrobatic",
-          "ipa": "/ˌækrəˈbætɪk/",
-          "chinese": "特技的",
-          "english": "involving aerial stunts"
-        },
-        {
-          "id": "s007-w013",
-          "text": "wise",
-          "ipa": "/waɪz/",
-          "chinese": "方面",
-          "english": "-wise (in manner of)"
-        }
-      ],
-      "blanks": {
-        "beginner": [
+          "t______r",
           "You'__",
           "leading",
-          "your",
-          "trail",
-          "a__",
+          "you'__",
+          "trailing",
           "you'__",
           "doing",
           "a__",
@@ -1827,191 +1943,9 @@ export const lesson002 = {
           "o_",
           "things",
           "a_______c",
-          "wise"
-        ],
-        "intermediate": [
-          "You'__",
-          "lead",
-          "your",
-          "trail",
-          "a__",
-          "you'__",
-          "do",
-          "a__",
-          "sorts",
-          "o_",
-          "t_____",
-          "a________",
-          "w___"
-        ],
-        "advanced": [
-          "Y_____",
-          "l______",
-          "y___",
-          "trail",
-          "a__",
-          "y_____",
-          "d____",
-          "___",
-          "sorts",
-          "__",
-          "things",
-          "_________",
-          "w___"
-        ]
-      }
-    },
-    {
-      "id": "s008",
-      "index": 8,
-      "english": "So how do you prepare mentally for something like that as you're pulling G-Force and trying to stay focused?",
-      "chinese": "在承受过载（G 力）并努力保持专注时，你如何为这样的事情做心理准备？",
-      "audioUrl": "/lessons/lesson002/s008.mp3",
-      "words": [
-        {
-          "id": "s008-w001",
-          "text": "So",
-          "ipa": "/soʊ/",
-          "chinese": "那么",
-          "english": "so (to start a question)"
-        },
-        {
-          "id": "s008-w002",
-          "text": "how",
-          "ipa": "/haʊ/",
-          "chinese": "如何",
-          "english": "in what way"
-        },
-        {
-          "id": "s008-w003",
-          "text": "do",
-          "ipa": "/du/",
-          "chinese": "做",
-          "english": "to perform"
-        },
-        {
-          "id": "s008-w004",
-          "text": "you",
-          "ipa": "/ju/",
-          "chinese": "你",
-          "english": "you"
-        },
-        {
-          "id": "s008-w005",
-          "text": "prepare",
-          "ipa": "/prɪˈpɛr/",
-          "chinese": "准备",
-          "english": "to get ready"
-        },
-        {
-          "id": "s008-w006",
-          "text": "mentally",
-          "ipa": "/ˈmɛntəli/",
-          "chinese": "心理上",
-          "english": "in the mind"
-        },
-        {
-          "id": "s008-w007",
-          "text": "for",
-          "ipa": "/fɔr/",
-          "chinese": "作为",
-          "english": "for"
-        },
-        {
-          "id": "s008-w008",
-          "text": "something",
-          "ipa": "/ˈsʌmθɪŋ/",
-          "chinese": "某事",
-          "english": "a thing"
-        },
-        {
-          "id": "s008-w009",
-          "text": "like",
-          "ipa": "/laɪk/",
-          "chinese": "想要",
-          "english": "to want; prefer"
-        },
-        {
-          "id": "s008-w010",
-          "text": "that",
-          "ipa": "/ðæt/",
-          "chinese": "即",
-          "english": "that"
-        },
-        {
-          "id": "s008-w011",
-          "text": "as",
-          "ipa": "/æz/",
-          "chinese": "因此",
-          "english": "as"
-        },
-        {
-          "id": "s008-w012",
-          "text": "you're",
-          "ipa": "/jʊr/",
-          "chinese": "你是；你们在",
-          "english": "you are"
-        },
-        {
-          "id": "s008-w013",
-          "text": "pulling",
-          "ipa": "/ˈpʊlɪŋ/",
-          "chinese": "承受",
-          "english": "experiencing (G-force)"
-        },
-        {
-          "id": "s008-w014",
-          "text": "G",
-          "ipa": "/dʒi/",
-          "chinese": "G",
-          "english": "gravitational force (G)"
-        },
-        {
-          "id": "s008-w015",
-          "text": "Force",
-          "ipa": "/fɔrs/",
-          "chinese": "力",
-          "english": "physical force; G-force"
-        },
-        {
-          "id": "s008-w016",
-          "text": "and",
-          "ipa": "/ænd/",
-          "chinese": "尤其",
-          "english": "and"
-        },
-        {
-          "id": "s008-w017",
-          "text": "trying",
-          "ipa": "/ˈtraɪɪŋ/",
-          "chinese": "努力",
-          "english": "attempting"
-        },
-        {
-          "id": "s008-w018",
-          "text": "to",
-          "ipa": "/tu/",
-          "chinese": "到",
-          "english": "to"
-        },
-        {
-          "id": "s008-w019",
-          "text": "stay",
-          "ipa": "/steɪ/",
-          "chinese": "保持",
-          "english": "to remain"
-        },
-        {
-          "id": "s008-w020",
-          "text": "focused",
-          "ipa": "/ˈfoʊkəst/",
-          "chinese": "专注的",
-          "english": "concentrated"
-        }
-      ],
-      "blanks": {
-        "beginner": [
-          "S_",
+          "wise",
+          "U_",
+          "s_",
           "h__",
           "d_",
           "you",
@@ -2033,7 +1967,39 @@ export const lesson002 = {
           "f_____d"
         ],
         "intermediate": [
-          "S_",
+          "A_________",
+          "N__",
+          "you",
+          "g___",
+          "a__",
+          "do",
+          "s___",
+          "p_____",
+          "l_________",
+          "things",
+          "u_",
+          "t____",
+          "i_",
+          "t__",
+          "a__",
+          "You'__",
+          "fly",
+          "c____",
+          "t_______",
+          "You'__",
+          "lead",
+          "you'__",
+          "trail",
+          "you'__",
+          "do",
+          "a__",
+          "sorts",
+          "o_",
+          "t_____",
+          "a________",
+          "w___",
+          "U_",
+          "s_",
           "h__",
           "d_",
           "you",
@@ -2055,7 +2021,39 @@ export const lesson002 = {
           "f______"
         ],
         "advanced": [
+          "__________",
+          "___",
+          "y__",
+          "g___",
+          "___",
+          "d____",
+          "____",
+          "______",
+          "__________",
+          "things",
           "__",
+          "_____",
+          "__",
+          "___",
+          "air",
+          "Y_____",
+          "f_____",
+          "_____",
+          "________",
+          "Y_____",
+          "l______",
+          "y_____",
+          "t_______",
+          "y_____",
+          "d____",
+          "___",
+          "sorts",
+          "__",
+          "things",
+          "_________",
+          "w___",
+          "__",
+          "s_",
           "h__",
           "__",
           "y__",
@@ -2079,329 +2077,343 @@ export const lesson002 = {
       }
     },
     {
-      "id": "s009",
-      "index": 9,
-      "english": "It's a lot like team sports honestly and we have a fantastic team. It's all hands on deck effort in order to get the aircraft prepared to lock in for the sortie and truthfully I'm blessed to have a fantastic team to help me do that.",
-      "chinese": "老实说，这跟团队运动很像。我们有一支出色的队伍。要把飞机准备好、为架次锁定状态，需要全员上阵；说实话，我很幸运有这样一支优秀的团队帮助我。",
-      "audioUrl": "/lessons/lesson002/s009.mp3",
+      "id": "s006",
+      "index": 6,
+      "english": "It's a lot like team sports, honestly. And we have a fantastic team. It's all hands on deck effort in order to get the aircraft prepared to lock in for the sortie and uh truthfully I'm I'm blessed to have a fantastic team to help me do that.",
+      "chinese": "老实说，这跟团队运动很像。我们有一支出色的队伍。要把飞机准备好、为架次进入状态，需要全员上阵；说实话，我很幸运有这样一支优秀的团队帮助我。",
+      "audioUrl": "/lessons/lesson002/s006.mp3",
       "words": [
         {
-          "id": "s009-w001",
+          "id": "s006-w001",
           "text": "It's",
           "ipa": "/ɪts/",
           "chinese": "它",
           "english": "it is"
         },
         {
-          "id": "s009-w002",
+          "id": "s006-w002",
           "text": "a",
           "ipa": "/ə/",
           "chinese": "一块",
           "english": "a (article)"
         },
         {
-          "id": "s009-w003",
+          "id": "s006-w003",
           "text": "lot",
           "ipa": "/lɑt/",
           "chinese": "经常",
           "english": "lot"
         },
         {
-          "id": "s009-w004",
+          "id": "s006-w004",
           "text": "like",
           "ipa": "/laɪk/",
           "chinese": "想要",
           "english": "to want; prefer"
         },
         {
-          "id": "s009-w005",
+          "id": "s006-w005",
           "text": "team",
           "ipa": "/tim/",
           "chinese": "团队",
           "english": "a group working together"
         },
         {
-          "id": "s009-w006",
+          "id": "s006-w006",
           "text": "sports",
           "ipa": "/spɔrts/",
           "chinese": "运动",
           "english": "athletic activities"
         },
         {
-          "id": "s009-w007",
+          "id": "s006-w007",
           "text": "honestly",
           "ipa": "/ˈɑnɪstli/",
           "chinese": "老实说",
           "english": "frankly"
         },
         {
-          "id": "s009-w008",
-          "text": "and",
+          "id": "s006-w008",
+          "text": "And",
           "ipa": "/ænd/",
           "chinese": "尤其",
           "english": "and"
         },
         {
-          "id": "s009-w009",
+          "id": "s006-w009",
           "text": "we",
           "ipa": "/wi/",
           "chinese": "我们",
           "english": "we (subject)"
         },
         {
-          "id": "s009-w010",
+          "id": "s006-w010",
           "text": "have",
           "ipa": "/hæv/",
           "chinese": "有",
           "english": "have"
         },
         {
-          "id": "s009-w011",
+          "id": "s006-w011",
           "text": "a",
           "ipa": "/ə/",
           "chinese": "一块",
           "english": "a (article)"
         },
         {
-          "id": "s009-w012",
+          "id": "s006-w012",
           "text": "fantastic",
           "ipa": "/fænˈtæstɪk/",
           "chinese": "极好的",
           "english": "wonderful"
         },
         {
-          "id": "s009-w013",
+          "id": "s006-w013",
           "text": "team",
           "ipa": "/tim/",
           "chinese": "团队",
           "english": "a group working together"
         },
         {
-          "id": "s009-w014",
+          "id": "s006-w014",
           "text": "It's",
           "ipa": "/ɪts/",
           "chinese": "它",
           "english": "it is"
         },
         {
-          "id": "s009-w015",
+          "id": "s006-w015",
           "text": "all",
           "ipa": "/ɔl/",
           "chinese": "全部",
           "english": "all"
         },
         {
-          "id": "s009-w016",
+          "id": "s006-w016",
           "text": "hands",
           "ipa": "/hændz/",
           "chinese": "人手",
           "english": "hands; personnel"
         },
         {
-          "id": "s009-w017",
+          "id": "s006-w017",
           "text": "on",
           "ipa": "/ɑn/",
           "chinese": "对",
           "english": "on"
         },
         {
-          "id": "s009-w018",
+          "id": "s006-w018",
           "text": "deck",
           "ipa": "/dɛk/",
           "chinese": "甲板；全员",
           "english": "deck; all hands on deck"
         },
         {
-          "id": "s009-w019",
+          "id": "s006-w019",
           "text": "effort",
           "ipa": "/ˈɛfərt/",
           "chinese": "努力",
           "english": "hard work"
         },
         {
-          "id": "s009-w020",
+          "id": "s006-w020",
           "text": "in",
           "ipa": "/ɪn/",
           "chinese": "在",
           "english": "in"
         },
         {
-          "id": "s009-w021",
+          "id": "s006-w021",
           "text": "order",
           "ipa": "/ˈɔrdər/",
           "chinese": "为了",
           "english": "for the purpose of"
         },
         {
-          "id": "s009-w022",
+          "id": "s006-w022",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s009-w023",
+          "id": "s006-w023",
           "text": "get",
           "ipa": "/ɡɛt/",
           "chinese": "得到",
           "english": "to receive"
         },
         {
-          "id": "s009-w024",
+          "id": "s006-w024",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s009-w025",
+          "id": "s006-w025",
           "text": "aircraft",
           "ipa": "/ˈɛrˌkræft/",
           "chinese": "飞机",
           "english": "an airplane"
         },
         {
-          "id": "s009-w026",
+          "id": "s006-w026",
           "text": "prepared",
           "ipa": "/prɪˈpɛrd/",
           "chinese": "准备好的",
           "english": "made ready"
         },
         {
-          "id": "s009-w027",
+          "id": "s006-w027",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s009-w028",
+          "id": "s006-w028",
           "text": "lock",
           "ipa": "/lɑk/",
           "chinese": "锁定",
           "english": "to secure; focus in"
         },
         {
-          "id": "s009-w029",
+          "id": "s006-w029",
           "text": "in",
           "ipa": "/ɪn/",
           "chinese": "在",
           "english": "in"
         },
         {
-          "id": "s009-w030",
+          "id": "s006-w030",
           "text": "for",
           "ipa": "/fɔr/",
           "chinese": "作为",
           "english": "for"
         },
         {
-          "id": "s009-w031",
+          "id": "s006-w031",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s009-w032",
+          "id": "s006-w032",
           "text": "sortie",
           "ipa": "/ˈsɔrti/",
           "chinese": "架次；出动",
           "english": "a flight mission"
         },
         {
-          "id": "s009-w033",
+          "id": "s006-w033",
           "text": "and",
           "ipa": "/ænd/",
           "chinese": "尤其",
           "english": "and"
         },
         {
-          "id": "s009-w034",
+          "id": "s006-w034",
+          "text": "uh",
+          "ipa": "/ʌ/",
+          "chinese": "嗯",
+          "english": "filler (hesitation)"
+        },
+        {
+          "id": "s006-w035",
           "text": "truthfully",
           "ipa": "/ˈtruθfəli/",
           "chinese": "说实话",
           "english": "honestly"
         },
         {
-          "id": "s009-w035",
+          "id": "s006-w036",
           "text": "I'm",
           "ipa": "/aɪm/",
           "chinese": "我是",
           "english": "I am"
         },
         {
-          "id": "s009-w036",
+          "id": "s006-w037",
+          "text": "I'm",
+          "ipa": "/aɪm/",
+          "chinese": "我是",
+          "english": "I am"
+        },
+        {
+          "id": "s006-w038",
           "text": "blessed",
           "ipa": "/blɛst/",
           "chinese": "幸运的",
           "english": "fortunate; grateful"
         },
         {
-          "id": "s009-w037",
+          "id": "s006-w039",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s009-w038",
+          "id": "s006-w040",
           "text": "have",
           "ipa": "/hæv/",
           "chinese": "有",
           "english": "have"
         },
         {
-          "id": "s009-w039",
+          "id": "s006-w041",
           "text": "a",
           "ipa": "/ə/",
           "chinese": "一块",
           "english": "a (article)"
         },
         {
-          "id": "s009-w040",
+          "id": "s006-w042",
           "text": "fantastic",
           "ipa": "/fænˈtæstɪk/",
           "chinese": "极好的",
           "english": "wonderful"
         },
         {
-          "id": "s009-w041",
+          "id": "s006-w043",
           "text": "team",
           "ipa": "/tim/",
           "chinese": "团队",
           "english": "a group working together"
         },
         {
-          "id": "s009-w042",
+          "id": "s006-w044",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s009-w043",
+          "id": "s006-w045",
           "text": "help",
           "ipa": "/hɛlp/",
           "chinese": "帮助",
           "english": "to assist"
         },
         {
-          "id": "s009-w044",
+          "id": "s006-w046",
           "text": "me",
           "ipa": "/mi/",
           "chinese": "我",
           "english": "me (object)"
         },
         {
-          "id": "s009-w045",
+          "id": "s006-w047",
           "text": "do",
           "ipa": "/du/",
           "chinese": "做",
           "english": "to perform"
         },
         {
-          "id": "s009-w046",
+          "id": "s006-w048",
           "text": "that",
           "ipa": "/ðæt/",
           "chinese": "即",
@@ -2417,7 +2429,7 @@ export const lesson002 = {
           "team",
           "sports",
           "h______y",
-          "a__",
+          "A__",
           "we",
           "have",
           "_",
@@ -2443,7 +2455,9 @@ export const lesson002 = {
           "t__",
           "sortie",
           "a__",
+          "u_",
           "t________y",
+          "I'_",
           "I'_",
           "blessed",
           "t_",
@@ -2465,7 +2479,7 @@ export const lesson002 = {
           "t___",
           "s_____",
           "h_______",
-          "a__",
+          "A__",
           "we",
           "have",
           "_",
@@ -2491,7 +2505,9 @@ export const lesson002 = {
           "t__",
           "s_____",
           "a__",
+          "u_",
           "t_________",
+          "I'_",
           "I'_",
           "bless",
           "t_",
@@ -2513,7 +2529,7 @@ export const lesson002 = {
           "t___",
           "sports",
           "________",
-          "a__",
+          "A__",
           "w_",
           "h___",
           "_",
@@ -2539,7 +2555,9 @@ export const lesson002 = {
           "___",
           "sortie",
           "a__",
+          "__",
           "__________",
+          "I__",
           "I__",
           "b______",
           "__",
@@ -2556,98 +2574,98 @@ export const lesson002 = {
       }
     },
     {
-      "id": "s010",
-      "index": 10,
+      "id": "s007",
+      "index": 7,
       "english": "What do you hope that civilians get from watching you guys up there?",
       "chinese": "你希望平民观众从观看你们的表演中得到什么？",
-      "audioUrl": "/lessons/lesson002/s010.mp3",
+      "audioUrl": "/lessons/lesson002/s007.mp3",
       "words": [
         {
-          "id": "s010-w001",
+          "id": "s007-w001",
           "text": "What",
           "ipa": "/wʌt/",
           "chinese": "什么",
           "english": "what"
         },
         {
-          "id": "s010-w002",
+          "id": "s007-w002",
           "text": "do",
           "ipa": "/du/",
           "chinese": "做",
           "english": "to perform"
         },
         {
-          "id": "s010-w003",
+          "id": "s007-w003",
           "text": "you",
           "ipa": "/ju/",
           "chinese": "你",
           "english": "you"
         },
         {
-          "id": "s010-w004",
+          "id": "s007-w004",
           "text": "hope",
           "ipa": "/hoʊp/",
           "chinese": "希望",
           "english": "to wish for"
         },
         {
-          "id": "s010-w005",
+          "id": "s007-w005",
           "text": "that",
           "ipa": "/ðæt/",
           "chinese": "即",
           "english": "that"
         },
         {
-          "id": "s010-w006",
+          "id": "s007-w006",
           "text": "civilians",
           "ipa": "/səˈvɪljənz/",
           "chinese": "平民",
           "english": "non-military people"
         },
         {
-          "id": "s010-w007",
+          "id": "s007-w007",
           "text": "get",
           "ipa": "/ɡɛt/",
           "chinese": "得到",
           "english": "to receive"
         },
         {
-          "id": "s010-w008",
+          "id": "s007-w008",
           "text": "from",
           "ipa": "/frʌm/",
           "chinese": "从",
           "english": "from"
         },
         {
-          "id": "s010-w009",
+          "id": "s007-w009",
           "text": "watching",
           "ipa": "/ˈwɑtʃɪŋ/",
           "chinese": "观看",
           "english": "observing"
         },
         {
-          "id": "s010-w010",
+          "id": "s007-w010",
           "text": "you",
           "ipa": "/ju/",
           "chinese": "你",
           "english": "you"
         },
         {
-          "id": "s010-w011",
+          "id": "s007-w011",
           "text": "guys",
           "ipa": "/ɡaɪz/",
           "chinese": "你们；队友",
           "english": "people (informal)"
         },
         {
-          "id": "s010-w012",
+          "id": "s007-w012",
           "text": "up",
           "ipa": "/ʌp/",
           "chinese": "饱",
           "english": "up (fill up)"
         },
         {
-          "id": "s010-w013",
+          "id": "s007-w013",
           "text": "there",
           "ipa": "/ðɛr/",
           "chinese": "恐怕",
@@ -2703,315 +2721,336 @@ export const lesson002 = {
       }
     },
     {
-      "id": "s011",
-      "index": 11,
-      "english": "I hope everyone takes some time to reflect this weekend on why we're able to go out to the beach and have a fantastic time together and really understand that without the sacrifices that went before us none of this would have been possible.",
-      "chinese": "我希望大家这个周末花点时间思考——我们为什么能去海边、一起度过美好时光；要真正明白，若没有先前列出的牺牲，这一切都不可能实现。",
-      "audioUrl": "/lessons/lesson002/s011.mp3",
+      "id": "s008",
+      "index": 8,
+      "english": "I hope everyone takes some time to reflect this weekend on why we're able to go out to the beach and have a fantastic time together and and really understand that without the sacrifices of those that went before us, none of this would have been possible.",
+      "chinese": "我希望大家这个周末花点时间想一想——我们为什么能去海边、一起度过美好时光；要真正明白，若没有先辈的牺牲，这一切都不可能。",
+      "audioUrl": "/lessons/lesson002/s008.mp3",
       "words": [
         {
-          "id": "s011-w001",
+          "id": "s008-w001",
           "text": "I",
           "ipa": "/aɪ/",
           "chinese": "我",
           "english": "I"
         },
         {
-          "id": "s011-w002",
+          "id": "s008-w002",
           "text": "hope",
           "ipa": "/hoʊp/",
           "chinese": "希望",
           "english": "to wish for"
         },
         {
-          "id": "s011-w003",
+          "id": "s008-w003",
           "text": "everyone",
           "ipa": "/ˈɛvriˌwʌn/",
           "chinese": "大家",
           "english": "all people"
         },
         {
-          "id": "s011-w004",
+          "id": "s008-w004",
           "text": "takes",
           "ipa": "/teɪks/",
           "chinese": "花（时间）",
           "english": "requires (time)"
         },
         {
-          "id": "s011-w005",
+          "id": "s008-w005",
           "text": "some",
           "ipa": "/sʌm/",
           "chinese": "一些",
           "english": "some"
         },
         {
-          "id": "s011-w006",
+          "id": "s008-w006",
           "text": "time",
           "ipa": "/taɪm/",
           "chinese": "次",
           "english": "time"
         },
         {
-          "id": "s011-w007",
+          "id": "s008-w007",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s011-w008",
+          "id": "s008-w008",
           "text": "reflect",
           "ipa": "/rɪˈflɛkt/",
           "chinese": "反思",
           "english": "to think deeply"
         },
         {
-          "id": "s011-w009",
+          "id": "s008-w009",
           "text": "this",
           "ipa": "/ðɪs/",
           "chinese": "这方面",
           "english": "this"
         },
         {
-          "id": "s011-w010",
+          "id": "s008-w010",
           "text": "weekend",
           "ipa": "/ˈwikˌɛnd/",
           "chinese": "周末",
           "english": "Saturday and Sunday"
         },
         {
-          "id": "s011-w011",
+          "id": "s008-w011",
           "text": "on",
           "ipa": "/ɑn/",
           "chinese": "对",
           "english": "on"
         },
         {
-          "id": "s011-w012",
+          "id": "s008-w012",
           "text": "why",
           "ipa": "/waɪ/",
           "chinese": "为什么",
           "english": "why"
         },
         {
-          "id": "s011-w013",
+          "id": "s008-w013",
           "text": "we're",
           "ipa": "/wɪr/",
           "chinese": "我们是",
           "english": "we are"
         },
         {
-          "id": "s011-w014",
+          "id": "s008-w014",
           "text": "able",
           "ipa": "/ˈeɪbəl/",
           "chinese": "能够",
           "english": "capable of"
         },
         {
-          "id": "s011-w015",
+          "id": "s008-w015",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s011-w016",
+          "id": "s008-w016",
           "text": "go",
           "ipa": "/ɡoʊ/",
           "chinese": "去",
           "english": "to move"
         },
         {
-          "id": "s011-w017",
+          "id": "s008-w017",
           "text": "out",
           "ipa": "/aʊt/",
           "chinese": "外出",
           "english": "outside"
         },
         {
-          "id": "s011-w018",
+          "id": "s008-w018",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s011-w019",
+          "id": "s008-w019",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s011-w020",
+          "id": "s008-w020",
           "text": "beach",
           "ipa": "/bitʃ/",
           "chinese": "海滩",
           "english": "sandy shore"
         },
         {
-          "id": "s011-w021",
+          "id": "s008-w021",
           "text": "and",
           "ipa": "/ænd/",
           "chinese": "尤其",
           "english": "and"
         },
         {
-          "id": "s011-w022",
+          "id": "s008-w022",
           "text": "have",
           "ipa": "/hæv/",
           "chinese": "有",
           "english": "have"
         },
         {
-          "id": "s011-w023",
+          "id": "s008-w023",
           "text": "a",
           "ipa": "/ə/",
           "chinese": "一块",
           "english": "a (article)"
         },
         {
-          "id": "s011-w024",
+          "id": "s008-w024",
           "text": "fantastic",
           "ipa": "/fænˈtæstɪk/",
           "chinese": "极好的",
           "english": "wonderful"
         },
         {
-          "id": "s011-w025",
+          "id": "s008-w025",
           "text": "time",
           "ipa": "/taɪm/",
           "chinese": "次",
           "english": "time"
         },
         {
-          "id": "s011-w026",
+          "id": "s008-w026",
           "text": "together",
           "ipa": "/təˈɡɛðər/",
           "chinese": "一起",
           "english": "with each other"
         },
         {
-          "id": "s011-w027",
+          "id": "s008-w027",
           "text": "and",
           "ipa": "/ænd/",
           "chinese": "尤其",
           "english": "and"
         },
         {
-          "id": "s011-w028",
+          "id": "s008-w028",
+          "text": "and",
+          "ipa": "/ænd/",
+          "chinese": "尤其",
+          "english": "and"
+        },
+        {
+          "id": "s008-w029",
           "text": "really",
           "ipa": "/ˈrɪli/",
           "chinese": "真正",
           "english": "truly"
         },
         {
-          "id": "s011-w029",
+          "id": "s008-w030",
           "text": "understand",
           "ipa": "/ˌʌndərˈstænd/",
           "chinese": "理解",
           "english": "to comprehend"
         },
         {
-          "id": "s011-w030",
+          "id": "s008-w031",
           "text": "that",
           "ipa": "/ðæt/",
           "chinese": "即",
           "english": "that"
         },
         {
-          "id": "s011-w031",
+          "id": "s008-w032",
           "text": "without",
           "ipa": "/wɪˈðaʊt/",
           "chinese": "没有",
           "english": "not having"
         },
         {
-          "id": "s011-w032",
+          "id": "s008-w033",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s011-w033",
+          "id": "s008-w034",
           "text": "sacrifices",
           "ipa": "/ˈsækrɪfaɪsɪz/",
           "chinese": "牺牲",
           "english": "things given up, especially lives"
         },
         {
-          "id": "s011-w034",
-          "text": "that",
-          "ipa": "/ðæt/",
-          "chinese": "即",
-          "english": "that"
-        },
-        {
-          "id": "s011-w035",
-          "text": "went",
-          "ipa": "/wɛnt/",
-          "chinese": "去了；献出了",
-          "english": "past of go"
-        },
-        {
-          "id": "s011-w036",
-          "text": "before",
-          "ipa": "/bɪˈfɔr/",
-          "chinese": "在…之前",
-          "english": "earlier than"
-        },
-        {
-          "id": "s011-w037",
-          "text": "us",
-          "ipa": "/ʌs/",
-          "chinese": "我们",
-          "english": "us (object)"
-        },
-        {
-          "id": "s011-w038",
-          "text": "none",
-          "ipa": "/nʌn/",
-          "chinese": "没有任何",
-          "english": "not any"
-        },
-        {
-          "id": "s011-w039",
+          "id": "s008-w035",
           "text": "of",
           "ipa": "/əv/",
           "chinese": "的",
           "english": "of"
         },
         {
-          "id": "s011-w040",
+          "id": "s008-w036",
+          "text": "those",
+          "ipa": "/ðoʊz/",
+          "chinese": "那些",
+          "english": "those (demonstrative)"
+        },
+        {
+          "id": "s008-w037",
+          "text": "that",
+          "ipa": "/ðæt/",
+          "chinese": "即",
+          "english": "that"
+        },
+        {
+          "id": "s008-w038",
+          "text": "went",
+          "ipa": "/wɛnt/",
+          "chinese": "去了；献出了",
+          "english": "past of go"
+        },
+        {
+          "id": "s008-w039",
+          "text": "before",
+          "ipa": "/bɪˈfɔr/",
+          "chinese": "在…之前",
+          "english": "earlier than"
+        },
+        {
+          "id": "s008-w040",
+          "text": "us",
+          "ipa": "/ʌs/",
+          "chinese": "我们",
+          "english": "us (object)"
+        },
+        {
+          "id": "s008-w041",
+          "text": "none",
+          "ipa": "/nʌn/",
+          "chinese": "没有任何",
+          "english": "not any"
+        },
+        {
+          "id": "s008-w042",
+          "text": "of",
+          "ipa": "/əv/",
+          "chinese": "的",
+          "english": "of"
+        },
+        {
+          "id": "s008-w043",
           "text": "this",
           "ipa": "/ðɪs/",
           "chinese": "这方面",
           "english": "this"
         },
         {
-          "id": "s011-w041",
+          "id": "s008-w044",
           "text": "would",
           "ipa": "/wʊd/",
           "chinese": "会",
           "english": "modal past"
         },
         {
-          "id": "s011-w042",
+          "id": "s008-w045",
           "text": "have",
           "ipa": "/hæv/",
           "chinese": "有",
           "english": "have"
         },
         {
-          "id": "s011-w043",
+          "id": "s008-w046",
           "text": "been",
           "ipa": "/bɪn/",
           "chinese": "一直是",
           "english": "past participle of be"
         },
         {
-          "id": "s011-w044",
+          "id": "s008-w047",
           "text": "possible",
           "ipa": "/ˈpɑsəbəl/",
           "chinese": "可能的",
@@ -3047,12 +3086,15 @@ export const lesson002 = {
           "time",
           "t______r",
           "a__",
+          "a__",
           "r____y",
           "understand",
           "t___",
           "w_____t",
           "t__",
           "sacrifices",
+          "o_",
+          "those",
           "that",
           "went",
           "b____e",
@@ -3093,12 +3135,15 @@ export const lesson002 = {
           "time",
           "t_______",
           "a__",
+          "a__",
           "r_____",
           "understand",
           "t___",
           "w______",
           "t__",
           "s_________",
+          "o_",
+          "those",
           "that",
           "go",
           "b_____",
@@ -3139,12 +3184,15 @@ export const lesson002 = {
           "time",
           "________",
           "a__",
+          "a__",
           "______",
           "u_________",
           "t___",
           "_______",
           "___",
           "sacrifices",
+          "__",
+          "those",
           "t___",
           "w___",
           "______",
@@ -3160,252 +3208,252 @@ export const lesson002 = {
       }
     },
     {
-      "id": "s012",
-      "index": 12,
+      "id": "s009",
+      "index": 9,
       "english": "Absolutely. Do you have a favorite moment from your enlistment and flying these jets that you can speak to as we think about the men and women who so bravely gave their lives for us?",
       "chinese": "当然。在缅怀为我们勇敢献出生命的男女军人之际，你能谈谈服役和驾驶这些战机过程中最难忘的时刻吗？",
-      "audioUrl": "/lessons/lesson002/s012.mp3",
+      "audioUrl": "/lessons/lesson002/s009.mp3",
       "words": [
         {
-          "id": "s012-w001",
+          "id": "s009-w001",
           "text": "Absolutely",
           "ipa": "/ˈæbsəˌlutli/",
           "chinese": "当然；绝对",
           "english": "certainly; completely"
         },
         {
-          "id": "s012-w002",
+          "id": "s009-w002",
           "text": "Do",
           "ipa": "/du/",
           "chinese": "做",
           "english": "to perform"
         },
         {
-          "id": "s012-w003",
+          "id": "s009-w003",
           "text": "you",
           "ipa": "/ju/",
           "chinese": "你",
           "english": "you"
         },
         {
-          "id": "s012-w004",
+          "id": "s009-w004",
           "text": "have",
           "ipa": "/hæv/",
           "chinese": "有",
           "english": "have"
         },
         {
-          "id": "s012-w005",
+          "id": "s009-w005",
           "text": "a",
           "ipa": "/ə/",
           "chinese": "一块",
           "english": "a (article)"
         },
         {
-          "id": "s012-w006",
+          "id": "s009-w006",
           "text": "favorite",
           "ipa": "/ˈfeɪvərɪt/",
           "chinese": "最喜爱的",
           "english": "most liked"
         },
         {
-          "id": "s012-w007",
+          "id": "s009-w007",
           "text": "moment",
           "ipa": "/ˈmoʊmənt/",
           "chinese": "时刻",
           "english": "a particular time"
         },
         {
-          "id": "s012-w008",
+          "id": "s009-w008",
           "text": "from",
           "ipa": "/frʌm/",
           "chinese": "从",
           "english": "from"
         },
         {
-          "id": "s012-w009",
+          "id": "s009-w009",
           "text": "your",
           "ipa": "/jʊr/",
           "chinese": "你的；你们的",
           "english": "belonging to you"
         },
         {
-          "id": "s012-w010",
+          "id": "s009-w010",
           "text": "enlistment",
           "ipa": "/ɪnˈlaɪstmənt/",
           "chinese": "入伍",
           "english": "joining the military"
         },
         {
-          "id": "s012-w011",
+          "id": "s009-w011",
           "text": "and",
           "ipa": "/ænd/",
           "chinese": "尤其",
           "english": "and"
         },
         {
-          "id": "s012-w012",
+          "id": "s009-w012",
           "text": "flying",
           "ipa": "/ˈflaɪɪŋ/",
           "chinese": "飞行",
           "english": "operating aircraft"
         },
         {
-          "id": "s012-w013",
+          "id": "s009-w013",
           "text": "these",
           "ipa": "/ðiz/",
           "chinese": "这些",
           "english": "these"
         },
         {
-          "id": "s012-w014",
+          "id": "s009-w014",
           "text": "jets",
           "ipa": "/dʒɛts/",
           "chinese": "喷气机",
           "english": "jet aircraft"
         },
         {
-          "id": "s012-w015",
+          "id": "s009-w015",
           "text": "that",
           "ipa": "/ðæt/",
           "chinese": "即",
           "english": "that"
         },
         {
-          "id": "s012-w016",
+          "id": "s009-w016",
           "text": "you",
           "ipa": "/ju/",
           "chinese": "你",
           "english": "you"
         },
         {
-          "id": "s012-w017",
+          "id": "s009-w017",
           "text": "can",
           "ipa": "/kæn/",
           "chinese": "能",
           "english": "modal: be able to"
         },
         {
-          "id": "s012-w018",
+          "id": "s009-w018",
           "text": "speak",
           "ipa": "/spik/",
           "chinese": "谈；说",
           "english": "to talk about"
         },
         {
-          "id": "s012-w019",
+          "id": "s009-w019",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s012-w020",
+          "id": "s009-w020",
           "text": "as",
           "ipa": "/æz/",
           "chinese": "因此",
           "english": "as"
         },
         {
-          "id": "s012-w021",
+          "id": "s009-w021",
           "text": "we",
           "ipa": "/wi/",
           "chinese": "我们",
           "english": "we (subject)"
         },
         {
-          "id": "s012-w022",
+          "id": "s009-w022",
           "text": "think",
           "ipa": "/θɪŋk/",
           "chinese": "琢磨",
           "english": "think"
         },
         {
-          "id": "s012-w023",
+          "id": "s009-w023",
           "text": "about",
           "ipa": "/əˈbaʊt/",
           "chinese": "关于",
           "english": "about"
         },
         {
-          "id": "s012-w024",
+          "id": "s009-w024",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s012-w025",
+          "id": "s009-w025",
           "text": "men",
           "ipa": "/mɛn/",
           "chinese": "男性军人",
           "english": "men (service members)"
         },
         {
-          "id": "s012-w026",
+          "id": "s009-w026",
           "text": "and",
           "ipa": "/ænd/",
           "chinese": "尤其",
           "english": "and"
         },
         {
-          "id": "s012-w027",
+          "id": "s009-w027",
           "text": "women",
           "ipa": "/ˈwɪmɪn/",
           "chinese": "女性军人",
           "english": "women (service members)"
         },
         {
-          "id": "s012-w028",
+          "id": "s009-w028",
           "text": "who",
           "ipa": "/hu/",
           "chinese": "那些",
           "english": "who (relative)"
         },
         {
-          "id": "s012-w029",
+          "id": "s009-w029",
           "text": "so",
           "ipa": "/soʊ/",
           "chinese": "那么",
           "english": "so (to start a question)"
         },
         {
-          "id": "s012-w030",
+          "id": "s009-w030",
           "text": "bravely",
           "ipa": "/ˈbreɪvli/",
           "chinese": "勇敢地",
           "english": "with courage"
         },
         {
-          "id": "s012-w031",
+          "id": "s009-w031",
           "text": "gave",
           "ipa": "/ɡeɪv/",
           "chinese": "给予",
           "english": "past of give"
         },
         {
-          "id": "s012-w032",
+          "id": "s009-w032",
           "text": "their",
           "ipa": "/ðɛr/",
           "chinese": "他们的",
           "english": "belonging to them"
         },
         {
-          "id": "s012-w033",
+          "id": "s009-w033",
           "text": "lives",
           "ipa": "/laɪvz/",
           "chinese": "生命",
           "english": "plural of life"
         },
         {
-          "id": "s012-w034",
+          "id": "s009-w034",
           "text": "for",
           "ipa": "/fɔr/",
           "chinese": "作为",
           "english": "for"
         },
         {
-          "id": "s012-w035",
+          "id": "s009-w035",
           "text": "us",
           "ipa": "/ʌs/",
           "chinese": "我们",
@@ -3527,340 +3575,438 @@ export const lesson002 = {
       }
     },
     {
-      "id": "s013",
-      "index": 13,
-      "english": "I think day in and day out it's just being part of such a fantastic team. I joined the Air Force as a result of the F-22 demonstration team back in 2016 watching the demo and now to be on the other side of the fence.",
-      "chinese": "我想日复一日，最宝贵的只是成为这么优秀团队的一员。2016 年，我因观看 F-22 演示队的表演而加入空军；如今我站在围栏的另一边。",
-      "audioUrl": "/lessons/lesson002/s013.mp3",
+      "id": "s010",
+      "index": 10,
+      "english": "I think day in and day out it's just being part of such a fantastic team. I joined the Air Force as a result of the F-22 demonstration team back in 2016 watching the demo and now to be on the other side of the fence hopefully lighting that same spark in someone else's life is it's quite an honor.",
+      "chinese": "我想日复一日，最宝贵的就是成为这么优秀团队的一员。2016 年我因观看 F-22 演示队的表演而加入空军；如今我站在围栏的另一边，希望能在他人的生命里点燃同样的火花。这是莫大的荣誉。",
+      "audioUrl": "/lessons/lesson002/s010.mp3",
       "words": [
         {
-          "id": "s013-w001",
+          "id": "s010-w001",
           "text": "I",
           "ipa": "/aɪ/",
           "chinese": "我",
           "english": "I"
         },
         {
-          "id": "s013-w002",
+          "id": "s010-w002",
           "text": "think",
           "ipa": "/θɪŋk/",
           "chinese": "琢磨",
           "english": "think"
         },
         {
-          "id": "s013-w003",
+          "id": "s010-w003",
           "text": "day",
           "ipa": "/deɪ/",
           "chinese": "日子",
           "english": "a day"
         },
         {
-          "id": "s013-w004",
+          "id": "s010-w004",
           "text": "in",
           "ipa": "/ɪn/",
           "chinese": "在",
           "english": "in"
         },
         {
-          "id": "s013-w005",
+          "id": "s010-w005",
           "text": "and",
           "ipa": "/ænd/",
           "chinese": "尤其",
           "english": "and"
         },
         {
-          "id": "s013-w006",
+          "id": "s010-w006",
           "text": "day",
           "ipa": "/deɪ/",
           "chinese": "日子",
           "english": "a day"
         },
         {
-          "id": "s013-w007",
+          "id": "s010-w007",
           "text": "out",
           "ipa": "/aʊt/",
           "chinese": "外出",
           "english": "outside"
         },
         {
-          "id": "s013-w008",
+          "id": "s010-w008",
           "text": "it's",
           "ipa": "/ɪts/",
           "chinese": "它",
           "english": "it is"
         },
         {
-          "id": "s013-w009",
+          "id": "s010-w009",
           "text": "just",
           "ipa": "/dʒʌst/",
           "chinese": "刚",
           "english": "just"
         },
         {
-          "id": "s013-w010",
+          "id": "s010-w010",
           "text": "being",
           "ipa": "/ˈbiɪŋ/",
           "chinese": "被",
           "english": "passive auxiliary"
         },
         {
-          "id": "s013-w011",
+          "id": "s010-w011",
           "text": "part",
           "ipa": "/pɑrt/",
           "chinese": "一部分",
           "english": "a member of"
         },
         {
-          "id": "s013-w012",
+          "id": "s010-w012",
           "text": "of",
           "ipa": "/əv/",
           "chinese": "的",
           "english": "of"
         },
         {
-          "id": "s013-w013",
+          "id": "s010-w013",
           "text": "such",
           "ipa": "/sʌtʃ/",
           "chinese": "如此",
           "english": "such"
         },
         {
-          "id": "s013-w014",
+          "id": "s010-w014",
           "text": "a",
           "ipa": "/ə/",
           "chinese": "一块",
           "english": "a (article)"
         },
         {
-          "id": "s013-w015",
+          "id": "s010-w015",
           "text": "fantastic",
           "ipa": "/fænˈtæstɪk/",
           "chinese": "极好的",
           "english": "wonderful"
         },
         {
-          "id": "s013-w016",
+          "id": "s010-w016",
           "text": "team",
           "ipa": "/tim/",
           "chinese": "团队",
           "english": "a group working together"
         },
         {
-          "id": "s013-w017",
+          "id": "s010-w017",
           "text": "I",
           "ipa": "/aɪ/",
           "chinese": "我",
           "english": "I"
         },
         {
-          "id": "s013-w018",
+          "id": "s010-w018",
           "text": "joined",
           "ipa": "/dʒɔɪnd/",
           "chinese": "加入",
           "english": "became a member"
         },
         {
-          "id": "s013-w019",
+          "id": "s010-w019",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s013-w020",
+          "id": "s010-w020",
           "text": "Air",
           "ipa": "/ɛr/",
           "chinese": "空中；航空",
           "english": "the sky; aviation"
         },
         {
-          "id": "s013-w021",
+          "id": "s010-w021",
           "text": "Force",
           "ipa": "/fɔrs/",
           "chinese": "力",
           "english": "physical force; G-force"
         },
         {
-          "id": "s013-w022",
+          "id": "s010-w022",
           "text": "as",
           "ipa": "/æz/",
           "chinese": "因此",
           "english": "as"
         },
         {
-          "id": "s013-w023",
+          "id": "s010-w023",
           "text": "a",
           "ipa": "/ə/",
           "chinese": "一块",
           "english": "a (article)"
         },
         {
-          "id": "s013-w024",
+          "id": "s010-w024",
           "text": "result",
           "ipa": "/rɪˈzʌlt/",
           "chinese": "结果",
           "english": "outcome"
         },
         {
-          "id": "s013-w025",
+          "id": "s010-w025",
           "text": "of",
           "ipa": "/əv/",
           "chinese": "的",
           "english": "of"
         },
         {
-          "id": "s013-w026",
+          "id": "s010-w026",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s013-w027",
+          "id": "s010-w027",
           "text": "F",
           "ipa": "/ɛf/",
           "chinese": "F",
           "english": "letter F (F-22)"
         },
         {
-          "id": "s013-w028",
+          "id": "s010-w028",
           "text": "22",
           "ipa": "/ˌtwɛn ti tu/",
           "chinese": "22",
           "english": "F-22 (fighter jet model number)"
         },
         {
-          "id": "s013-w029",
+          "id": "s010-w029",
           "text": "demonstration",
           "ipa": "/ˌdɛmənˈstreɪʃən/",
           "chinese": "演示",
           "english": "a visual showing"
         },
         {
-          "id": "s013-w030",
+          "id": "s010-w030",
           "text": "team",
           "ipa": "/tim/",
           "chinese": "团队",
           "english": "a group working together"
         },
         {
-          "id": "s013-w031",
+          "id": "s010-w031",
           "text": "back",
           "ipa": "/bæk/",
           "chinese": "回来；后方",
           "english": "return; rear"
         },
         {
-          "id": "s013-w032",
+          "id": "s010-w032",
           "text": "in",
           "ipa": "/ɪn/",
           "chinese": "在",
           "english": "in"
         },
         {
-          "id": "s013-w033",
+          "id": "s010-w033",
           "text": "2016",
           "ipa": "/ˌtwɛn tiˈsɪkstin/",
           "chinese": "2016年",
           "english": "the year two thousand sixteen"
         },
         {
-          "id": "s013-w034",
+          "id": "s010-w034",
           "text": "watching",
           "ipa": "/ˈwɑtʃɪŋ/",
           "chinese": "观看",
           "english": "observing"
         },
         {
-          "id": "s013-w035",
+          "id": "s010-w035",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s013-w036",
+          "id": "s010-w036",
           "text": "demo",
           "ipa": "/ˈdɛmoʊ/",
           "chinese": "演示",
           "english": "demonstration (short)"
         },
         {
-          "id": "s013-w037",
+          "id": "s010-w037",
           "text": "and",
           "ipa": "/ænd/",
           "chinese": "尤其",
           "english": "and"
         },
         {
-          "id": "s013-w038",
+          "id": "s010-w038",
           "text": "now",
           "ipa": "/naʊ/",
           "chinese": "不过",
           "english": "now (transition)"
         },
         {
-          "id": "s013-w039",
+          "id": "s010-w039",
           "text": "to",
           "ipa": "/tu/",
           "chinese": "到",
           "english": "to"
         },
         {
-          "id": "s013-w040",
+          "id": "s010-w040",
           "text": "be",
           "ipa": "/bi/",
           "chinese": "会",
           "english": "be"
         },
         {
-          "id": "s013-w041",
+          "id": "s010-w041",
           "text": "on",
           "ipa": "/ɑn/",
           "chinese": "对",
           "english": "on"
         },
         {
-          "id": "s013-w042",
+          "id": "s010-w042",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s013-w043",
+          "id": "s010-w043",
           "text": "other",
           "ipa": "/ˈʌðər/",
           "chinese": "另一边的",
           "english": "opposite side"
         },
         {
-          "id": "s013-w044",
+          "id": "s010-w044",
           "text": "side",
           "ipa": "/saɪd/",
           "chinese": "一边",
           "english": "a side (of the fence)"
         },
         {
-          "id": "s013-w045",
+          "id": "s010-w045",
           "text": "of",
           "ipa": "/əv/",
           "chinese": "的",
           "english": "of"
         },
         {
-          "id": "s013-w046",
+          "id": "s010-w046",
           "text": "the",
           "ipa": "/ðə/",
           "chinese": "早上",
           "english": "the"
         },
         {
-          "id": "s013-w047",
+          "id": "s010-w047",
           "text": "fence",
           "ipa": "/fɛns/",
           "chinese": "围栏",
           "english": "barrier; sideline"
+        },
+        {
+          "id": "s010-w048",
+          "text": "hopefully",
+          "ipa": "/ˈhoʊpfəli/",
+          "chinese": "希望",
+          "english": "I hope; with luck"
+        },
+        {
+          "id": "s010-w049",
+          "text": "lighting",
+          "ipa": "/ˈlaɪtɪŋ/",
+          "chinese": "点燃",
+          "english": "igniting (a spark)"
+        },
+        {
+          "id": "s010-w050",
+          "text": "that",
+          "ipa": "/ðæt/",
+          "chinese": "即",
+          "english": "that"
+        },
+        {
+          "id": "s010-w051",
+          "text": "same",
+          "ipa": "/seɪm/",
+          "chinese": "同样的",
+          "english": "identical"
+        },
+        {
+          "id": "s010-w052",
+          "text": "spark",
+          "ipa": "/spɑrk/",
+          "chinese": "火花；触动",
+          "english": "inspiration; ignite interest"
+        },
+        {
+          "id": "s010-w053",
+          "text": "in",
+          "ipa": "/ɪn/",
+          "chinese": "在",
+          "english": "in"
+        },
+        {
+          "id": "s010-w054",
+          "text": "someone",
+          "ipa": "/ˈsʌmˌwʌn/",
+          "chinese": "某人",
+          "english": "another person"
+        },
+        {
+          "id": "s010-w055",
+          "text": "else's",
+          "ipa": "/ɛlsɪz/",
+          "chinese": "他人的",
+          "english": "belonging to someone else"
+        },
+        {
+          "id": "s010-w056",
+          "text": "life",
+          "ipa": "/laɪf/",
+          "chinese": "生命；人生",
+          "english": "a person's life"
+        },
+        {
+          "id": "s010-w057",
+          "text": "is",
+          "ipa": "/ɪz/",
+          "chinese": "被",
+          "english": "is"
+        },
+        {
+          "id": "s010-w058",
+          "text": "it's",
+          "ipa": "/ɪts/",
+          "chinese": "它",
+          "english": "it is"
+        },
+        {
+          "id": "s010-w059",
+          "text": "quite",
+          "ipa": "/kwaɪt/",
+          "chinese": "相当",
+          "english": "quite"
+        },
+        {
+          "id": "s010-w060",
+          "text": "an",
+          "ipa": "/ən/",
+          "chinese": "一份",
+          "english": "an"
+        },
+        {
+          "id": "s010-w061",
+          "text": "honor",
+          "ipa": "/ˈɑnər/",
+          "chinese": "荣誉；致敬",
+          "english": "respect; tribute"
         }
       ],
       "blanks": {
@@ -3911,7 +4057,21 @@ export const lesson002 = {
           "side",
           "o_",
           "t__",
-          "fence"
+          "fence",
+          "h_______y",
+          "lighting",
+          "t___",
+          "s___",
+          "spark",
+          "i_",
+          "someone",
+          "e___'_",
+          "life",
+          "i_",
+          "it'_",
+          "q___e",
+          "a_",
+          "honor"
         ],
         "intermediate": [
           "I",
@@ -3960,7 +4120,21 @@ export const lesson002 = {
           "s___",
           "o_",
           "t__",
-          "f____"
+          "f____",
+          "h________",
+          "light",
+          "t___",
+          "s___",
+          "spark",
+          "i_",
+          "someone",
+          "e___'_",
+          "l___",
+          "i_",
+          "it'_",
+          "q____",
+          "a_",
+          "h____"
         ],
         "advanced": [
           "I",
@@ -4009,143 +4183,9 @@ export const lesson002 = {
           "side",
           "__",
           "___",
-          "fence"
-        ]
-      }
-    },
-    {
-      "id": "s014",
-      "index": 14,
-      "english": "We're letting that same spark in someone else's life. It's quite an honor.",
-      "chinese": "我们正在他人生命中点燃同样的火花。这是莫大的荣誉。",
-      "audioUrl": "/lessons/lesson002/s014.mp3",
-      "words": [
-        {
-          "id": "s014-w001",
-          "text": "We're",
-          "ipa": "/wɪr/",
-          "chinese": "我们是",
-          "english": "we are"
-        },
-        {
-          "id": "s014-w002",
-          "text": "letting",
-          "ipa": "/ˈlɛtɪŋ/",
-          "chinese": "让",
-          "english": "allowing"
-        },
-        {
-          "id": "s014-w003",
-          "text": "that",
-          "ipa": "/ðæt/",
-          "chinese": "即",
-          "english": "that"
-        },
-        {
-          "id": "s014-w004",
-          "text": "same",
-          "ipa": "/seɪm/",
-          "chinese": "同样的",
-          "english": "identical"
-        },
-        {
-          "id": "s014-w005",
-          "text": "spark",
-          "ipa": "/spɑrk/",
-          "chinese": "火花；触动",
-          "english": "inspiration; ignite interest"
-        },
-        {
-          "id": "s014-w006",
-          "text": "in",
-          "ipa": "/ɪn/",
-          "chinese": "在",
-          "english": "in"
-        },
-        {
-          "id": "s014-w007",
-          "text": "someone",
-          "ipa": "/ˈsʌmˌwʌn/",
-          "chinese": "某人",
-          "english": "another person"
-        },
-        {
-          "id": "s014-w008",
-          "text": "else's",
-          "ipa": "/ɛlsɪz/",
-          "chinese": "他人的",
-          "english": "belonging to someone else"
-        },
-        {
-          "id": "s014-w009",
-          "text": "life",
-          "ipa": "/laɪf/",
-          "chinese": "生命；人生",
-          "english": "a person's life"
-        },
-        {
-          "id": "s014-w010",
-          "text": "It's",
-          "ipa": "/ɪts/",
-          "chinese": "它",
-          "english": "it is"
-        },
-        {
-          "id": "s014-w011",
-          "text": "quite",
-          "ipa": "/kwaɪt/",
-          "chinese": "相当",
-          "english": "quite"
-        },
-        {
-          "id": "s014-w012",
-          "text": "an",
-          "ipa": "/ən/",
-          "chinese": "一份",
-          "english": "an"
-        },
-        {
-          "id": "s014-w013",
-          "text": "honor",
-          "ipa": "/ˈɑnər/",
-          "chinese": "荣誉；致敬",
-          "english": "respect; tribute"
-        }
-      ],
-      "blanks": {
-        "beginner": [
-          "We'__",
-          "letting",
-          "t___",
-          "s___",
-          "spark",
-          "i_",
-          "someone",
-          "e___'_",
-          "life",
-          "It'_",
-          "q___e",
-          "a_",
-          "honor"
-        ],
-        "intermediate": [
-          "We'__",
-          "let",
-          "t___",
-          "s___",
-          "spark",
-          "i_",
-          "someone",
-          "e___'_",
-          "l___",
-          "It'_",
-          "q____",
-          "a_",
-          "h____"
-        ],
-        "advanced": [
-          "W____",
-          "l______",
+          "fence",
+          "_________",
+          "l_______",
           "____",
           "____",
           "spark",
@@ -4153,12 +4193,17 @@ export const lesson002 = {
           "s______",
           "______",
           "life",
-          "I___",
+          "__",
+          "i___",
           "_____",
           "__",
           "h____"
         ]
       }
     }
-  ]
+  ],
+  "briefing": "每年五月最后一个周一是美国的Memorial Day，今年falls on May 25th。各地都会举办多种纪念活动。我本人曾目睹在游行队伍中出现军人的方阵时，两边原本坐着的观众会站起来以表示对军人的敬重。本课视频来自佛罗里达州 Homestead 航展现场的一段电视采访。这个航展是该节日之前周末的Memorial Day Weekend系列活动中的一个。接受采访的特技飞行员Nick “Laz” Le Tourneau来自中西部的Minnesota，也许带有一点accent。可能是飞行员的缘故，也可能是这些套话说了无数遍，他的语速极快。建议慢速播放以了解发音特点。",
+  "briefingDate": "May 23th，2026",
+  "headerImageUrl": "/lessons/lesson002/header.png",
+  "videoPosterUrl": "/lessons/lesson002/poster.jpg"
 };

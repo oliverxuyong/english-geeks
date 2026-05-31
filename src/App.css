@@ -14,22 +14,56 @@ body {
 }
 
 .hero {
-  padding: 48px 24px 32px;
+  padding: 64px 24px 32px;
   text-align: center;
   background: white;
   border-bottom: 1px solid #ddd;
 }
 
-.hero h1 {
-  margin: 0;
-  font-size: 48px;
-  letter-spacing: -1px;
+.hero-header-image {
+  display: block;
+  width: min(720px, 100%);
+  max-height: 220px;
+  margin: 0 auto 16px;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 12px;
 }
 
-.hero p {
+.hero h1 {
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
   margin: 8px 0 0;
-  font-size: 24px;
+  font-size: 18px;
   color: #666;
+}
+
+.hero-briefing-wrap {
+  position: relative;
+  max-width: 42rem;
+  margin: 14px auto 0;
+  text-align: left;
+}
+
+.hero-briefing-date {
+  display: block;
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #888;
+}
+
+.hero-briefing {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #444;
+  white-space: pre-line;
 }
 
 .lesson-picker {
@@ -110,7 +144,19 @@ button {
   }
 
   .hero h1 {
-    font-size: 38px;
+    font-size: 30px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-briefing {
+    font-size: 14px;
+  }
+
+  .hero-briefing-date {
+    font-size: 12px;
   }
 }
 
@@ -439,9 +485,15 @@ button:disabled {
 }
 
 .practice-card-header-right {
-  display: flex; 
+  display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.sentence-audio-buttons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .word-column {
@@ -449,6 +501,24 @@ button:disabled {
   flex-direction: column;
   align-items: center;
   gap: 2px;
+}
+
+.word-token-row {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+
+.word-punct {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #1d1d1f;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.word-column-tight-left {
+  margin-left: -8px;
 }
 
 .word-ipa {
@@ -485,9 +555,12 @@ button:disabled {
 }
 
 .full-video {
+  display: block;
   width: 100%;
   max-width: 720px;
+  margin: 12px auto 0;
   border-radius: 12px;
-  margin-top: 12px;
+  background: #111;
+  object-fit: contain;
 }
 

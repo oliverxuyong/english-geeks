@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import { speakWord } from "../utils/playAudio";
+import { toggleSpeakWord } from "../utils/playAudio";
 import { BLANK_PLACEHOLDER, buildWordCharSlots } from "../utils/formatBlankDisplay";
 import { calculateMatchScore } from "../utils/lcsMatch";
+import { buildSentenceDisplayGroups } from "../utils/sentenceDisplay";
 
 const WORD_PEEK_MS = 700;
 
@@ -107,14 +108,26 @@ export function PracticeCard({
       <div className="practice-card-header">
         <div className="practice-card-header-right">
           {sentence.audioUrl && (
-            <button
-              type="button"
-              className="play-icon play-icon-small"
-              aria-label="Play sentence audio"
-              onClick={() => speakWord(sentence.english, sentence.audioUrl)}
-            >
-              🔊
-            </button>
+            <div className="sentence-audio-buttons">
+              <button
+                type="button"
+                className="play-icon play-icon-small"
+                aria-label="Play sentence audio at half speed"
+                onClick={() =>
+                  toggleSpeakWord(sentence.english, sentence.audioUrl, { playbackRate: 0.5 })
+                }
+              >
+                🐢
+              </button>
+              <button
+                type="button"
+                className="play-icon play-icon-small"
+                aria-label="Play sentence audio"
+                onClick={() => toggleSpeakWord(sentence.english, sentence.audioUrl)}
+              >
+                🔊
+              </button>
+            </div>
           )}
           <p className="sentence-index">
             Sentence {sentence.index} / {sentenceCount}
@@ -167,7 +180,16 @@ export function PracticeCard({
       {showTranslation && <p className="translation">{sentence.chinese}</p>}
 
       <div className="word-line">
-        {sentence.words.map((word, wordIndex) => {
+        {buildSentenceDisplayGroups(sentence).map((group) => {
+          if (group.type === "punct-only") {
+            return (
+              <span className="word-punct" key={`punct-${group.text}`}>
+                {group.text}
+              </span>
+            );
+          }
+
+          const { word, wordIndex, leadingPunct, trailingPunct, tightLeft } = group;
           const isMatched = matchedWordIndexes.has(wordIndex);
           const reveal = showFullText || isMatched || peekWordId === word.id;
           const slots = buildWordCharSlots(
@@ -176,27 +198,42 @@ export function PracticeCard({
           );
 
           return (
-            <div className="word-column" key={word.id}>
+            <div
+              className={`word-column${tightLeft ? " word-column-tight-left" : ""}`}
+              key={word.id}
+            >
               {showIPA && word.ipa && <span className="word-ipa">{word.ipa}</span>}
-              <button
-                className={`word-token word-token-slotted ${
-                  selectedWord?.id === word.id ? "word-token-selected" : ""
-                } ${isMatched ? "word-token-matched" : ""}`}
-                type="button"
-                onClick={() => handleWordClick(word)}
-                onDoubleClick={() => handleWordDoubleClick(word)}
-              >
-                {slots.map((slot, charIndex) => (
-                  <span
-                    key={`${word.id}-${charIndex}`}
-                    className={
-                      slot.hidden && !reveal ? "word-char word-char-blank" : "word-char"
-                    }
-                  >
-                    {slot.hidden && !reveal ? BLANK_PLACEHOLDER : slot.char}
+              <span className="word-token-row">
+                {leadingPunct.map((punct, i) => (
+                  <span className="word-punct" key={`${word.id}-lead-${i}`}>
+                    {punct}
                   </span>
                 ))}
-              </button>
+                <button
+                  className={`word-token word-token-slotted ${
+                    selectedWord?.id === word.id ? "word-token-selected" : ""
+                  } ${isMatched ? "word-token-matched" : ""}`}
+                  type="button"
+                  onClick={() => handleWordClick(word)}
+                  onDoubleClick={() => handleWordDoubleClick(word)}
+                >
+                  {slots.map((slot, charIndex) => (
+                    <span
+                      key={`${word.id}-${charIndex}`}
+                      className={
+                        slot.hidden && !reveal ? "word-char word-char-blank" : "word-char"
+                      }
+                    >
+                      {slot.hidden && !reveal ? BLANK_PLACEHOLDER : slot.char}
+                    </span>
+                  ))}
+                </button>
+                {trailingPunct.map((punct, i) => (
+                  <span className="word-punct" key={`${word.id}-trail-${i}`}>
+                    {punct}
+                  </span>
+                ))}
+              </span>
             </div>
           );
         })}
