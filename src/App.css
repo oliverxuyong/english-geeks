@@ -124,7 +124,7 @@ button {
 .practice-card {
   border: 1px solid #ddd;
   border-radius: 16px;
-  padding: 18px;
+  padding: 12px;
   background: #fafafa; 
   min-height: 160px;
 }
@@ -134,8 +134,9 @@ button {
 }
 
 .practice-card p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.6;
+  text-align: left;
 }
 
 @media (max-width: 800px) {
@@ -162,22 +163,28 @@ button {
 
 
 .vocab-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 14px;
 }
 
 .vocab-card {
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 18px;
-  background: #fafafa;
+  padding: 16px 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
   text-align: left;
+}
+
+.vocab-card:not(:last-child) {
+  border-bottom: 1px solid #eee;
 }
 
 .vocab-card h3 {
   margin: 0 0 6px;
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .ipa {
@@ -199,12 +206,6 @@ button {
   font-size: 22px;
   line-height: 1.7;
   font-weight: 600;
-}
-
-@media (max-width: 800px) {
-  .vocab-list {
-    grid-template-columns: 1fr;
-  }
 }
 
 .button-row {

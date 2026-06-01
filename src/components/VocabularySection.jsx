@@ -23,10 +23,12 @@ export function VocabularySection({ lesson }) {
       <h2>1. Vocabulary</h2>
 
       <div className="vocab-list">
-        {lesson.vocabulary.map((item) => (
+        {lesson.vocabulary.map((item, index) => (
           <div className="vocab-card" key={item.id}>
             <div className="vocab-card-top">
-              <h3>{item.word}</h3>
+              <h3>
+                {index + 1}. {item.word}
+              </h3>
               <button
                 type="button"
                 className={`play-icon${pressedId === item.id ? " is-pressed" : ""}`}
