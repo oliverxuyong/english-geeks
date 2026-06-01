@@ -21,6 +21,9 @@ export function VocabularySection({ lesson }) {
   return (
     <section className="panel" id="step-vocab">
       <h2>1. Vocabulary</h2>
+      <p className="vocab-intro">
+        先把生词扫荡一遍，免得后面卡壳。如果除了这些词之外，你还有不懂的，可以下面第3步的练习区里直接双击它，会弹出一个简短释义。
+      </p>
 
       <div className="vocab-list">
         {lesson.vocabulary.map((item, index) => (

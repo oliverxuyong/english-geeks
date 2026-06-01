@@ -9,6 +9,9 @@ export function FinalListeningSection({ lesson }) {
   return (
     <section className="panel" id="step-listen-2">
       <h2>4. Final Listening</h2>
+      <p className="final-listen-intro">
+        经过约30分钟的训练后，现在是测试学习效果的时候了。
+      </p>
       {lesson.fullVideoUrl ? (
         <InlineLessonVideo
           src={lesson.fullVideoUrl}

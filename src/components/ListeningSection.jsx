@@ -15,7 +15,7 @@ export function ListeningSection({ lesson, stepId = "step-listen-1", title }) {
       <button type="button" onClick={toggle}>
         {isPlaying ? "Stop Playing" : "Play Full Audio"}
       </button>
-      <p className="listen-hint">Listen once to test yourself before practice.</p>
+      <p className="listen-hint">Listen once to test yourself before practice. <br />听一遍就够了以测试练习后的效果，或者跳过这一步直接进入练习区。</p>
     </section>
   );
 }

@@ -4202,7 +4202,7 @@ export const lesson002 = {
       }
     }
   ],
-  "briefing": "每年五月最后一个周一是美国的Memorial Day，今年falls on May 25th。各地都会举办多种纪念活动。我本人曾目睹在游行队伍中出现军人的方阵时，两边原本坐着的观众会站起来以表示对军人的敬重。本课视频来自佛罗里达州 Homestead 航展现场的一段电视采访。这个航展是该节日之前周末的Memorial Day Weekend系列活动中的一个。接受采访的特技飞行员Nick “Laz” Le Tourneau来自中西部的Minnesota，也许带有一点accent。可能是飞行员的缘故，也可能是这些套话说了无数遍，他的语速极快。建议慢速播放以了解发音特点。",
+  "briefing": "每年五月最后一个周一是美国的Memorial Day，今年falls on May 25th。各地都会举办多种纪念活动。我本人曾目睹在游行队伍中出现军人的方阵时，两边原本坐着的观众会站起来以表示对军人的敬重。本课视频来自佛罗里达州 Homestead 航展现场的一段电视采访。这个航展是该节日之前周末的Memorial Day Weekend系列活动中的一个。接受采访的特技飞行员Nick “Laz” Le Tourneau来自中西部的Minnesota，也许带有一点accent。可能是飞行员的缘故，也可能是这些套话说了无数遍，他的语速极快。建议慢速播放以了解发音特点。视频长度1分30秒，练习时间约30分钟。",
   "briefingDate": "May 23th，2026",
   "headerImageUrl": "/lessons/lesson002/header.png",
   "videoPosterUrl": "/lessons/lesson002/poster.jpg"

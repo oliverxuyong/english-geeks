@@ -202,6 +202,9 @@ export function PracticeSection({ lesson }) {
   return (
     <section className="panel" id="step-practice">
       <h2>3. Practice</h2>
+      <p className="practice-intro">
+        下面是本课的核心部分-句子补全练习区。句子被挖空了，等着你来补全。有三个级别，至少完成中级。你可以默念，也可以点Speak用语音读出全句。按Full Text查看全文，或点击挖空处临时显示某个词。左上角还有个0.5倍速播放按钮。用于慢速跟读，模仿native speaker的发音。双击某个词可以查看它的简短释义。
+      </p>
 
       <div className="practice-section">
         <PracticeCard
