@@ -9,7 +9,13 @@ npm install
 npm run dev
 ```
 
-Open the **https://** URL printed in the terminal (Vite basic SSL). Speech recognition requires a secure context on phones — use that HTTPS network URL, not `http://`.
+| Where | URL |
+|-------|-----|
+| Chrome / Safari (desktop) | **https://localhost:5173** — accept the self-signed cert once |
+| Cursor built-in browser | **http://localhost:5174** — no certificate warning |
+| Phone on same Wi‑Fi | **https://** plus the LAN IP and `:5173` shown in the terminal |
+
+Both localhost URLs support speech recognition. Use the **https** LAN URL on phones (not `http://`).
 
 ```bash
 npm run build    # static output in dist/
@@ -93,7 +99,8 @@ Practice blanks: spaCy `scripts/lib/blank_out_designated_words.py` when installe
 
 ## Mobile / HTTPS
 
-- Dev: `@vitejs/plugin-basic-ssl` — always use the **https** LAN URL on iPhone/Android.
+- Dev: `npm run dev` serves **HTTPS on :5173** (external browsers + phone) and **HTTP on :5174** (Cursor built-in tab).
+- Optional: `npm run dev:http-only` — HTTP only on :5173 if you do not need TLS locally.
 - iOS: Speech recognition works in **Safari**, not Chrome on iPhone.
 - Production: host must be HTTPS for microphone access.
 

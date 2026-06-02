@@ -17,6 +17,22 @@ export function FinalListeningSection({ lesson }) {
           src={lesson.fullVideoUrl}
           poster={lesson.videoPosterUrl}
         />
+      ) : lesson.videoPosterUrl ? (
+        <button
+          type="button"
+          className="final-listen-poster"
+          onClick={toggle}
+          aria-label={isPlaying ? "Stop full audio" : "Play full audio"}
+        >
+          <img
+            className="final-listen-poster-image"
+            src={lesson.videoPosterUrl}
+            alt={lesson.videoPosterAlt ?? lesson.title}
+          />
+          <span className="final-listen-poster-control" aria-hidden="true">
+            {isPlaying ? "■" : "▶"}
+          </span>
+        </button>
       ) : (
         <button type="button" onClick={toggle}>
           {isPlaying ? "Stop Playing" : "Play Again"}

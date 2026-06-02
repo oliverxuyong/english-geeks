@@ -115,10 +115,95 @@ function buildMatchSequence(originalWords) {
   return entries;
 }
 
+function levenshtein(a, b) {
+  const m = a.length;
+  const n = b.length;
+  const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));
+  for (let i = 0; i <= m; i++) dp[i][0] = i;
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,
+        dp[i][j - 1] + 1,
+        dp[i - 1][j - 1] + cost,
+      );
+    }
+  }
+  return dp[m][n];
+}
+
+/** Whether a spoken token likely refers to the same lesson token (STT typo). */
+export function tokensFuzzyMatch(referenceToken, spokenToken) {
+  if (referenceToken === spokenToken) return true;
+
+  const refLen = referenceToken.length;
+  const spokenLen = spokenToken.length;
+  if (refLen < 3 || spokenLen < 3) return false;
+
+  if (levenshtein(referenceToken, spokenToken) <= 1) return true;
+
+  const shorter = refLen <= spokenLen ? referenceToken : spokenToken;
+  const longer = refLen <= spokenLen ? spokenToken : referenceToken;
+  if (shorter.length >= 4 && longer.startsWith(shorter)) return true;
+
+  return false;
+}
+
+/**
+ * Map STT tokens onto lesson vocabulary where alignment supports a near match.
+ * Does not insert tokens the user did not speak.
+ */
+export function alignTranscriptToReference(originalWords, spokenText) {
+  const entries = buildMatchSequence(originalWords);
+  const reference = entries.map((e) => e.token);
+  const spoken = textToWords(spokenText);
+
+  if (!spoken.length || !reference.length) {
+    return spokenText;
+  }
+
+  const m = reference.length;
+  const n = spoken.length;
+  const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));
+
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      if (tokensFuzzyMatch(reference[i - 1], spoken[j - 1])) {
+        dp[i][j] = dp[i - 1][j - 1] + 1;
+      } else {
+        dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+      }
+    }
+  }
+
+  const corrected = [...spoken];
+  let i = m;
+  let j = n;
+
+  while (i > 0 && j > 0) {
+    if (tokensFuzzyMatch(reference[i - 1], spoken[j - 1])) {
+      if (reference[i - 1] !== spoken[j - 1]) {
+        corrected[j - 1] = reference[i - 1];
+      }
+      i--;
+      j--;
+    } else if (dp[i - 1][j] >= dp[i][j - 1]) {
+      i--;
+    } else {
+      j--;
+    }
+  }
+
+  return corrected.join(" ");
+}
+
 export function findMatchedWordIndexes(originalWords, spokenText) {
+  const alignedText = alignTranscriptToReference(originalWords, spokenText);
   const entries = buildMatchSequence(originalWords);
   const original = entries.map((e) => e.token);
-  const spoken = textToWords(spokenText);
+  const spoken = textToWords(alignedText);
 
   const m = original.length;
   const n = spoken.length;

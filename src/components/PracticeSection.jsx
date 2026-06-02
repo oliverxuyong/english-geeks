@@ -37,6 +37,7 @@ export function PracticeSection({ lesson }) {
     stopSpeaking,
   } = useSpeechRecognition({
     words: sentence.words,
+    referenceText: sentence.english,
     onMatchUpdate: setMatchedWordIndexes,
   });
 

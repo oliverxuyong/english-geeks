@@ -3838,5 +3838,8 @@ export const lesson001 = {
         ]
       }
     }
-  ]
+  ],
+  "headerImageUrl": "/lessons/lesson001/header.png",
+  "videoPosterUrl": "/lessons/lesson001/poster.jpg",
+  "videoPosterAlt": "USA Today: Mayor Bill de Blasio eats pizza with a fork"
 };

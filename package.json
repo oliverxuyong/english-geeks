@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:http-only": "VITE_HTTP_ONLY=1 vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",

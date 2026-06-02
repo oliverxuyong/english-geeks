@@ -54,7 +54,7 @@ function App() {
           <img
             className="hero-header-image"
             src={lesson.headerImageUrl}
-            alt="F-22 demonstration team pilot interviewed at Homestead air show"
+            alt={lesson.headerImageAlt ?? lesson.title}
           />
         )}
         <h1>{lesson.title}</h1>

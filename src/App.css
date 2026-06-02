@@ -583,3 +583,55 @@ button:disabled {
   object-fit: contain;
 }
 
+.final-listen-poster {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 12px auto 0;
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #111;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.final-listen-poster-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.final-listen-poster-control {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: #1d1d1f;
+  font-size: 26px;
+  line-height: 1;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.08s ease, background 0.08s ease;
+}
+
+.final-listen-poster:hover .final-listen-poster-control {
+  background: #fff;
+}
+
+.final-listen-poster:active .final-listen-poster-control {
+  transform: translate(-50%, -50%) scale(0.94);
+  background: #c8e0ff;
+}
+

@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { findMatchedWordIndexes } from "../utils/lcsMatch";
+import { alignTranscriptToReference, findMatchedWordIndexes } from "../utils/lcsMatch";
+import { applySpeechPhrases } from "../utils/speechPhrases";
 import { setSpeechRecognitionStop } from "../utils/playAudio";
 
 const SILENCE_MS = 1400;
@@ -17,7 +18,7 @@ function joinResultTranscripts(results, startIndex = 0) {
   return parts.join(" ");
 }
 
-export function useSpeechRecognition({ words, onMatchUpdate }) {
+export function useSpeechRecognition({ words, referenceText, onMatchUpdate }) {
   const [recognizedText, setRecognizedText] = useState("");
   const [isListening, setIsListening] = useState(false);
   const [attemptEnded, setAttemptEnded] = useState(false);
@@ -26,12 +27,29 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
   const shouldListenRef = useRef(false);
   const silenceTimerRef = useRef(null);
   const wordsRef = useRef(words);
+  const referenceTextRef = useRef(referenceText);
+  const onMatchUpdateRef = useRef(onMatchUpdate);
   const attemptEndedRef = useRef(false);
   const segmentStartIndexRef = useRef(0);
 
   useEffect(() => {
     wordsRef.current = words;
   }, [words]);
+
+  useEffect(() => {
+    referenceTextRef.current = referenceText;
+  }, [referenceText]);
+
+  useEffect(() => {
+    onMatchUpdateRef.current = onMatchUpdate;
+  }, [onMatchUpdate]);
+
+  const updateMatches = useCallback((transcript) => {
+    const aligned = alignTranscriptToReference(wordsRef.current, transcript);
+    onMatchUpdateRef.current?.(
+      findMatchedWordIndexes(wordsRef.current, aligned),
+    );
+  }, []);
 
   const clearSilenceTimer = useCallback(() => {
     if (silenceTimerRef.current) {
@@ -51,8 +69,8 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
   const clearRecognitionSession = useCallback(() => {
     segmentStartIndexRef.current = 0;
     setRecognizedText("");
-    onMatchUpdate?.(new Set());
-  }, [onMatchUpdate]);
+    onMatchUpdateRef.current?.(new Set());
+  }, []);
 
   const stopSpeaking = useCallback(() => {
     shouldListenRef.current = false;
@@ -82,13 +100,19 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
     recognition.interimResults = true;
     recognition.continuous = true;
 
+    applySpeechPhrases(
+      recognition,
+      referenceTextRef.current,
+      wordsRef.current,
+    );
+
     recognition.onresult = (event) => {
       if (attemptEndedRef.current) {
         attemptEndedRef.current = false;
         setAttemptEnded(false);
         segmentStartIndexRef.current = event.resultIndex;
         setRecognizedText("");
-        onMatchUpdate?.(new Set());
+        onMatchUpdateRef.current?.(new Set());
       }
 
       const burstTranscript = joinResultTranscripts(
@@ -97,15 +121,18 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
       );
 
       setRecognizedText(burstTranscript);
-      onMatchUpdate?.(
-        findMatchedWordIndexes(wordsRef.current, burstTranscript),
-      );
+      updateMatches(burstTranscript);
       scheduleAttemptEnd();
     };
 
     recognition.onerror = (event) => {
-      console.error("Speech recognition error:", event.error);
-      if (event.error === "not-allowed" || event.error === "service-not-allowed") {
+      console.error("Speech recognition error:", event.error, event.message);
+      if (
+        event.error === "not-allowed" ||
+        event.error === "service-not-allowed" ||
+        event.error === "audio-capture" ||
+        event.error === "network"
+      ) {
         stopSpeaking();
       }
     };
@@ -124,7 +151,7 @@ export function useSpeechRecognition({ words, onMatchUpdate }) {
 
     recognitionRef.current = recognition;
     recognition.start();
-  }, [onMatchUpdate, scheduleAttemptEnd, stopSpeaking]);
+  }, [scheduleAttemptEnd, stopSpeaking, updateMatches]);
 
   const startSpeaking = useCallback(() => {
     if (!window.isSecureContext) {
