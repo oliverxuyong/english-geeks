@@ -1,7 +1,7 @@
 export const lesson001 = {
   "id": "lesson001",
-  "title": "English Geeks",
-  "subtitle": "英语极客",
+  "title": "The Unspoken Rules of Italian Cuisine",
+  "subtitle": "意大利饮食中的潜规则",
   "fullAudioUrl": "/lessons/lesson001/full.mp3",
   "fullVideoUrl": "",
   "vocabulary": [
@@ -51,6 +51,7 @@ export const lesson001 = {
       "audioUrl": "/lessons/lesson001/v005.m4a"
     }
   ],
+
   "sentences": [
     {
       "id": "s001",
@@ -3839,7 +3840,8 @@ export const lesson001 = {
       }
     }
   ],
+  "briefing": "本课来自TED Talks。Bryan Berkowitz在加州Los Angeles上中学，在Tufts University读食品创新专业(Tufts是Boston北边的小城)。大三时去意大利留学一年。他发现意大利饮食文化中有不少外人难以理解并且好笑的潜规则unspoken rules，并且固执的意大利人很在乎这些。不过他认为这些荒唐的饮食文化也有一定的道理，并且提倡以开放的心态来理解甚至欣赏他国文化的多样性。",
   "headerImageUrl": "/lessons/lesson001/header.png",
   "videoPosterUrl": "/lessons/lesson001/poster.jpg",
-  "videoPosterAlt": "USA Today: Mayor Bill de Blasio eats pizza with a fork"
+  "videoPosterAlt": "Speaker presenting on stage at TEDx"
 };
